@@ -13,9 +13,75 @@
   -moz-osx-font-smoothing: grayscale;
 } */
 
-* {
-  margin: 0 auto;
-  padding: 0;
+/* ===== VARIABLES GLOBALES ===== */
+:root {
+  /* breakpoints */
+  --bp-mobile: 768px; /* layout general */
+  --bp-navbar: 900px; /* breakpoint para ocultar informacion */
+
+  /* anchos por sección (mobile-first) */
+  --w-topnav: 95%;
+  --w-botnav: 95%;
+  --w-hero: 95%;
+  --w-content: 95%;
+
+  /* colores */
+  --kineclin-azul: #009edb;
+  --kineclin-rose: #e8b8af;
+  --kineclin-gold: #d89000;
+
+  /* fuentes */
+  --font-primary: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-secondary: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ===== MARGENES ===== */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  max-width: 1280px;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== TIPOGRAFIA ===== */
+body {
+  font-family: var(--font-primary);
+  line-height: 1.4;
+  font-weight: 400;
+
+  /* Optimizacion MACs */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Optimizacion General */
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-secondary);
+  line-height: 1.2;
+  font-weight: 600;
+}
+.navbar,
+.btn {
+  line-height: 1.1;
+}
+
+/* ===== RESPONSIVIDAD: ANCHOS DESKTOP ===== */
+@media (min-width: 768px) {
+  :root {
+    --w-topnav: 95%;
+    --w-botnav: 86%;
+    --w-hero: 100%;
+    --w-content: 80%;
+  }
 }

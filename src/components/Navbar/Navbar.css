@@ -1,0 +1,63 @@
+.topNavBar {
+  background: var(--kineclin-azul);
+  color: white;
+  padding: 8px 0;
+}
+.botNavBar {
+  background: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 16px 0;
+}
+.topNavWidth {
+  max-width: var(--w-topnav);
+  margin: 0 auto;
+}
+.botNavWidth {
+  max-width: var(--w-botnav);
+  margin: 0 auto;
+}
+
+/* fila bot navbar */
+.botNavRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navLogo {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.right a {
+  color: #111827;
+  text-decoration: none;
+}
+
+.right a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  background: var(--kineclin-azul);
+  color: white !important;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+/* mobile rápido: oculta links (mañana hamburguesa) */
+@media (max-width: 900px) {
+  .navLogo {
+    height: 40px;
+  }
+  .right a:not(.btn) {
+    display: none;
+  }
+}
