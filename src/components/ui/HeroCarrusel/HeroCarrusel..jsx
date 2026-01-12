@@ -3,9 +3,9 @@ import "./HeroCarrusel.css";
 
 export default function HeroCarousel() {
   const photos = [
-    { url: "/fondo01.jpg" },
+    { url: "/fondo01.jpg", link: "https://www.kineclin.cl/agenda" },
     { url: "/fondo02.jpg" },
-    { url: "/fondo03.jpg" },
+    { url: "/fondo03.jpg", link: "https://kcplus.cl" },
     { url: "/fondo04.jpg" },
   ];
 
@@ -25,11 +25,27 @@ export default function HeroCarousel() {
     <section className="heroCarousel">
       {/* este inner respeta el ancho centralizado de la seccion HERO */}
       <div className="heroCarousel__inner">
-        <div
-          className="heroCarousel__slide"
-          style={{ backgroundImage: `url(${photos[currentIndex].url})` }}
-          aria-label="Carrusel principal"
-        >
+        <div className="heroCarousel__slide" aria-label="Carrusel principal">
+          {photos[currentIndex].link ? (
+            <a
+              href={photos[currentIndex].link}
+              target="_blank"
+              rel="noreferrer"
+              className="heroCarousel__link"
+            >
+              <div
+                key={currentIndex}
+                className="heroCarousel__image"
+                style={{ backgroundImage: `url(${photos[currentIndex].url})` }}
+              />
+            </a>
+          ) : (
+            <div
+              key={currentIndex}
+              className="heroCarousel__image"
+              style={{ backgroundImage: `url(${photos[currentIndex].url})` }}
+            />
+          )}
           <div className="heroCarousel__nav">
             <button
               type="button"

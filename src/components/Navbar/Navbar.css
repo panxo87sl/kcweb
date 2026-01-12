@@ -1,7 +1,21 @@
 .topNavBar {
+  display: flex;
   background: var(--kineclin-azul);
   color: white;
   padding: 8px 0;
+  font-size: var(--font-size-little);
+}
+
+.googleMaps_link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+.googleMaps_icon {
+  flex-shrink: 0;
 }
 .botNavBar {
   background: white;
@@ -10,8 +24,11 @@
   /* padding: 16px 0; */
 }
 .topNavWidth {
+  display: flex;
+  gap: 5px;
   width: var(--w-topnav);
   margin: 0 auto;
+  align-items: center;
 }
 .botNavWidth {
   width: var(--w-botnav);

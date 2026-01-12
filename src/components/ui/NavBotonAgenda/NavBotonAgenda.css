@@ -47,15 +47,19 @@
 
 /* Botón interno (NO usa .btn global para no chocar) */
 .navBotonAgenda__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   background: var(--bColor);
+  font-size: var(--font-size-medium);
   width: 100%;
   color: #ffffff !important;
   text-decoration: none;
-  text-align: center;
-  padding: 10px 14px;
+  padding: 8px 14px;
   border-radius: 5px;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 @media (max-width: 900px) {

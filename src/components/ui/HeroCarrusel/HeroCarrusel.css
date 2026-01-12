@@ -19,6 +19,28 @@
   overflow: hidden;
 }
 
+.heroCarousel__link {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.heroCarousel__image {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+  animation: heroTransition 900ms ease;
+}
+@keyframes heroTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* overlay flechas */
 .heroCarousel__nav {
   position: absolute;
