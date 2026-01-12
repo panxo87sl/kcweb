@@ -27,8 +27,13 @@
 
   /* colores */
   --kineclin-azul: #009edb;
+  --kineclin-azul-s: #0086ba;
   --kineclin-rose: #e8b8af;
+  --kineclin-rose-s: #da8e81;
   --kineclin-gold: #d89000;
+  --kineclin-gold-s: #b67900;
+  --kineclin-grey: #707475;
+  --kineclin-grey-s: #606363;
 
   /* fuentes */
   --font-primary: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -41,6 +46,9 @@
 *::after {
   box-sizing: border-box;
 }
+#root {
+  min-width: 460px !important;
+}
 
 html,
 body,
@@ -52,6 +60,7 @@ body,
 
 /* ===== TIPOGRAFIA ===== */
 body {
+  overflow-x: auto;
   font-family: var(--font-primary);
   line-height: 1.4;
   font-weight: 400;
@@ -71,8 +80,7 @@ h4 {
   line-height: 1.2;
   font-weight: 600;
 }
-.navbar,
-.btn {
+.navbar {
   line-height: 1.1;
 }
 
@@ -80,7 +88,7 @@ h4 {
 @media (min-width: 768px) {
   :root {
     --w-topnav: 95%;
-    --w-botnav: 86%;
+    --w-botnav: 92%;
     --w-hero: 100%;
     --w-content: 80%;
   }

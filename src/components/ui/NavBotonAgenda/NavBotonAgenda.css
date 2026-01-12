@@ -1,0 +1,65 @@
+.navBotonAgenda {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  padding: 12px 20px;
+
+  --bColorHover: var(--kineclin-azul-s);
+  --bColor: var(--kineclin-azul);
+  transition: background-color 400ms ease;
+}
+
+/* Variantes: definen color del hover (bColorHover) y el color del botón (bColor) */
+.navBotonAgenda--centro {
+  --bColorHover: var(--kineclin-azul-s);
+  --bColor: var(--kineclin-azul);
+}
+
+.navBotonAgenda--estetica {
+  --bColorHover: var(--kineclin-rose-s);
+  --bColor: var(--kineclin-rose);
+}
+
+.navBotonAgenda--kcplus {
+  --bColorHover: var(--kineclin-gold-s);
+  --bColor: var(--kineclin-gold);
+}
+.navBotonAgenda__titulo {
+  font-family: var(--font-secondary);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+}
+
+/* Hover del bloque: cambia fondo + cambia color del título */
+.navBotonAgenda:hover {
+  background: color-mix(in srgb, var(--bColorHover), transparent 60%);
+}
+
+.navBotonAgenda:hover .navBotonAgenda__titulo {
+  color: #ffffff;
+}
+
+/* Botón interno (NO usa .btn global para no chocar) */
+.navBotonAgenda__btn {
+  background: var(--bColor);
+  width: 100%;
+  color: #ffffff !important;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 5px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+@media (max-width: 900px) {
+  .navBotonAgenda {
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,81 @@
+.heroCarousel {
+  width: 100%;
+  padding: 0px 0px 12px 0px;
+}
+
+/* este es el “hero width” centralizado */
+.heroCarousel__inner {
+  width: var(--w-hero);
+  margin: 0 auto;
+}
+
+.heroCarousel__slide {
+  position: relative;
+  width: 100%;
+  height: 520px; /* ajusta */
+  background-position: center;
+  background-size: cover;
+  /* border-radius: 16px; */
+  overflow: hidden;
+}
+
+/* overlay flechas */
+.heroCarousel__nav {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.heroCarousel__arrow {
+  border: 0;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.65);
+  color: #1f2937;
+}
+
+.heroCarousel__arrow:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* dots debajo */
+.heroCarousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.heroCarousel__dot {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  background: rgba(17, 24, 39, 0.35);
+}
+
+.heroCarousel__dot.is-active {
+  background: rgba(17, 24, 39, 0.85);
+}
+
+@media (max-width: 900px) {
+  .heroCarousel__slide {
+    border-radius: 6px;
+  }
+  .heroCarousel {
+    padding: 10px 0px 12px 0px;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .heroCarousel__slide {
+    height: 360px;
+    border-radius: 8px;
+  }
+}

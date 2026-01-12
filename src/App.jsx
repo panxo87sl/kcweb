@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar/Navbar";
+import HeroCarousel from "./components/ui/HeroCarrusel/HeroCarrusel.";
 
 export default function App() {
   return (
@@ -6,9 +7,7 @@ export default function App() {
       <Navbar />
 
       <section>
-        <div className="heroWidth">
-          <h1>Hero</h1>
-        </div>
+        <HeroCarousel />
       </section>
 
       <main>
