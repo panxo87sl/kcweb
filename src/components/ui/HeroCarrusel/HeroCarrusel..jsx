@@ -7,6 +7,10 @@ export default function HeroCarousel() {
     { url: "/fondo02.jpg" },
     { url: "/fondo03.jpg", link: "https://kcplus.cl" },
     { url: "/fondo04.jpg" },
+    {
+      url: "/fondo05.jpg",
+      link: "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agendas/agendaExpress/1",
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,31 +25,29 @@ export default function HeroCarousel() {
 
   const goToSlide = (i) => setCurrentIndex(i);
 
+  const active = photos[currentIndex];
+
   return (
     <section className="heroCarousel">
       {/* este inner respeta el ancho centralizado de la seccion HERO */}
       <div className="heroCarousel__inner">
         <div className="heroCarousel__slide" aria-label="Carrusel principal">
-          {photos[currentIndex].link ? (
+          <div
+            key={currentIndex}
+            className="heroCarousel__image"
+            style={{ backgroundImage: `url(${active.url})` }}
+          />
+
+          {active.link && (
             <a
-              href={photos[currentIndex].link}
+              className="heroCarousel__overlayLink"
+              href={active.link}
               target="_blank"
               rel="noreferrer"
-              className="heroCarousel__link"
-            >
-              <div
-                key={currentIndex}
-                className="heroCarousel__image"
-                style={{ backgroundImage: `url(${photos[currentIndex].url})` }}
-              />
-            </a>
-          ) : (
-            <div
-              key={currentIndex}
-              className="heroCarousel__image"
-              style={{ backgroundImage: `url(${photos[currentIndex].url})` }}
+              aria-label="Abrir enlace del carrusel"
             />
           )}
+
           <div className="heroCarousel__nav">
             <button
               type="button"
