@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
 import "./HeroCarrusel.css";
 
-export default function HeroCarousel() {
+export default function HeroCarousel({ autoPlay = false, intervalMs = 5000 }) {
   const photos = [
     { url: "/fondo01.jpg", link: "https://www.kineclin.cl/agenda" },
     { url: "/fondo02.jpg" },
@@ -24,6 +25,16 @@ export default function HeroCarousel() {
   };
 
   const goToSlide = (i) => setCurrentIndex(i);
+
+  useEffect(() => {
+    if (!autoPlay) return;
+
+    const id = setInterval(() => {
+      setCurrentIndex((i) => (i === photos.length - 1 ? 0 : i + 1));
+    }, intervalMs);
+
+    return () => clearInterval(id);
+  }, [autoPlay, intervalMs, photos.length]);
 
   const active = photos[currentIndex];
 
@@ -58,8 +69,8 @@ export default function HeroCarousel() {
               {/* left chevron */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
+                width="26"
+                height="26"
                 fill="none"
                 stroke="currentColor"
                 strokeLinecap="round"
@@ -81,8 +92,8 @@ export default function HeroCarousel() {
               {/* right chevron */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
+                width="26"
+                height="26"
                 fill="none"
                 stroke="currentColor"
                 strokeLinecap="round"

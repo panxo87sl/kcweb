@@ -28,7 +28,7 @@
 .navBotonAgenda__titulo {
   font-family: var(--font-secondary);
   text-align: center;
-  font-size: 14px;
+  font-size: var(--font-size-medium);
   font-weight: 600;
   color: #111827;
   text-transform: uppercase;
@@ -52,7 +52,7 @@
   justify-content: center;
   gap: 6px;
   background: var(--bColor);
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-m);
   width: 100%;
   color: #ffffff !important;
   text-decoration: none;
@@ -71,13 +71,18 @@
 
 @media (max-width: 768px) {
   .navBotonAgenda__titulo {
-    font-size: 12px;
+    font-size: var(--font-size-xs);
   }
   .navBotonAgenda__btn {
     padding: 8px 14px;
-    font-size: 12px;
+    width: 80%;
+    font-size: var(--font-size-s);
   }
   .navBotonAgenda__icon {
     display: none;
+  }
+  .navBotonAgenda {
+    flex: 1;
+    height: 100%;
   }
 }

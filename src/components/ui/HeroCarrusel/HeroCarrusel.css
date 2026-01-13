@@ -23,7 +23,7 @@
   inset: 0;
   background-position: center;
   background-size: cover;
-  animation: heroFade 350ms ease;
+  animation: heroFade 1800ms ease;
   z-index: 1;
 }
 

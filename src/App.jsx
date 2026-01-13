@@ -7,7 +7,7 @@ export default function App() {
       <Navbar />
 
       <section>
-        <HeroCarousel />
+        <HeroCarousel autoPlay={true} intervalMs={6500} />
       </section>
 
       <main>

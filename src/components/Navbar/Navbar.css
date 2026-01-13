@@ -3,7 +3,7 @@
   background: var(--kineclin-azul);
   color: white;
   padding: 8px 0;
-  font-size: var(--font-size-little);
+  font-size: var(--font-size-s);
 }
 
 .googleMaps_link {
@@ -72,7 +72,8 @@
   }
   .right {
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-end;
   }
   .navLogo {
     margin: 12px 0 6px 0;
@@ -87,11 +88,11 @@
 }
 
 @media (max-width: 768px) {
-  /* .right a:not(.btn) {
-    display: none;
-  } */
   .botNavRow {
     align-items: flex-start;
     gap: 12px;
+  }
+  .topNavBar {
+    font-size: var(--font-size-xs);
   }
 }
