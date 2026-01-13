@@ -11,7 +11,7 @@ export default function NavbarBot() {
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth="1.5"
+      strokeWidth="2"
       viewBox="0 0 24 24"
     >
       <path fill="none" stroke="none" d="M0 0h24v24H0z" />

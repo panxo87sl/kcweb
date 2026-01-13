@@ -65,5 +65,19 @@
 @media (max-width: 900px) {
   .navBotonAgenda {
     border-radius: 5px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBotonAgenda__titulo {
+    font-size: 12px;
+  }
+  .navBotonAgenda__btn {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+  .navBotonAgenda__icon {
+    display: none;
   }
 }

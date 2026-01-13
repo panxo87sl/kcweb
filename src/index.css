@@ -29,7 +29,8 @@
   --kineclin-azul: #009edb;
   --kineclin-azul-s: #0086ba;
   --kineclin-rose: #e8b8af;
-  --kineclin-rose-s: #da8e81;
+  /* --kineclin-rose-s: #da8e81; */
+  --kineclin-rose-s: #606363;
   --kineclin-gold: #d89000;
   --kineclin-gold-s: #b67900;
   --kineclin-grey: #707475;
@@ -50,7 +51,7 @@
   box-sizing: border-box;
 }
 #root {
-  min-width: 460px !important;
+  min-width: 360px !important;
 }
 
 html,

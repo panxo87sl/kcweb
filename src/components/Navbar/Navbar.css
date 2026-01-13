@@ -72,30 +72,26 @@
   }
   .right {
     width: 100%;
-    justify-content: space-between; /* opcional */
+    justify-content: center;
   }
   .navLogo {
     margin: 12px 0 6px 0;
   }
   .right {
     border-top: 1px solid rgba(0, 0, 0, 0.08);
+    min-width: 0; /* CLAVE: permite que flex items se encojan */
   }
   .botNavBar {
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
 }
+
 @media (max-width: 768px) {
   /* .right a:not(.btn) {
     display: none;
   } */
   .botNavRow {
-    flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-  }
-
-  .right {
-    width: 100%;
-    justify-content: space-between; /* opcional */
   }
 }

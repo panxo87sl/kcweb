@@ -97,9 +97,6 @@
 }
 
 @media (max-width: 900px) {
-  .heroCarousel__slide {
-    border-radius: 6px;
-  }
   .heroCarousel {
     padding: 10px 0px 12px 0px;
   }
