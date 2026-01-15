@@ -101,8 +101,8 @@ a {
 @media (min-width: 768px) {
   :root {
     --w-topnav: 95%;
-    --w-botnav: 92%;
-    --w-hero: 100%;
+    --w-botnav: 95%;
+    --w-hero: 95%;
     --w-content: 80%;
   }
 }

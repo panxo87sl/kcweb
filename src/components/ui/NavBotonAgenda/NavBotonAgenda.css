@@ -4,12 +4,18 @@
   gap: 6px;
   align-items: center;
   padding: 12px 20px;
-
+  height: 100%;
   --bColorHover: var(--kineclin-azul-s);
   --bColor: var(--kineclin-azul);
   transition: background-color 400ms ease;
 }
 
+.navBotonAgenda--centro,
+.navBotonAgenda--estetica,
+.navBotonAgenda--kcplus {
+  display: flex;
+  justify-content: space-between;
+}
 /* Variantes: definen color del hover (bColorHover) y el color del botón (bColor) */
 .navBotonAgenda--centro {
   --bColorHover: var(--kineclin-azul-s);
@@ -29,10 +35,10 @@
   font-family: var(--font-secondary);
   text-align: center;
   font-size: var(--font-size-medium);
-  font-weight: 600;
+  font-weight: 500;
   color: #111827;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
   line-height: 1.2;
 }
 
@@ -52,13 +58,14 @@
   justify-content: center;
   gap: 6px;
   background: var(--bColor);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
   width: 100%;
   color: #ffffff !important;
   text-decoration: none;
-  padding: 8px 14px;
+  padding: 4px 0px;
   border-radius: 5px;
-  font-weight: 500;
+  text-transform: uppercase;
+  font-weight: 400;
   line-height: 1;
 }
 
@@ -67,19 +74,24 @@
     border-radius: 5px;
     padding: 6px 10px;
   }
-}
-
-@media (max-width: 768px) {
-  .navBotonAgenda__titulo {
-    font-size: var(--font-size-xs);
-  }
   .navBotonAgenda__btn {
-    padding: 8px 14px;
-    width: 80%;
-    font-size: var(--font-size-s);
+    text-transform: uppercase;
+    font-weight: 400;
   }
   .navBotonAgenda__icon {
     display: none;
+  }
+  .navBotonAgenda__titulo {
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBotonAgenda__btn {
+    padding: 8px 14px;
+
+    font-size: var(--font-size-s);
   }
   .navBotonAgenda {
     flex: 1;

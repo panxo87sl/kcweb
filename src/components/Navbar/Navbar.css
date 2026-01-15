@@ -5,34 +5,39 @@
   padding: 8px 0;
   font-size: var(--font-size-s);
 }
-
-.googleMaps_link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: white;
-  text-decoration: none;
-}
-
-.googleMaps_icon {
-  flex-shrink: 0;
-}
-.botNavBar {
-  background: white;
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.08); */
-  gap: 10px;
-  /* padding: 16px 0; */
-}
 .topNavWidth {
   display: flex;
   gap: 5px;
   width: var(--w-topnav);
   margin: 0 auto;
   align-items: center;
+  justify-content: space-between;
 }
+
+.googleMaps_link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  text-decoration: none;
+}
+.topNavActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+}
+
 .botNavWidth {
   width: var(--w-botnav);
-  margin: 0 auto;
+  margin: 10px auto;
+}
+.botNavBar {
+  background: white;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.08); */
+  gap: 10px;
+  /* padding: 16px 0; */
 }
 
 /* fila bot navbar */
@@ -46,6 +51,7 @@
   display: block;
   height: 50px;
   width: auto;
+  margin: 0 0 0 20px;
 }
 .right {
   display: flex;
@@ -63,20 +69,19 @@
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
-/* mobile rápido: oculta links (mañana hamburguesa) */
-@media (max-width: 900px) {
+/* TABLETS */
+@media (max-width: 910px) {
   .botNavRow {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
   }
   .right {
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
   }
   .navLogo {
-    margin: 12px 0 6px 0;
+    margin: 12px 0 12px 0;
   }
   .right {
     border-top: 1px solid rgba(0, 0, 0, 0.08);
@@ -86,13 +91,23 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
 }
+.botNavWidth {
+  margin: 0 auto;
+}
 
+/* MOBILE */
 @media (max-width: 768px) {
   .botNavRow {
     align-items: flex-start;
-    gap: 12px;
   }
   .topNavBar {
     font-size: var(--font-size-xs);
+  }
+  .topNavActions {
+    gap: 15px;
+    margin: 0 12px 0 0;
+  }
+  .topNavActions_label {
+    display: none;
   }
 }
