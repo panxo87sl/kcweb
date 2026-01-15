@@ -21,6 +21,12 @@
   color: white;
   text-decoration: none;
 }
+.mobileLine {
+  display: none;
+}
+.desktopLine {
+  display: flex;
+}
 .topNavActions {
   display: flex;
   align-items: center;
@@ -34,12 +40,11 @@
   margin: 10px auto;
 }
 .botNavBar {
-  background: white;
+  background: var(--kineclin-bg1);
   /* border-bottom: 1px solid rgba(0, 0, 0, 0.08); */
   gap: 10px;
   /* padding: 16px 0; */
 }
-
 /* fila bot navbar */
 .botNavRow {
   display: flex;
@@ -47,15 +52,24 @@
   justify-content: space-between;
   gap: 10px;
 }
-.navLogo {
+.logoImg {
   display: block;
   height: 50px;
   width: auto;
   margin: 0 0 0 20px;
 }
+.botNav_logo {
+  width: 100%;
+  display: flex;
+  flex: 0;
+  align-items: center;
+}
 .right {
   display: flex;
+  flex: 1;
+  width: 100%;
   align-items: center;
+  justify-content: flex-end;
   gap: 0px;
 }
 
@@ -70,22 +84,20 @@
 }
 
 /* TABLETS */
-@media (max-width: 910px) {
+@media (max-width: 940px) {
   .botNavRow {
     flex-direction: column;
     align-items: flex-start;
   }
   .right {
+    flex: 1;
     width: 100%;
     justify-content: space-around;
     align-items: flex-end;
-  }
-  .navLogo {
-    margin: 12px 0 12px 0;
-  }
-  .right {
     border-top: 1px solid rgba(0, 0, 0, 0.08);
-    min-width: 0; /* CLAVE: permite que flex items se encojan */
+  }
+  .logoImg {
+    margin: 12px 0 12px 0;
   }
   .botNavBar {
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -103,11 +115,22 @@
   .topNavBar {
     font-size: var(--font-size-xs);
   }
+  .mobileLine {
+    display: flex;
+  }
+  .desktopLine {
+    display: none;
+  }
   .topNavActions {
     gap: 15px;
     margin: 0 12px 0 0;
   }
   .topNavActions_label {
     display: none;
+  }
+  .botNav_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

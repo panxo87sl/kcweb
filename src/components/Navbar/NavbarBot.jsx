@@ -41,7 +41,9 @@ export default function NavbarBot() {
   return (
     <div className="botNavBar">
       <div className="botNavWidth botNavRow">
-        <img className="navLogo" src="/kineclin-logo.png" alt="Kineclin Logo" />
+        <div className="botNav_logo">
+          <img className="logoImg" src="/kineclin-logo.png" alt="Kineclin Logo" />
+        </div>
 
         <div className="right">
           <NavBotonAgenda

@@ -9,8 +9,9 @@ export default function NavBotonAgenda({
 }) {
   return (
     <div className={`navBotonAgenda navBotonAgenda--${variante}`}>
-      <span className="navBotonAgenda__titulo">{titulo}</span>
-
+      <div className="navBotonAgenda_container_titulo">
+        <span className="navBotonAgenda__titulo">{titulo}</span>
+      </div>
       <a className="navBotonAgenda__btn" href={href} target="_blank" rel="noreferrer">
         {labelBoton}
         <span className="navBotonAgenda__icon">{icon}</span>

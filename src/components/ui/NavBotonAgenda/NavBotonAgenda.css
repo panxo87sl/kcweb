@@ -1,10 +1,11 @@
 .navBotonAgenda {
   display: flex;
+  width: 215px;
   flex-direction: column;
   gap: 6px;
   align-items: center;
   padding: 12px 20px;
-  height: 100%;
+
   --bColorHover: var(--kineclin-azul-s);
   --bColor: var(--kineclin-azul);
   transition: background-color 400ms ease;
@@ -51,7 +52,6 @@
   color: #ffffff;
 }
 
-/* Botón interno (NO usa .btn global para no chocar) */
 .navBotonAgenda__btn {
   display: flex;
   align-items: center;
@@ -69,28 +69,26 @@
   line-height: 1;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .navBotonAgenda {
     border-radius: 5px;
     padding: 6px 10px;
   }
-  .navBotonAgenda__btn {
-    text-transform: uppercase;
-    font-weight: 400;
-  }
   .navBotonAgenda__icon {
     display: none;
   }
+  .navBotonAgenda_container_titulo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
   .navBotonAgenda__titulo {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-s);
     font-weight: 500;
   }
-}
-
-@media (max-width: 768px) {
   .navBotonAgenda__btn {
     padding: 8px 14px;
-
+    font-weight: 400;
     font-size: var(--font-size-s);
   }
   .navBotonAgenda {

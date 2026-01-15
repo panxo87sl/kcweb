@@ -10,7 +10,8 @@ export default function NavbarTop() {
           target="_blank"
           rel="noreferrer"
         >
-          <span>Copiapo #739, Oficina 303, Antofagasta</span>
+          <span className="desktopLine">Copiapo #739, Oficina 303, Antofagasta</span>
+          <span className="mobileLine">Encuentranos en Antofagasta</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"

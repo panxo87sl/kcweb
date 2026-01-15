@@ -35,6 +35,8 @@
   --kineclin-gold-s: #b67900;
   --kineclin-grey: #707475;
   --kineclin-grey-s: #606363;
+  --kineclin-bg1: #fff;
+  --kineclin-bg2: #f6f6f6;
 
   /* fuentes */
   --font-primary: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
