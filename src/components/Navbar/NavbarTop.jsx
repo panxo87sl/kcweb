@@ -1,6 +1,8 @@
 import "./Navbar.css";
 
 export default function NavbarTop() {
+  const APP_VERSION = import.meta.env.VITE_APP_VERSION;
+
   return (
     <div className="topNavBar">
       <div className="topNavWidth">
@@ -30,6 +32,7 @@ export default function NavbarTop() {
           </svg>
         </a>
         <div className="topNavActions">
+          <span className="appVersion">v{APP_VERSION}</span>
           <a
             className="googleMaps_link"
             href="tel:+56950833838"
