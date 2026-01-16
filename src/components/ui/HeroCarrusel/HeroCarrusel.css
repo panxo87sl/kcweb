@@ -16,6 +16,7 @@
   height: 520px; /* ajusta */
   border-radius: 5px;
   overflow: hidden;
+  touch-action: pan-y;
 }
 
 /* capa imagen (con fade) */
