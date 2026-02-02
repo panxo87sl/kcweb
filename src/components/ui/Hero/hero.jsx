@@ -15,7 +15,8 @@ export default function Hero() {
         </h1>
 
         <p className="hero__subtitle">
-          Comprehensive medical care with compassion and expertise
+          Acompañamos tu salud de forma integral, combinando atención clínica, bienestar y
+          prevención.{" "}
         </p>
 
         <a
@@ -36,18 +37,18 @@ export default function Hero() {
           {/* chevron down */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="34"
-            height="34"
+            width="54"
+            height="54"
             fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
             viewBox="0 0 24 24"
           >
-            <path
-              d="m6 9 6 6 6-6"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
+            <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+            <path d="m6 9 6 6 6-6" />
           </svg>
         </button>
       </div>
