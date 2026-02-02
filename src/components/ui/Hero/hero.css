@@ -1,0 +1,127 @@
+.hero {
+  /* si tu navbar flotante tapa contenido, este padding lo evita */
+  padding-top: 110px;
+
+  min-height: 100vh;
+  width: 100%;
+
+  /* Fondo base estilo Bolt */
+  background:
+    radial-gradient(circle at 50% 45%, rgba(0, 158, 219, 0.14), transparent 55%),
+    radial-gradient(circle at 50% 65%, rgba(0, 158, 219, 0.08), transparent 55%),
+    linear-gradient(180deg, #cfefff 0%, #eaf7ff 45%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* patrón de puntitos (tipo “grid de puntos”) */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(0, 158, 219, 0.18) 1px, transparent 1px);
+  background-size: 34px 34px;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* leve “vignette” suave para dar profundidad */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 55%, transparent 55%, rgba(0, 0, 0, 0.03) 100%);
+  pointer-events: none;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+
+  width: var(--w-hero);
+  margin: 0 auto;
+
+  min-height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  gap: 18px;
+  padding: 40px 0 60px;
+}
+
+.hero__title {
+  margin: 0;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  color: var(--kineclin-azul);
+  letter-spacing: -0.5px;
+  font-size: clamp(34px, 4.6vw, 64px);
+  line-height: 1.05;
+}
+
+.hero__subtitle {
+  margin: 0;
+  color: rgba(17, 24, 39, 0.65);
+  font-size: clamp(14px, 1.2vw, 18px);
+  max-width: 720px;
+}
+
+.hero__cta {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--kineclin-azul);
+  color: #fff !important;
+  padding: 14px 44px;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 150ms ease,
+    background-color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.hero__cta:hover {
+  background: var(--kineclin-azul-s);
+  transform: translateY(-1px);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14);
+}
+
+.hero__down {
+  margin-top: 22px;
+  border: 0;
+  background: transparent;
+  color: var(--kineclin-azul);
+  cursor: pointer;
+  opacity: 0.9;
+  transition:
+    transform 150ms ease,
+    opacity 150ms ease;
+}
+
+.hero__down:hover {
+  transform: translateY(2px);
+  opacity: 1;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 95px;
+  }
+  .hero__inner {
+    min-height: calc(100vh - 95px);
+    padding: 26px 0 50px;
+  }
+}

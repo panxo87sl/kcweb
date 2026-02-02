@@ -1,142 +1,155 @@
-.appVersion {
-  margin-left: auto;
-  font-size: 10px;
-  opacity: 0.75;
-  color: black;
-}
-.topNavBar {
-  display: flex;
-  background: var(--kineclin-azul);
-  color: white;
-  padding: 8px 0;
-  font-size: var(--font-size-s);
-}
-.topNavWidth {
-  display: flex;
-  gap: 5px;
-  width: var(--w-topnav);
-  margin: 0 auto;
-  align-items: center;
-  justify-content: space-between;
+.siteHeader {
+  position: relative;
+  z-index: 50;
 }
 
-.googleMaps_link {
+/* pill flotante */
+.navPill {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  width: 70%;
+  /* width: min(1100px, calc(100% - 32px)); */
+  height: 76px;
+  transform: translateX(-50%);
+  background: #ffffff;
+  border-radius: 999px;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.1);
+}
+
+/* marca */
+.navPill__brand {
+  display: inline-flex;
+  align-items: center;
+}
+.navPill__logo {
+  height: 38px;
+  margin: 0 0 5px 10px;
+  width: auto;
+  display: block;
+}
+
+/* links del centro */
+.navPill__center {
   display: flex;
   align-items: center;
-  gap: 6px;
-  color: white;
-  text-decoration: none;
+  gap: 28px;
+  color: #111827;
+  font-weight: 500;
 }
-.mobileLine {
+.navPill__link {
+  opacity: 0.85;
+}
+.navPill__link:hover {
+  opacity: 1;
+}
+
+/* botones derecha */
+.navPill__right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navPill__cta {
+  background: var(--kineclin-azul);
+  color: #fff !important;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  line-height: 1;
+  box-shadow: 0 10px 20px rgba(0, 158, 219, 0.25);
+  text-align: center;
+}
+.navPill_kcPlus {
+  background: var(--kineclin-gold);
+}
+.navPill_kcEstetica {
+  background: var(--kineclin-rose);
+}
+.navPill_kcPlus:hover {
+  background: var(--kineclin-gold-s);
+}
+.navPill_kcEstetica:hover {
+  background: var(--kineclin-rose-s);
+}
+
+/* botón menú (solo mobile) */
+.navPill__menuBtn {
+  display: none;
+  border: 0;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 999px;
+  padding: 10px 12px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* dropdown mobile */
+.navPill__dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 16px;
+  right: 16px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.12);
+  padding: 10px;
   display: none;
 }
-.desktopLine {
-  display: flex;
+.navPill__dropdown.is-open {
+  display: grid;
+  gap: 6px;
 }
-.topNavActions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: white;
-  text-decoration: none;
-}
-
-.botNavWidth {
-  width: var(--w-botnav);
-  margin: 10px auto;
-}
-.botNavBar {
-  background: var(--kineclin-bg1);
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.08); */
-  gap: 10px;
-  /* padding: 16px 0; */
-}
-/* fila bot navbar */
-.botNavRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-.logoImg {
-  display: block;
-  height: 50px;
-  width: auto;
-  margin: 0 0 0 20px;
-}
-.botNav_logo {
-  width: 100%;
-  display: flex;
-  flex: 0;
-  align-items: center;
-}
-.right {
-  display: flex;
-  flex: 1;
-  width: 100%;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 0px;
-}
-
-.right a {
+.navPill__dropdownLink {
+  padding: 12px 12px;
+  border-radius: 12px;
   color: #111827;
-  text-decoration: none;
-  transition: box-shadow 150ms ease;
+  background: rgba(0, 0, 0, 0.04);
+  font-weight: 600;
+}
+.navPill__dropdownLink:hover {
+  background: rgba(0, 0, 0, 0.08);
 }
 
-.right a:hover {
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-}
-
-/* TABLETS */
-@media (max-width: 940px) {
-  .botNavRow {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .right {
-    flex: 1;
-    width: 100%;
-    justify-content: space-around;
-    align-items: flex-end;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-  }
-  .logoImg {
-    margin: 12px 0 12px 0;
-  }
-  .botNavBar {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  }
-}
-.botNavWidth {
-  margin: 0 auto;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .botNavRow {
-    align-items: flex-start;
-  }
-  .topNavBar {
-    font-size: var(--font-size-xs);
-  }
-  .mobileLine {
-    display: flex;
-  }
-  .desktopLine {
+@media (max-width: 1116px) {
+  .navPill__center {
     display: none;
   }
-  .topNavActions {
-    gap: 15px;
-    margin: 0 12px 0 0;
+}
+
+/* responsive */
+@media (max-width: 950px) {
+  .navPill {
+    /* padding: 10px 14px; */
+    top: 10px;
+    width: 90%;
+    height: auto;
   }
-  .topNavActions_label {
+  .navPill__center {
     display: none;
   }
-  .botNav_logo {
-    display: flex;
+  .navPill_kcPlus {
+    display: none;
+  }
+  .navPill_kcEstetica {
+    display: none;
+  }
+  .navPill__menuBtn {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+  .navPill__logo {
+    height: 28px;
+  }
+  .navPill__cta {
+    padding: 9px 12px;
+    font-size: 13px;
   }
 }
