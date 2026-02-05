@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Navbar.css";
+import ActionButton from "../ui/ActionButton/ActionButton";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -23,24 +24,23 @@ export default function Navbar() {
           </a>
         </div>
 
-        <div className="navPill__right">
-          <a
-            className="navPill__cta navPill_kcEstetica"
-            href="https://www.instagram.com/kineclin_estetica/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Clinica Estetica
-          </a>
-          <a
-            className="navPill__cta navPill_kcPlus"
-            href="https://kcplus.cl"
-            target="_blank"
-            rel="noreferrer"
-          >
-            KCPLUS
-          </a>
-
+        <div className="navPill__right__desk">
+          <ActionButton
+            label={"Clínica Estética"}
+            href={
+              "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agendas/agendaExpress/1"
+            }
+            variant="estetica"
+            size="nav"
+          />
+          <ActionButton
+            label={"KCPlus"}
+            href={"https://https://kcplus.cl/"}
+            variant="kcplus"
+            size="nav"
+          />
+        </div>
+        <div className="navPill__right__mobile">
           <button
             type="button"
             className="navPill__menuBtn"

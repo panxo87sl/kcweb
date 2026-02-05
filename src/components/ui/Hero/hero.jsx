@@ -1,4 +1,5 @@
 import "./Hero.css";
+import ActionButton from "../ActionButton/ActionButton";
 
 export default function Hero() {
   const handleScrollDown = () => {
@@ -15,18 +16,33 @@ export default function Hero() {
         </h1>
 
         <p className="hero__subtitle">
-          Acompañamos tu salud de forma integral, combinando atención clínica, bienestar y
-          prevención.{" "}
+          Acompañamos tu salud, combinando atención clínica, bienestar y prevención.{" "}
         </p>
-
-        <a
-          className="hero__cta"
-          href="https://www.kineclin.cl/agenda"
-          target="_blank"
-          rel="noreferrer"
-        >
-          AGENDA AHORA
-        </a>
+        <div className="hero__cont_cta">
+          <ActionButton
+            title={"Kineclin Centro de Salud"}
+            label={"AGENDA AHORA"}
+            href={"https://www.kineclin.cl/agenda"}
+            variant="centro"
+            size="hero"
+          />
+          <ActionButton
+            title={"Kineclin Clínica Estética"}
+            label={"AGENDA AHORA"}
+            href={
+              "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agendas/agendaExpress/1"
+            }
+            variant="estetica"
+            size="hero"
+          />
+          <ActionButton
+            title={"KCPLUS Suplementos Premium"}
+            label={"TIENDA"}
+            href={"https://https://kcplus.cl/"}
+            variant="kcplus"
+            size="hero"
+          />
+        </div>
 
         <button
           type="button"
@@ -37,8 +53,8 @@ export default function Hero() {
           {/* chevron down */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="54"
-            height="54"
+            width="80"
+            height="80"
             fill="none"
             stroke="currentColor"
             stroke-linecap="round"

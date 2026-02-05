@@ -50,10 +50,13 @@
 }
 
 /* botones derecha */
-.navPill__right {
+.navPill__right__desk {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+.navPill__right__mobile {
+  display: none;
 }
 
 .navPill__cta {
@@ -131,14 +134,13 @@
     width: 90%;
     height: auto;
   }
-  .navPill__center {
+  .navPill__right__desk {
     display: none;
   }
-  .navPill_kcPlus {
-    display: none;
-  }
-  .navPill_kcEstetica {
-    display: none;
+  .navPill__right__mobile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
   .navPill__menuBtn {
     display: inline-flex;
