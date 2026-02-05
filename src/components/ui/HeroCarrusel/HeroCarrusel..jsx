@@ -4,10 +4,14 @@ import "./HeroCarrusel.css";
 
 export default function HeroCarousel({ autoPlay = false, intervalMs = 5000 }) {
   const photos = [
-    { url: "/fondo01.jpg", link: "https://www.kineclin.cl/agenda" },
+    {
+      url: "/fondo01.jpg",
+      link: "https://www.kineclin.cl/agenda",
+      title: "Centro de Salud Integral",
+    },
     { url: "/fondo02.jpg" },
     { url: "/fondo03.jpg", link: "https://kcplus.cl" },
-    { url: "/fondo04.jpg" },
+    { url: "/fondo04.jpg", title: "Tecnologia de Vanguardia" },
     {
       url: "/fondo05.jpg",
       link: "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agendas/agendaExpress/1",
@@ -93,6 +97,7 @@ export default function HeroCarousel({ autoPlay = false, intervalMs = 5000 }) {
               aria-label="Abrir enlace del carrusel"
             />
           )}
+          {active.title && <div className="heroCarousel__caption">{active.title}</div>}
 
           <div className="heroCarousel__nav">
             <button

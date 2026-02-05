@@ -1,0 +1,144 @@
+.aboutSection {
+  padding: 100px 0;
+}
+
+.aboutSection__inner {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 60px;
+}
+
+/* ===== Columna izquierda ===== */
+.aboutSection__title {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--kineclin-azul);
+  margin-bottom: 24px;
+}
+
+.aboutSection__text {
+  height: auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4b5563;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.aboutSection__brands {
+  display: flex;
+  gap: 28px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* ===== Grid derecho ===== */
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.aboutGrid__card {
+  border-radius: 20px;
+  height: 280px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: transform 220ms ease;
+}
+.aboutGrid__card:hover {
+  transform: translateY(-6px);
+}
+
+/* Card azul */
+.aboutGrid__card--highlight {
+  background: var(--kineclin-azul);
+  align-content: center;
+
+  color: #ffffff;
+  padding: 30px;
+}
+
+.aboutGrid__card--highlight h3 {
+  font-size: 26px;
+  margin: 0px 0px 16px 0px;
+}
+
+.aboutGrid__card--highlight p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.aboutGrid__card--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* .aboutGrid__playBtn {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  border: none;
+  background: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+} */
+
+.aboutGrid__descText {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Card texto blanco */
+.aboutGrid__card--text {
+  padding: 30px;
+  align-content: center;
+}
+
+.aboutGrid__card--text h3 {
+  margin: 0 0 14px 0;
+  font-size: 24px;
+}
+
+.aboutGrid__card--text p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .aboutSection {
+    padding: 10px 0;
+  }
+  .aboutSection__inner {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .aboutSection__title {
+    text-align: center;
+  }
+
+  .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+}

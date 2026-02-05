@@ -62,6 +62,7 @@ body,
   margin: 0;
   padding: 0;
   overflow-x: visible;
+  scroll-behavior: smooth; /* Scrolls hacia marcadores HTML mas suaves */
 }
 
 /* ===== TIPOGRAFIA VALORES POR DEFECTO ===== */
@@ -100,7 +101,7 @@ a {
   :root {
     --w-topnav: 95%;
     --w-botnav: 95%;
-    --w-hero: 95%;
+    --w-hero: 82%;
     --w-content: 80%;
   }
 }

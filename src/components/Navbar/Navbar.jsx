@@ -13,14 +13,11 @@ export default function Navbar() {
         </a>
 
         <div className="navPill__center">
-          <a className="navPill__link" href="#servicios">
-            Servicios
+          <a className="navPill__link" href="#about">
+            Quienes Somos
           </a>
-          <a className="navPill__link" href="#profesionales">
-            Profesionales
-          </a>
-          <a className="navPill__link" href="#agenda">
-            Agenda
+          <a className="navPill__link" href="#team">
+            Nuestro Equipo
           </a>
         </div>
 
@@ -53,22 +50,15 @@ export default function Navbar() {
         </div>
 
         <div className={`navPill__dropdown ${open ? "is-open" : ""}`} role="menu">
-          <a
-            className="navPill__dropdownLink"
-            href="#servicios"
-            onClick={() => setOpen(false)}
-          >
-            Servicios
+          <a className="navPill__dropdownLink" href="#about" onClick={() => setOpen(false)}>
+            Quienes Somos
           </a>
           <a
             className="navPill__dropdownLink"
             href="#profesionales"
             onClick={() => setOpen(false)}
           >
-            Profesionales
-          </a>
-          <a className="navPill__dropdownLink" href="#agenda" onClick={() => setOpen(false)}>
-            Agenda
+            Nuestro Equipo
           </a>
         </div>
       </nav>

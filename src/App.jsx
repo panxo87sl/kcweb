@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar/Navbar";
 import HeroCarousel from "./components/ui/HeroCarrusel/HeroCarrusel.";
 import Hero from "./components/ui/Hero/hero";
+import AboutSection from "./components/About/AboutSection";
 
 export default function App() {
   return (
@@ -10,11 +11,9 @@ export default function App() {
       <section id="home-next">
         <HeroCarousel autoPlay={true} intervalMs={6500} />
       </section>
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>
+      <section id="about">
+        <AboutSection />
+      </section>
       <main>
         <div className="contentWidth">
           <h2>Content</h2>
