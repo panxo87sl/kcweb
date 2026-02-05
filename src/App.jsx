@@ -6,20 +6,80 @@ export default function App() {
   return (
     <>
       <Navbar />
-
       <Hero />
-
-      <div id="home-next" />
-      <section>
+      <section id="home-next">
         <HeroCarousel autoPlay={true} intervalMs={6500} />
       </section>
-
       <main>
         <div className="contentWidth">
           <h2>Content</h2>
         </div>
       </main>
-
+      <main>
+        <div className="contentWidth">
+          <h2>Content</h2>
+        </div>
+      </main>{" "}
+      <main>
+        <div className="contentWidth">
+          <h2>Content</h2>
+        </div>
+      </main>{" "}
+      <main>
+        <div className="contentWidth">
+          <h2>Content</h2>
+        </div>
+      </main>{" "}
+      <main>
+        <div className="contentWidth">
+          <h2>Content</h2>
+        </div>
+      </main>{" "}
+      <main>
+        <div className="contentWidth">
+          <h2>Content</h2>
+        </div>
+      </main>{" "}
+      <main>
+        <div className="contentWidth">
+          <h2>Content</h2>
+        </div>
+      </main>{" "}
+      <main>
+        <div className="contentWidth">
+          <h2>Content</h2>
+        </div>
+      </main>{" "}
+      <main>
+        <div className="contentWidth">
+          <h2>Content</h2>
+        </div>
+      </main>{" "}
+      <main>
+        <div className="contentWidth">
+          <h2>Content</h2>
+        </div>
+      </main>{" "}
+      <main>
+        <div className="contentWidth">
+          <h2>Content</h2>
+        </div>
+      </main>{" "}
+      <main>
+        <div className="contentWidth">
+          <h2>Content</h2>
+        </div>
+      </main>{" "}
+      <main>
+        <div className="contentWidth">
+          <h2>Content</h2>
+        </div>
+      </main>{" "}
+      <main>
+        <div className="contentWidth">
+          <h2>Content</h2>
+        </div>
+      </main>
       <footer>
         <div className="footerWidth">Footer</div>
       </footer>

@@ -35,7 +35,7 @@ export default function Navbar() {
           />
           <ActionButton
             label={"KCPlus"}
-            href={"https://https://kcplus.cl/"}
+            href={"https://www.kcplus.cl/"}
             variant="kcplus"
             size="nav"
           />

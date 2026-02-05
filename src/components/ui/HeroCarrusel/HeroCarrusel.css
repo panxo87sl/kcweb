@@ -97,6 +97,9 @@
 .heroCarousel__dot.is-active {
   background: rgba(17, 24, 39, 0.85);
 }
+#home-next {
+  scroll-margin-top: 70px; /* desktop: navbar + aire */
+}
 
 @media (max-width: 900px) {
   .heroCarousel {
@@ -109,5 +112,8 @@
   .heroCarousel__slide {
     height: 340px;
     border-radius: 5px;
+  }
+  #home-next {
+    scroll-margin-top: 65px; /* mobile: navbar + aire  */
   }
 }

@@ -9,7 +9,7 @@
   --bColorHover: var(--kineclin-azul-s);
 
   /* Shadow tipo Navbar */
-  --bShadow: 0 10px 20px rgba(0, 158, 219, 0.25);
+  /* --bShadow: 0 0px 0px rgba(0, 158, 219, 0.25); */
 }
 
 /* ===== Variantes (colores desde index.css) ===== */
@@ -101,11 +101,13 @@
 }
 
 .actionButton--nav .actionButton__btn {
+  width: 144px;
   padding: 10px 16px;
   font-size: 13px;
 }
 
 .actionButton--hero .actionButton__btn {
+  width: 208px;
   padding: 14px 44px;
   font-size: 14px;
   min-height: 45px;

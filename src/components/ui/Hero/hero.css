@@ -99,17 +99,18 @@
   .hero {
     padding-top: 70px;
   }
+  .hero__inner {
+    min-height: calc(100vh - 95px);
+    padding: 26px 0 50px;
+    justify-content: space-evenly;
+  }
   .hero__down {
     margin: 0;
     padding: 0;
   }
-  .hero__inner {
-    min-height: calc(100vh - 95px);
-    padding: 26px 0 50px;
-  }
   .hero__cont_cta {
-    margin-top: 10px;
+    margin-top: 20px;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
   }
 }

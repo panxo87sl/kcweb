@@ -38,7 +38,7 @@ export default function Hero() {
           <ActionButton
             title={"KCPLUS Suplementos Premium"}
             label={"TIENDA"}
-            href={"https://https://kcplus.cl/"}
+            href={"https://www.kcplus.cl/"}
             variant="kcplus"
             size="hero"
           />
