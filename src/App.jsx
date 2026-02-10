@@ -3,6 +3,7 @@ import HeroCarousel from "./components/ui/HeroCarrusel/HeroCarrusel.";
 import Hero from "./components/ui/Hero/hero";
 import AboutSection from "./components/About/AboutSection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
   return (
@@ -18,69 +19,7 @@ export default function App() {
       <div id="services">
         <ServicesSection />
       </div>
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>{" "}
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>{" "}
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>{" "}
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>{" "}
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>{" "}
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>{" "}
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>{" "}
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>{" "}
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>{" "}
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>{" "}
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>{" "}
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>
-      <footer>
-        <div className="footerWidth">Footer</div>
-      </footer>
+      <Footer />
     </>
   );
 }
