@@ -1,5 +1,5 @@
 .aboutSection {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .aboutSection__inner {
@@ -125,10 +125,14 @@
   color: #4b5563;
 }
 
+#about {
+  scroll-margin-top: 65px; /* desktop: navbar + aire */
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .aboutSection {
-    padding: 10px 0;
+    padding: 20px 0;
   }
   .aboutSection__inner {
     grid-template-columns: 1fr;
@@ -140,5 +144,8 @@
 
   .aboutGrid {
     grid-template-columns: 1fr;
+  }
+  #about {
+    scroll-margin-top: 40px; /* desktop: navbar + aire */
   }
 }

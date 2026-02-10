@@ -2,23 +2,22 @@ import Navbar from "./components/Navbar/Navbar";
 import HeroCarousel from "./components/ui/HeroCarrusel/HeroCarrusel.";
 import Hero from "./components/ui/Hero/hero";
 import AboutSection from "./components/About/AboutSection";
+import ServicesSection from "./components/ServicesSection/ServicesSection";
 
 export default function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <section id="home-next">
+      <div id="home-next">
         <HeroCarousel autoPlay={true} intervalMs={6500} />
-      </section>
-      <section id="about">
+      </div>
+      <div id="about">
         <AboutSection />
-      </section>
-      <main>
-        <div className="contentWidth">
-          <h2>Content</h2>
-        </div>
-      </main>{" "}
+      </div>
+      <div id="services">
+        <ServicesSection />
+      </div>
       <main>
         <div className="contentWidth">
           <h2>Content</h2>

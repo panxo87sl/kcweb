@@ -16,8 +16,8 @@ export default function Navbar() {
           <a className="navPill__link" href="#about">
             Quienes Somos
           </a>
-          <a className="navPill__link" href="#team">
-            Nuestro Equipo
+          <a className="navPill__link" href="#services">
+            Nuestros Servicios
           </a>
         </div>
 
@@ -53,12 +53,8 @@ export default function Navbar() {
           <a className="navPill__dropdownLink" href="#about" onClick={() => setOpen(false)}>
             Quienes Somos
           </a>
-          <a
-            className="navPill__dropdownLink"
-            href="#profesionales"
-            onClick={() => setOpen(false)}
-          >
-            Nuestro Equipo
+          <a className="navPill__dropdownLink" href="#services" onClick={() => setOpen(false)}>
+            Nuestros Servicios
           </a>
         </div>
       </nav>

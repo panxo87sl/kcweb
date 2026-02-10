@@ -65,6 +65,10 @@ body,
   scroll-behavior: smooth; /* Scrolls hacia marcadores HTML mas suaves */
 }
 
+section {
+  padding: 50px 0;
+}
+
 /* ===== TIPOGRAFIA VALORES POR DEFECTO ===== */
 body {
   font-family: var(--font-primary);
