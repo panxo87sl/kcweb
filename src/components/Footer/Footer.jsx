@@ -1,11 +1,133 @@
 import "./Footer.css";
 
 export default function Footer() {
+  const res = 25;
+  const iconPhone = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height={res}
+      fill="none"
+      stroke="#fff"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-phone"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+      <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" />
+    </svg>
+  );
+
+  const iconMail = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height={res}
+      fill="none"
+      stroke="#fff"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-mail"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+      <path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+      <path d="m3 7 9 6 9-6" />
+    </svg>
+  );
+
+  const iconWsp = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height={res}
+      fill="none"
+      stroke="#fff"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+      <path d="m3 21 1.65-3.8a9 9 0 1 1 3.4 2.9z" />
+      <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+    </svg>
+  );
+
+  const iconInsta = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height={res}
+      fill="none"
+      stroke="#fff"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+      <path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" />
+      <path d="M9 12a3 3 0 1 0 6 0 3 3 0 0 0-6 0m7.5-4.5v.01" />
+    </svg>
+  );
+
+  const iconFace = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height={res}
+      fill="none"
+      stroke="#fff"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+      <path d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2z" />
+    </svg>
+  );
+  const iconMap = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height={res}
+      fill="none"
+      stroke="#fff"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"
+      viewBox="0 0 24 24"
+    >
+      <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+      <path d="M9 11a3 3 0 1 0 6 0 3 3 0 0 0-6 0" />
+      <path d="M17.657 16.657 13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0" />
+    </svg>
+  );
+
   return (
     <footer className="siteFooter" aria-label="Footer Kineclin">
       <div className="siteFooter__inner">
         {/* Col 1: Brand */}
-        <div className="footerCol footerCol--brand">
+        <div className="footerCol footerCol__brand">
           <h3 className="footerCol__title">
             <span className="footerBrand__mark" aria-hidden="true">
               +
@@ -13,11 +135,9 @@ export default function Footer() {
             Kineclin
           </h3>
 
-          <p className="footerCol__text">Centro de Salud Integral en Antofagasta</p>
-
           <nav className="footerLinks" aria-label="Enlaces Kineclin">
             <a className="footerLink" href="#top">
-              Kineclin Centro de Salud
+              Centro de Salud
             </a>
             <a
               className="footerLink"
@@ -38,172 +158,163 @@ export default function Footer() {
           </nav>
         </div>
 
+        {/* Col 2: Síguenos */}
+        <div className="footerCol footerCol__social">
+          <h3 className="footerCol__title">Síguenos</h3>
+          <div className="footerSocialGroup__container">
+            <div className="footerSocialGroup">
+              <p className="footerSocialGroup__title">Centro de Salud</p>
+              <div className="footerSocialRow">
+                <a
+                  className="socialBtn"
+                  href="https://www.facebook.com/kineclin"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook Centro de Salud"
+                >
+                  <span className="socialBtn__icon">{iconFace}</span>
+                </a>
+                <a
+                  className="socialBtn"
+                  href="https://www.instagram.com/kineclin/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram Centro de Salud"
+                >
+                  <span className="socialBtn__icon">{iconInsta}</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="footerSocialGroup">
+              <p className="footerSocialGroup__title">Clínica Estética</p>
+              <div className="footerSocialRow">
+                <a
+                  className="socialBtn"
+                  href="https://www.facebook.com/kineclinestetica"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook Estética"
+                >
+                  <span className="socialBtn__icon">{iconFace}</span>
+                </a>
+                <a
+                  className="socialBtn"
+                  href="https://www.instagram.com/kineclin_estetica/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram Estética"
+                >
+                  <span className="socialBtn__icon">{iconInsta}</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="footerSocialGroup">
+              <p className="footerSocialGroup__title">KCPLUS</p>
+              <div className="footerSocialRow">
+                <a
+                  className="socialBtn"
+                  href="https://www.instagram.com/kcplus.cl/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram KCPLUS"
+                >
+                  <span className="socialBtn__icon">{iconInsta}</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* Col 2: Contacto */}
-        <div className="footerCol footerCol--contact">
-          <h3 className="footerCol__title">Contacto</h3>
+        <div className="footerCol footerCol__contact">
+          <h3 className="footerCol__title">Contáctanos</h3>
 
           <ul className="footerList" aria-label="Datos de contacto">
             <li className="footerList__item">
-              <img className="footerIcon" src="/icons/map-pin.svg" alt="" aria-hidden="true" />
+              <span className="footerIcon">{iconMap}</span>
               <a
                 className="footerLink"
                 href="https://www.google.com/maps?q=Kineclin+Antofagasta"
                 target="_blank"
                 rel="noreferrer"
               >
-                Antofagasta, Chile
-              </a>
-            </li>
-
-            {/* Teléfonos */}
-            <li className="footerList__item">
-              <img className="footerIcon" src="/icons/phone.svg" alt="" aria-hidden="true" />
-              <a className="footerLink" href="tel:+56912345678">
-                Kineclin: +56 9 1234 5678
+                Copiapó 739, Of. 303. Antofagasta
               </a>
             </li>
 
             <li className="footerList__item">
-              <img className="footerIcon" src="/icons/phone.svg" alt="" aria-hidden="true" />
+              <span className="footerIcon">{iconPhone}</span>
+              <a className="footerLink" href="tel:+56950833838">
+                +56 9 5083 3838
+              </a>
+            </li>
+
+            {/* <li className="footerList__item">
+              <span className="footerIcon">{iconPhone}</span>
               <a className="footerLink" href="tel:+56987654321">
                 Estética: +56 9 8765 4321
               </a>
-            </li>
+            </li> */}
 
-            {/* Email */}
             <li className="footerList__item">
-              <img className="footerIcon" src="/icons/mail.svg" alt="" aria-hidden="true" />
-              <a className="footerLink" href="mailto:contacto@kineclin.cl">
-                contacto@kineclin.cl
-              </a>
-            </li>
-
-            {/* WhatsApp */}
-            <li className="footerList__item">
-              <img
-                className="footerIcon"
-                src="/icons/brand-whatsapp.svg"
-                alt=""
-                aria-hidden="true"
-              />
+              <span className="footerIcon">{iconWsp}</span>
               <a
                 className="footerLink"
-                href="https://wa.me/56912345678"
+                href="https://wa.me/56950833838"
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp Kineclin
+                WhatsApp Centro de Salud
               </a>
             </li>
 
             <li className="footerList__item">
-              <img
-                className="footerIcon"
-                src="/icons/brand-whatsapp.svg"
-                alt=""
-                aria-hidden="true"
-              />
+              <span className="footerIcon">{iconWsp}</span>
               <a
                 className="footerLink"
-                href="https://wa.me/56987654321"
+                href="https://wa.me/56959192132"
                 target="_blank"
                 rel="noreferrer"
               >
                 WhatsApp Estética
               </a>
             </li>
+            <li className="footerList__item">
+              <span className="footerIcon">{iconMail}</span>
+              <a className="footerLink" href="mailto:contacto@kineclin.cl">
+                contacto@kineclin.cl
+              </a>
+            </li>
           </ul>
         </div>
 
-        {/* Col 3: Síguenos */}
-        <div className="footerCol footerCol--social">
-          <h3 className="footerCol__title">Síguenos</h3>
-
-          <div className="footerSocialGroup">
-            <p className="footerSocialGroup__title">Centro de Salud</p>
-            <div className="footerSocialRow">
-              <a
-                className="socialBtn"
-                href="https://facebook.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Facebook Centro de Salud"
-              >
-                <img src="/icons/brand-facebook.svg" alt="" />
-              </a>
-              <a
-                className="socialBtn"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Instagram Centro de Salud"
-              >
-                <img src="/icons/brand-instagram.svg" alt="" />
-              </a>
-            </div>
-          </div>
-
-          <div className="footerSocialGroup">
-            <p className="footerSocialGroup__title">Clínica Estética</p>
-            <div className="footerSocialRow">
-              <a
-                className="socialBtn"
-                href="https://facebook.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Facebook Estética"
-              >
-                <img src="/icons/brand-facebook.svg" alt="" />
-              </a>
-              <a
-                className="socialBtn"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Instagram Estética"
-              >
-                <img src="/icons/brand-instagram.svg" alt="" />
-              </a>
-            </div>
-          </div>
-
-          <div className="footerSocialGroup">
-            <p className="footerSocialGroup__title">KCPLUS</p>
-            <div className="footerSocialRow">
-              <a
-                className="socialBtn"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Instagram KCPLUS"
-              >
-                <img src="/icons/brand-instagram.svg" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-
         {/* Col 4: Mapa */}
-        <div className="footerCol footerCol--map">
+        <div className="footerCol footerCol__map">
           <h3 className="footerCol__title">Ubicación</h3>
-
-          {/* Placeholder preparado para Google Maps */}
+          <ul className="footerList" aria-label="Datos de contacto">
+            <li className="footerList__item">
+              <span className="footerIcon">{iconMap}</span>
+              <a
+                className="footerLink"
+                href="https://www.google.com/maps?q=Kineclin+Antofagasta"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Copiapó 739, Of. 303, Antofagasta
+              </a>
+            </li>
+          </ul>
           <div className="footerMap" role="region" aria-label="Mapa de ubicación">
-            <div className="footerMap__placeholder">
-              <p>Mapa (Google Maps) aquí</p>
-              <p className="footerMap__hint">Luego reemplazas esto por el iframe/embed.</p>
-            </div>
-
-            {/*
-              Ejemplo futuro:
-              <iframe
-                title="Kineclin Google Maps"
-                src="TU_EMBED_URL"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                allowFullScreen
-              />
-            */}
+            <iframe
+              className="footerMap__iframe"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1112.3236718934656!2d-70.40103095656399!3d-23.654211728537106!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96afd51171e6c8e7%3A0xc7fedef551254be4!2sCopiap%C3%B3%20739%2C%201240000%20Antofagasta!5e1!3m2!1ses-419!2scl!4v1770770025984!5m2!1ses-419!2scl"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Mapa Kineclin - Copiapó 739, Antofagasta"
+            />
           </div>
         </div>
       </div>
@@ -212,12 +323,12 @@ export default function Footer() {
 
       <div className="siteFooter__bottom">
         <p className="siteFooter__legal">
-          © 2026 Kineclin. Todos los derechos reservados. Marca registrada.
+          © 2026 Kineclin. Marca registrada. Todos los derechos reservados.
         </p>
 
-        <a className="siteFooter__policy" href="/politica-privacidad">
+        {/* <a className="siteFooter__policy" href="/politica-privacidad">
           Política de Privacidad
-        </a>
+        </a> */}
       </div>
     </footer>
   );
