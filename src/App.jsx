@@ -3,11 +3,15 @@ import Home from "./pages/Home";
 import Kinesionologia from "./pages/Kinesiologia";
 import Osteopatia from "./pages/Osteopatia";
 import Footer from "./components/Footer/Footer";
+import ScrollToHash from "./components/ScrollTo/ScrollToHash";
+import ScrollToTop from "./components/ScrollTo/ScrollToTop";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+      <ScrollToHash />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

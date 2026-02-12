@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Navbar.css";
 import ActionButton from "../ActionButton/ActionButton";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -8,17 +9,17 @@ export default function Navbar() {
   return (
     <header className="siteHeader">
       <nav className="navPill" aria-label="Navegación principal">
-        <a className="navPill__brand" href="#top" aria-label="Kineclin Home">
+        <a className="navPill__brand" href="/" aria-label="Kineclin Home">
           <img className="navPill__logo" src="/kineclin-logo.png" alt="Kineclin" />
         </a>
 
         <div className="navPill__center">
-          <a className="navPill__link" href="#about">
+          <Link className="navPill__link" to="/#about">
             Quienes Somos
-          </a>
-          <a className="navPill__link" href="#services">
+          </Link>
+          <Link className="navPill__link" to="/#services">
             Nuestros Servicios
-          </a>
+          </Link>
         </div>
 
         <div className="navPill__right__desk">
@@ -50,12 +51,16 @@ export default function Navbar() {
         </div>
 
         <div className={`navPill__dropdown ${open ? "is-open" : ""}`} role="menu">
-          <a className="navPill__dropdownLink" href="#about" onClick={() => setOpen(false)}>
+          <Link className="navPill__dropdownLink" to="/#about" onClick={() => setOpen(false)}>
             Quienes Somos
-          </a>
-          <a className="navPill__dropdownLink" href="#services" onClick={() => setOpen(false)}>
+          </Link>
+          <Link
+            className="navPill__dropdownLink"
+            to="/#services"
+            onClick={() => setOpen(false)}
+          >
             Nuestros Servicios
-          </a>
+          </Link>
         </div>
       </nav>
     </header>

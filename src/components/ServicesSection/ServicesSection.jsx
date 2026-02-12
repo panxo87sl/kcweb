@@ -7,6 +7,7 @@ export default function ServicesSection() {
   const services = [
     {
       title: "Osteópata / Quiropraxia",
+      to: "/osteopatia",
       description:
         "Tratamientos especializados para aliviar dolores musculares y articulares, mejorando la movilidad y postura.",
       icon: (
@@ -204,6 +205,7 @@ export default function ServicesSection() {
             <ServiceCard
               key={service.title}
               title={service.title}
+              to={service.to}
               description={service.description}
               icon={service.icon}
             />

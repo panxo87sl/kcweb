@@ -8,6 +8,13 @@
   transition: transform 220ms ease;
 }
 
+.serviceCard--link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 .serviceCard:hover {
   transform: translateY(-6px);
 }
