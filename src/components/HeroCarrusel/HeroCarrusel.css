@@ -131,7 +131,7 @@
   pointer-events: none; /* deja el link del slide funcionando */
 }
 
-#home-next {
+#carrusel {
   scroll-margin-top: 65px; /* desktop: navbar + aire */
 }
 
@@ -146,7 +146,7 @@
   .heroCarousel__slide {
     height: 340px;
   }
-  #home-next {
+  #carrusel {
     scroll-margin-top: 50px; /* mobile: navbar + aire  */
   }
   .heroCarousel__arrow {

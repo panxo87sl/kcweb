@@ -48,7 +48,7 @@ export default function Navbar() {
         </div>
 
         <div className={`navPill__dropdown ${open ? "is-open" : ""}`} role="menu">
-          <Link className="navPill__dropdownLink" to="/#top" onClick={() => setOpen(false)}>
+          <Link className="navPill__dropdownLink" to="/#home" onClick={() => setOpen(false)}>
             Inicio
           </Link>
           <Link className="navPill__dropdownLink" to="/#about" onClick={() => setOpen(false)}>
