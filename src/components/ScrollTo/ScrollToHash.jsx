@@ -8,10 +8,10 @@ export default function ScrollToHash() {
     if (!location.hash) return;
 
     const id = location.hash.replace("#", "");
-    const el = document.getElementById(id);
+    const section = document.getElementById(id);
 
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }, [location]);
 

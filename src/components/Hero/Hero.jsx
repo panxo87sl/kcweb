@@ -10,15 +10,15 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero__inner">
-        <h1 className="hero__title">
+        <h1 className="hero__title heroReveal heroReveal--1">
           Centro de Salud Integral en <br />
           Antofagasta
         </h1>
 
-        <p className="hero__subtitle">
-          Acompañamos tu salud, combinando atención clínica, bienestar y prevención.{" "}
+        <p className="hero__subtitle heroReveal heroReveal--2">
+          Acompañamos tu salud, combinando atención clínica, bienestar y prevención.
         </p>
-        <div className="hero__cont_cta">
+        <div className="hero__cont_cta heroReveal heroReveal--3">
           <ActionButton
             title={"Kineclin Centro de Salud"}
             label={"AGENDA AHORA"}
@@ -46,7 +46,7 @@ export default function Hero() {
 
         <button
           type="button"
-          className="hero__down"
+          className="hero__down heroReveal heroReveal--4"
           onClick={handleScrollDown}
           aria-label="Bajar a la siguiente sección"
         >
