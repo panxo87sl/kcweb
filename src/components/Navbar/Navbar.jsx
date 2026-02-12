@@ -9,11 +9,14 @@ export default function Navbar() {
   return (
     <header className="siteHeader">
       <nav className="navPill" aria-label="Navegación principal">
-        <a className="navPill__brand" href="/" aria-label="Kineclin Home">
+        <a className="navPill__brand" href="/#home" aria-label="Kineclin Home">
           <img className="navPill__logo" src="/kineclin-logo.png" alt="Kineclin" />
         </a>
 
         <div className="navPill__center">
+          <Link className="navPill__link" to="/#home">
+            Inicio
+          </Link>
           <Link className="navPill__link" to="/#about">
             Quienes Somos
           </Link>
@@ -24,17 +27,11 @@ export default function Navbar() {
 
         <div className="navPill__right__desk">
           <ActionButton
-            label={"Clínica Estética"}
+            label={"AGENDAR"}
             href={
-              "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agendas/agendaExpress/1"
+              "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1"
             }
-            variant="estetica"
-            size="nav"
-          />
-          <ActionButton
-            label={"KCPlus"}
-            href={"https://www.kcplus.cl/"}
-            variant="kcplus"
+            variant="centro"
             size="nav"
           />
         </div>
@@ -51,6 +48,9 @@ export default function Navbar() {
         </div>
 
         <div className={`navPill__dropdown ${open ? "is-open" : ""}`} role="menu">
+          <Link className="navPill__dropdownLink" to="/#top" onClick={() => setOpen(false)}>
+            Inicio
+          </Link>
           <Link className="navPill__dropdownLink" to="/#about" onClick={() => setOpen(false)}>
             Quienes Somos
           </Link>

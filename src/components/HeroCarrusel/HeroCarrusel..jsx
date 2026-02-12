@@ -60,7 +60,7 @@ export default function HeroCarousel({ autoPlay = false, intervalMs = 5000 }) {
   const active = photos[currentIndex];
 
   return (
-    <section className="heroCarousel" id="home-next">
+    <section className="heroCarousel" id="carrusel">
       {/* este inner respeta el ancho centralizado de la seccion HERO */}
       <div className="heroCarousel__inner">
         <div

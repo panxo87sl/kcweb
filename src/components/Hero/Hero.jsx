@@ -3,12 +3,12 @@ import ActionButton from "../ActionButton/ActionButton";
 
 export default function Hero() {
   const handleScrollDown = () => {
-    const target = document.getElementById("home-next");
+    const target = document.getElementById("carrusel");
     if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero__inner">
         <h1 className="hero__title heroReveal heroReveal--1">
           Centro de Salud Integral en <br />
@@ -22,7 +22,9 @@ export default function Hero() {
           <ActionButton
             title={"Kineclin Centro de Salud"}
             label={"AGENDA AHORA"}
-            href={"https://www.kineclin.cl/agenda"}
+            href={
+              "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1"
+            }
             variant="centro"
             size="hero"
           />

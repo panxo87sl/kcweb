@@ -9,16 +9,15 @@ export default function Footer() {
       height={res}
       fill="none"
       stroke="#fff"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="1.5"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-phone"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-device-landline-phone"
       viewBox="0 0 24 24"
-      aria-hidden="true"
-      focusable="false"
     >
       <path fill="none" stroke="none" d="M0 0h24v24H0z" />
-      <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" />
+      <path d="M20 3h-2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-4 1H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11" />
+      <path d="M12 8H6v3h6zm0 6v.01M9 14v.01M6 14v.01M12 17v.01M9 17v.01M6 17v.01" />
     </svg>
   );
 
@@ -232,21 +231,9 @@ export default function Footer() {
 
           <ul className="footerList" aria-label="Datos de contacto">
             <li className="footerList__item">
-              <span className="footerIcon">{iconMap}</span>
-              <a
-                className="footerLink"
-                href="https://www.google.com/maps?q=Kineclin+Antofagasta"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Copiapó 739, Of. 303. Antofagasta
-              </a>
-            </li>
-
-            <li className="footerList__item">
               <span className="footerIcon">{iconPhone}</span>
-              <a className="footerLink" href="tel:+56950833838">
-                +56 9 5083 3838
+              <a className="footerLink" href="tel:+56553330382">
+                +56 55 333 0382
               </a>
             </li>
 
@@ -286,6 +273,12 @@ export default function Footer() {
                 contacto@kineclin.cl
               </a>
             </li>
+            <li className="footerList__item">
+              <span className="footerIcon">{iconMail}</span>
+              <a className="footerLink" href="mailto:ventas@kcplus.cl">
+                ventas@kcplus.cl
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -308,7 +301,7 @@ export default function Footer() {
           <div className="footerMap" role="region" aria-label="Mapa de ubicación">
             <iframe
               className="footerMap__iframe"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1112.3236718934656!2d-70.40103095656399!3d-23.654211728537106!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96afd51171e6c8e7%3A0xc7fedef551254be4!2sCopiap%C3%B3%20739%2C%201240000%20Antofagasta!5e1!3m2!1ses-419!2scl!4v1770770025984!5m2!1ses-419!2scl"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d661.3919873975059!2d-70.40093109810451!3d-23.654137563103127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96afd5e47e590d03%3A0x9bbf6809617877af!2sCentro%20de%20Salud%20integral%20KINECLIN!5e1!3m2!1ses-419!2scl!4v1770936550870!5m2!1ses-419!2scl"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
