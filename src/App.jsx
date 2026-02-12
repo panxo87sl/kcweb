@@ -1,25 +1,20 @@
 import Navbar from "./components/Navbar/Navbar";
-import HeroCarousel from "./components/ui/HeroCarrusel/HeroCarrusel.";
-import Hero from "./components/ui/Hero/hero";
-import AboutSection from "./components/About/AboutSection";
-import ServicesSection from "./components/ServicesSection/ServicesSection";
+import Home from "./pages/Home";
+import Kinesionologia from "./pages/Kinesiologia";
+import Osteopatia from "./pages/Osteopatia";
 import Footer from "./components/Footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-      <div id="home-next">
-        <HeroCarousel autoPlay={true} intervalMs={6500} />
-      </div>
-      <div id="about">
-        <AboutSection />
-      </div>
-      <div id="services">
-        <ServicesSection />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/osteopatia" element={<Osteopatia />} />
+        <Route path="/kinesiologia" element={<Kinesionologia />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Navbar.css";
-import ActionButton from "../ui/ActionButton/ActionButton";
+import ActionButton from "../ActionButton/ActionButton";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

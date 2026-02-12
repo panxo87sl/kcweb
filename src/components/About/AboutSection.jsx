@@ -2,7 +2,7 @@ import "./AboutSection.css";
 
 export default function AboutSection() {
   return (
-    <section className="aboutSection">
+    <section className="aboutSection" id="about">
       <div className="aboutSection__inner">
         {/* Columna izquierda */}
         <div className="aboutSection__content">
