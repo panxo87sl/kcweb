@@ -13,6 +13,7 @@ export default function ServiceCard({ title, description, icon, to }) {
       </header>
 
       <p className="serviceCard__desc">{description}</p>
+      {to && <div className="serviceCard__cta">Ver más →</div>}
     </>
   );
   // Si hay ruta -> Link (navegación interna)

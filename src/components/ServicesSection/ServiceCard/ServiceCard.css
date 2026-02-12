@@ -59,6 +59,32 @@
   color: #4b5563;
 }
 
+.serviceCard__cta {
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--kineclin-azul);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition:
+    transform 200ms ease,
+    opacity 200ms ease;
+  opacity: 0.9;
+}
+
+/* Hace que el CTA quede abajo */
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover solo cuando es link */
+.serviceCard--link:hover .serviceCard__cta {
+  transform: translateX(4px);
+  opacity: 1;
+}
+
 /* Mobile adjustments */
 @media (max-width: 700px) {
   .serviceCard {
