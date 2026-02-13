@@ -154,6 +154,14 @@ export default function Footer() {
             >
               KCPLUS
             </a>
+            <a
+              className="footerLink"
+              href="https://kineclin.app.softwaremedilink.com/medilink/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Intranet
+            </a>
           </nav>
         </div>
 
