@@ -39,14 +39,14 @@ export default function AboutSection() {
 
           {/* Card imagen */}
           <div className="aboutGrid__card aboutGrid__card--image .aboutGrid__card--imageRoom">
-            <img src="/kineclin01.jpg" alt="Centro de Salud Kineclin" />
+            <img src="/home/kineclin01.jpg" alt="Centro de Salud Kineclin" />
 
             <span className="aboutGrid__descText">Centro de Salud</span>
           </div>
 
           {/* Card imagen simple */}
           <div className="aboutGrid__card aboutGrid__card--image .aboutGrid__card--imageTeam">
-            <img src="/kineclin02.jpg" alt="Nuestro Equipo" />
+            <img src="/home/kineclin02.jpg" alt="Nuestro Equipo" />
           </div>
 
           {/* Card texto blanco */}

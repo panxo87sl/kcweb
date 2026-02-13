@@ -5,16 +5,33 @@ import "./HeroCarrusel.css";
 export default function HeroCarousel({ autoPlay = false, intervalMs = 5000 }) {
   const photos = [
     {
-      url: "/fondo01.jpg",
-      link: "https://www.kineclin.cl/agenda",
-      title: "Centro de Salud Integral",
+      title: "Kineclin · Tú centro de salud",
+      url: "/home/fondo01.jpg",
+      mobileUrl: "/home/fondo01mobile.jpg",
+      link: "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1",
+      more: "Ver más",
     },
-    { url: "/fondo02.jpg" },
-    { url: "/fondo03.jpg", link: "https://kcplus.cl" },
-    { url: "/fondo04.jpg", title: "Tecnologia de Vanguardia" },
+    // { url: "/home/fondo02.jpg", mobileUrl: "/home/fondo02.jpg" },
     {
-      url: "/fondo05.jpg",
+      title: "Suplementos Premium",
+      url: "/home/fondo03.jpg",
+      mobileUrl: "/home/fondo03mobile.jpg",
+      link: "https://kcplus.cl",
+      more: "Ver más",
+    },
+    {
+      url: "/home/fondo04.jpg",
+      mobileUrl: "/home/fondo04mobile.jpg",
+      link: "/osteopatia",
+      title: "Osteopatía y Quiropraxia",
+      more: "Ver más",
+    },
+    {
+      title: "Última tecnología en estética",
+      url: "/home/fondo05.jpg",
+      mobileUrl: "/home/fondo05mobile.jpg",
       link: "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agendas/agendaExpress/1",
+      more: "Ver más",
     },
   ];
 
@@ -82,11 +99,21 @@ export default function HeroCarousel({ autoPlay = false, intervalMs = 5000 }) {
             touchStartX.current = null;
           }}
         >
-          <div
-            key={currentIndex}
-            className="heroCarousel__image"
-            style={{ backgroundImage: `url(${active.url})` }}
-          />
+          <picture key={currentIndex} className="heroCarousel__picture">
+            {/* Si existe mobileUrl, se usa en pantallas chicas */}
+            {active.mobileUrl && (
+              <source media="(max-width: 460px)" srcSet={active.mobileUrl} />
+            )}
+
+            {/* Fallback obligatorio (desktop) */}
+            <img
+              className="heroCarousel__img"
+              src={active.url}
+              alt={active.title ? active.title : "Slide del carrusel"}
+              loading="lazy"
+              draggable="false"
+            />
+          </picture>
 
           {active.link && (
             <a
@@ -98,6 +125,7 @@ export default function HeroCarousel({ autoPlay = false, intervalMs = 5000 }) {
             />
           )}
           {active.title && <div className="heroCarousel__caption">{active.title}</div>}
+          {active.link && <div className="heroCarousel__more">{active.more} →</div>}
 
           <div className="heroCarousel__nav">
             <button

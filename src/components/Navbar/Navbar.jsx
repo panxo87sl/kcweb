@@ -9,8 +9,8 @@ export default function Navbar() {
   return (
     <header className="siteHeader">
       <nav className="navPill" aria-label="Navegación principal">
-        <a className="navPill__brand" href="/#home" aria-label="Kineclin Home">
-          <img className="navPill__logo" src="/kineclin-logo.png" alt="Kineclin" />
+        <a className="navPill__brand" href="/" aria-label="Kineclin Home">
+          <img className="navPill__logo" src="/home/kineclin-logo.png" alt="Kineclin" />
         </a>
 
         <div className="navPill__center">
