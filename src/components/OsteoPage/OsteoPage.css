@@ -113,11 +113,13 @@
 }
 
 .osteoCard__title {
-  margin: 0 0 10px 0;
+  margin: 5px 0 5px 0;
   font-family: var(--font-secondary);
   font-weight: 800;
   color: #0b2b3a;
   font-size: 18px;
+  text-align: center;
+  height: 40px;
 }
 
 .osteoList {
