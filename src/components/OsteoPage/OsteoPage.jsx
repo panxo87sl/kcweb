@@ -1,4 +1,5 @@
 import "./OsteoPage.css";
+import ActionButton from "../ActionButton/ActionButton";
 
 export default function OsteoPage() {
   return (
@@ -60,6 +61,14 @@ export default function OsteoPage() {
                   <strong>Docente universitario.</strong>
                 </li>
               </ul>
+              <div className="osteoSpecialistBlock__agenda">
+                <ActionButton
+                  label={"Reservar hora"}
+                  href={"https://ff.healthatom.io/qn3RXi"}
+                  variant="centro"
+                  size="nav"
+                />
+              </div>
             </div>
           </div>
         </div>

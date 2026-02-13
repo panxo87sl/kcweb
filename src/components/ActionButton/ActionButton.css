@@ -87,6 +87,7 @@
 
 .actionButton__label {
   display: inline-block;
+  text-align: center;
 }
 
 .actionButton__icon {

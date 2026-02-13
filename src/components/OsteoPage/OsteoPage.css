@@ -188,6 +188,12 @@
   font-size: 15px;
 }
 
+.osteoSpecialistBlock__agenda {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
 /* =========================
    RESPONSIVE
    ========================= */
