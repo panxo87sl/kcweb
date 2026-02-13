@@ -259,12 +259,12 @@ export default function OsteoPage() {
               <div className="osteoCard__media">
                 <img
                   className="osteoImg"
-                  src="/osteopatia/theragun-4pro.jpg"
-                  alt="Theragun 4PRO"
+                  src="/osteopatia/theragun.jpg"
+                  alt="Theragun PRO Plus"
                 />
               </div>
               <div className="osteoCard__body">
-                <h3 className="osteoCard__title">PISTOLA DE MASAJE - THERAGUN 4PRO</h3>
+                <h3 className="osteoCard__title">PISTOLA DE MASAJE - THERAGUN PRO PLUS</h3>
                 <p className="osteoText">
                   El masajeador muscular percutivo es una herramienta profesional utilizada
                   para reducir el dolor muscular, mejorar la movilidad y favorecer la
