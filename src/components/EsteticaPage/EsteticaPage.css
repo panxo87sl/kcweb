@@ -1,0 +1,195 @@
+.esteticaPage {
+  width: 100%;
+}
+
+/* =========================
+   HERO
+   ========================= */
+.esteticaHero {
+  padding: 120px 0 60px 0;
+  background: var(--kineclin-bg2);
+}
+
+.esteticaHero__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.esteticaHero__title {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--kineclin-rose);
+  font-size: clamp(42px, 4.5vw, 56px);
+}
+
+/* =========================
+   SECCIONES GENERALES
+   ========================= */
+.esteticaSection {
+  padding: 56px 0;
+  background: #fff;
+}
+
+.esteticaSection__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.esteticaTitle {
+  margin: 0 0 14px 0;
+  font-size: 44px;
+  font-weight: 800;
+  color: var(--kineclin-rose);
+  margin-bottom: 14px;
+}
+
+.esteticaText {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4b5563;
+  text-align: justify;
+}
+
+/* =========================
+   GRIDS / CARDS
+   ========================= */
+.esteticaGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.esteticaCard {
+  grid-column: span 4;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.esteticaCard__media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: rgba(232, 184, 175, 0.18);
+}
+
+.esteticaImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.esteticaCard__body {
+  padding: 16px 16px 18px 16px;
+}
+
+.esteticaCard__title {
+  margin: 5px 0 5px 0;
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  color: #0b2b3a;
+  font-size: 18px;
+  text-align: center;
+  height: 40px;
+}
+
+/* =========================
+   ESPECIALISTA (BLOQUE UNIFICADO)
+   ========================= */
+.esteticaSpecialistBlock {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 0;
+  align-items: stretch;
+  margin-top: 18px;
+
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
+
+.esteticaSpecialistBlock__photo {
+  background: #fff;
+}
+
+.esteticaSpecialistBlock__img {
+  width: 100%;
+  height: 100%;
+  max-height: 420px;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.esteticaSpecialistBlock__content {
+  padding: 18px 18px 20px 18px;
+}
+
+.esteticaSpecialistBlock__name {
+  margin: 0 0 14px 0;
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  color: #0b2b3a;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+.esteticaSpecialistBlock__list {
+  margin: 0;
+  padding-left: 18px;
+  color: #2b3941;
+  line-height: 1.7;
+  font-family: var(--font-primary);
+  font-size: 15px;
+}
+
+.esteticaSpecialistBlock__agenda {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+  .esteticaHero {
+    padding: 92px 0 40px 0;
+  }
+
+  .esteticaSection {
+    padding: 44px 0;
+  }
+
+  .esteticaSection h2 {
+    text-align: center;
+  }
+
+  .esteticaTitle {
+    font-size: 38px;
+  }
+
+  .esteticaCard {
+    grid-column: span 12;
+  }
+
+  .esteticaSpecialistBlock {
+    grid-template-columns: 1fr;
+  }
+
+  .esteticaSpecialistBlock__img {
+    max-height: 300px;
+    object-position: center top;
+  }
+}

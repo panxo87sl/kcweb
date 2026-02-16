@@ -1,7 +1,7 @@
 import "./ServiceCard.css";
 import { Link } from "react-router-dom";
 
-export default function ServiceCard({ title, description, icon, to }) {
+export default function ServiceCard({ title, description, icon, to, published }) {
   const CardInner = (
     <>
       <header className="serviceCard__header">
@@ -13,11 +13,11 @@ export default function ServiceCard({ title, description, icon, to }) {
       </header>
 
       <p className="serviceCard__desc">{description}</p>
-      {to && <div className="serviceCard__cta">Ver más →</div>}
+      {published && <div className="serviceCard__cta">Ver más →</div>}
     </>
   );
   // Si hay ruta -> Link (navegación interna)
-  if (to) {
+  if (to && published) {
     return (
       <Link to={to} className="serviceCard serviceCard--link" aria-label={title}>
         {CardInner}

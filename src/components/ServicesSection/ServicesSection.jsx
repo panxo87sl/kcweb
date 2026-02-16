@@ -6,6 +6,7 @@ export default function ServicesSection() {
 
   const services = [
     {
+      published: true,
       title: "Osteópata / Quiropraxia",
       to: "/osteopatia",
       description:
@@ -28,6 +29,7 @@ export default function ServicesSection() {
       ),
     },
     {
+      published: true,
       title: "Kinesiología",
       description:
         "Evaluación y tratamiento kinesiológico para la recuperación funcional y mejora de la movilidad.",
@@ -51,6 +53,7 @@ export default function ServicesSection() {
       ),
     },
     {
+      published: true,
       title: "Nutricionista",
       description:
         "Planes alimenticios personalizados para mejorar tu salud, control de peso y condiciones específicas.",
@@ -74,6 +77,7 @@ export default function ServicesSection() {
       ),
     },
     {
+      published: true,
       title: "Gimnasio Médico",
       description:
         "Ejercicio terapéutico supervisado, enfocado en rehabilitación física y bienestar corporal.",
@@ -96,6 +100,7 @@ export default function ServicesSection() {
       ),
     },
     {
+      published: true,
       title: "Fonoaudiología y Terapia Ocupacional",
       description:
         "Atención orientada a la rehabilitación funcional, autonomía y calidad de vida, cobertura GES con indicación clínica",
@@ -121,6 +126,7 @@ export default function ServicesSection() {
       ),
     },
     {
+      published: true,
       title: "Psicología",
       description:
         "Atención psicológica profesional para salud mental, manejo del estrés y bienestar emocional.",
@@ -143,6 +149,7 @@ export default function ServicesSection() {
       ),
     },
     {
+      published: true,
       title: "Enfermería",
       description:
         "Cuidados de enfermería especializados, procedimientos médicos y seguimiento de tratamientos.",
@@ -165,6 +172,8 @@ export default function ServicesSection() {
       ),
     },
     {
+      published: false,
+      to: "/estetica",
       title: "Clínica Estética",
       description:
         "Tratamientos estéticos médicos profesionales para potenciar tu bienestar y confianza.",
@@ -206,6 +215,7 @@ export default function ServicesSection() {
               key={service.title}
               title={service.title}
               to={service.to}
+              published={service.published}
               description={service.description}
               icon={service.icon}
             />
