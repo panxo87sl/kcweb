@@ -46,9 +46,7 @@ export default function EsteticaPage() {
               <div className="esteticaSpecialistBlock__agenda">
                 <ActionButton
                   label={"Reservar evaluación"}
-                  href={
-                    "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agendas/agendaExpress/1"
-                  }
+                  href={"https://ff.healthatom.io/FcAeFZ"}
                   variant="estetica"
                   size="nav"
                 />

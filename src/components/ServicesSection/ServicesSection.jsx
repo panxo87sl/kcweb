@@ -29,7 +29,7 @@ export default function ServicesSection() {
       ),
     },
     {
-      published: true,
+      published: false,
       title: "Kinesiología",
       description:
         "Evaluación y tratamiento kinesiológico para la recuperación funcional y mejora de la movilidad.",
@@ -53,7 +53,7 @@ export default function ServicesSection() {
       ),
     },
     {
-      published: true,
+      published: false,
       title: "Nutricionista",
       description:
         "Planes alimenticios personalizados para mejorar tu salud, control de peso y condiciones específicas.",
@@ -77,7 +77,7 @@ export default function ServicesSection() {
       ),
     },
     {
-      published: true,
+      published: false,
       title: "Gimnasio Médico",
       description:
         "Ejercicio terapéutico supervisado, enfocado en rehabilitación física y bienestar corporal.",
@@ -100,7 +100,7 @@ export default function ServicesSection() {
       ),
     },
     {
-      published: true,
+      published: false,
       title: "Fonoaudiología y Terapia Ocupacional",
       description:
         "Atención orientada a la rehabilitación funcional, autonomía y calidad de vida, cobertura GES con indicación clínica",
@@ -126,7 +126,7 @@ export default function ServicesSection() {
       ),
     },
     {
-      published: true,
+      published: false,
       title: "Psicología",
       description:
         "Atención psicológica profesional para salud mental, manejo del estrés y bienestar emocional.",
@@ -149,7 +149,7 @@ export default function ServicesSection() {
       ),
     },
     {
-      published: true,
+      published: false,
       title: "Enfermería",
       description:
         "Cuidados de enfermería especializados, procedimientos médicos y seguimiento de tratamientos.",
