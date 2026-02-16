@@ -11,7 +11,13 @@ export default function HeroCarousel({ autoPlay = false, intervalMs = 5000 }) {
       link: "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1",
       more: "Ver más",
     },
-    // { url: "/home/fondo02.jpg", mobileUrl: "/home/fondo02.jpg" },
+    {
+      title: "Gimnasio Médico",
+      url: "/home/fondo02.jpg",
+      mobileUrl: "/home/fondo02mobile.jpg",
+      link: "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1",
+      more: "Ver más",
+    },
     {
       title: "Suplementos Premium",
       url: "/home/fondo03.jpg",
