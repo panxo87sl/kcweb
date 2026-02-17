@@ -12,20 +12,23 @@ export default function HeroCarousel({ autoPlay = false, intervalMs = 5000 }) {
       more: "Ver más",
     },
     {
+      //GIMNASIO
       title: "Gimnasio Médico",
-      url: "/home/fondo02.jpg",
+      url: "/carrusel/4.jpg",
       mobileUrl: "/home/fondo02mobile.jpg",
       link: "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1",
       more: "Ver más",
     },
     {
+      //KCPLUS
       title: "Suplementos Premium",
-      url: "/home/fondo03.jpg",
+      url: "/carrusel/2.jpg",
       mobileUrl: "/home/fondo03mobile.jpg",
       link: "https://kcplus.cl",
       more: "Ver más",
     },
     {
+      //OSTEOPATIA
       url: "/home/fondo04.jpg",
       mobileUrl: "/home/fondo04mobile.jpg",
       link: "/osteopatia",
@@ -33,10 +36,16 @@ export default function HeroCarousel({ autoPlay = false, intervalMs = 5000 }) {
       more: "Ver más",
     },
     {
+      // ESTETICA
       title: "Última tecnología en estética",
-      url: "/home/fondo05.jpg",
+      url: "/carrusel/1.jpg",
       mobileUrl: "/home/fondo05mobile.jpg",
       link: "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agendas/agendaExpress/1",
+      more: "Ver más",
+    },
+    {
+      url: "/carrusel/3.jpg",
+      mobileUrl: "/carrusel/3.jpg",
       more: "Ver más",
     },
   ];
