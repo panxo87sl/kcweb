@@ -5,32 +5,17 @@ import "./HeroCarrusel.css";
 export default function HeroCarousel({ autoPlay = false, intervalMs = 5000 }) {
   const photos = [
     {
+      //KINECLIN
       title: "Kineclin · Tú centro de salud",
-      url: "/home/fondo01.jpg",
-      mobileUrl: "/home/fondo01mobile.jpg",
+      url: "/carrusel/fondo01.jpg",
+      mobileUrl: "/carrusel/fondo01mobile.jpg",
       link: "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1",
-      more: "Ver más",
-    },
-    {
-      //GIMNASIO
-      title: "Gimnasio Médico",
-      url: "/carrusel/4.jpg",
-      mobileUrl: "/home/fondo02mobile.jpg",
-      link: "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1",
-      more: "Ver más",
-    },
-    {
-      //KCPLUS
-      title: "Suplementos Premium",
-      url: "/carrusel/2.jpg",
-      mobileUrl: "/home/fondo03mobile.jpg",
-      link: "https://kcplus.cl",
       more: "Ver más",
     },
     {
       //OSTEOPATIA
-      url: "/home/fondo04.jpg",
-      mobileUrl: "/home/fondo04mobile.jpg",
+      url: "/carrusel/fondo04.jpg",
+      mobileUrl: "/carrusel/fondo04mobile.jpg",
       link: "/osteopatia",
       title: "Osteopatía y Quiropraxia",
       more: "Ver más",
@@ -39,11 +24,28 @@ export default function HeroCarousel({ autoPlay = false, intervalMs = 5000 }) {
       // ESTETICA
       title: "Última tecnología en estética",
       url: "/carrusel/1.jpg",
-      mobileUrl: "/home/fondo05mobile.jpg",
+      mobileUrl: "/carrusel/fondo05mobile.jpg",
       link: "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agendas/agendaExpress/1",
       more: "Ver más",
     },
     {
+      //KCPLUS
+      title: "Suplementos Premium",
+      url: "/carrusel/2.jpg",
+      mobileUrl: "/carrusel/fondo03mobile.jpg",
+      link: "https://kcplus.cl",
+      more: "Ver más",
+    },
+    {
+      //GIMNASIO
+      title: "Gimnasio Médico",
+      url: "/carrusel/4.jpg",
+      mobileUrl: "/carrusel/fondo02mobile.jpg",
+      link: "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1",
+      more: "Ver más",
+    },
+    {
+      //CUIDADOS DOMICILIARIOS
       url: "/carrusel/3.jpg",
       mobileUrl: "/carrusel/3.jpg",
       more: "Ver más",
