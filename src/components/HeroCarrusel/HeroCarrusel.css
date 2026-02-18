@@ -144,7 +144,7 @@
 
   color: #ffffff;
   font-family: var(--font-secondary);
-  font-size: 14px;
+  font-size: var(--font-size-xl);
   font-weight: 600;
 
   opacity: 0.92;
@@ -183,6 +183,9 @@
   }
   .heroCarousel__arrow {
     display: none;
+  }
+  .heroCarousel__more {
+    font-size: var(--font-size-l);
   }
   .heroCarousel__caption {
     left: 20px;
