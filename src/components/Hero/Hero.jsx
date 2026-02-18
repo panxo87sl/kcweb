@@ -31,9 +31,7 @@ export default function Hero() {
           <ActionButton
             title={"Kineclin Clínica Estética"}
             label={"AGENDA AHORA"}
-            href={
-              "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agendas/agendaExpress/1"
-            }
+            href={"https://www.instagram.com/kineclin_estetica/"}
             variant="estetica"
             size="hero"
           />

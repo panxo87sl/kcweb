@@ -25,7 +25,7 @@ export default function HeroCarousel({ autoPlay = false, intervalMs = 5000 }) {
       title: "Última tecnología en estética",
       url: "/carrusel/1.jpg",
       mobileUrl: "/carrusel/fondo05mobile.jpg",
-      link: "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agendas/agendaExpress/1",
+      link: "https://www.instagram.com/kineclin_estetica/",
       more: "Ver más",
     },
     {
