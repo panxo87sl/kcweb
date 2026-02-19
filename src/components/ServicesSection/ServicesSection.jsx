@@ -30,6 +30,29 @@ export default function ServicesSection() {
     },
     {
       published: false,
+      title: "Psiconeuroinmunología Clínica",
+      description:
+        "Abordaje integral que conecta sistema nervioso, inmunológico y endocrino para mejorar la salud desde una mirada funcional y personalizada.",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={res}
+          height={res}
+          fill="none"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.6"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+          <path d="M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0m18 11-6-6" />
+          <path d="m10.055 12.875 2.472-2.533a1.71 1.71 0 0 0 0-2.37 1.6 1.6 0 0 0-2.304 0l-.165.17-.164-.17a1.6 1.6 0 0 0-2.304 0 1.71 1.71 0 0 0 0 2.369l2.464 2.542z" />
+        </svg>
+      ),
+    },
+    {
+      published: false,
       title: "Kinesiología",
       description:
         "Evaluación y tratamiento kinesiológico para la recuperación funcional y mejora de la movilidad.",
@@ -193,6 +216,30 @@ export default function ServicesSection() {
           <path fill="none" stroke="none" d="M0 0h24v24H0z" />
           <path d="M10 6v3m4-3v3m-9 2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z" />
           <path d="M10 15a2 2 0 1 0 4 0 2 2 0 1 0-4 0M9 3h6v3H9z" />
+        </svg>
+      ),
+    },
+    {
+      published: false,
+      to: "/domicilios",
+      title: "Cuidados Domiciliarios",
+      description:
+        "Tratamientos estéticos médicos profesionales para potenciar tu bienestar y confianza.",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={res}
+          height={res}
+          fill="none"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.6"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-bed"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+          <path d="M5 9a2 2 0 1 0 4 0 2 2 0 1 0-4 0m17 8v-3H2m0-6v9m10-3h10v-2a3 3 0 0 0-3-3h-7z" />
         </svg>
       ),
     },
