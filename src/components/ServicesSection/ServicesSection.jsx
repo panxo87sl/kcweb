@@ -243,6 +243,55 @@ export default function ServicesSection() {
         </svg>
       ),
     },
+    {
+      published: false,
+      to: "/masoterapia",
+      title: "Masoterapia",
+      description:
+        "Terapia manual enfocada en aliviar tensiones musculares, mejorar la circulación y favorecer la recuperación física y el bienestar general.",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={res}
+          height={res}
+          fill="none"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-massage"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+          <path d="M3 17a1 1 0 1 0 2 0 1 1 0 1 0-2 0M8 5a1 1 0 1 0 2 0 1 1 0 1 0-2 0M4 22l4-2v-3h12m-9 3h9M8 14l3-2 1-4c3 1 3 4 3 6" />
+        </svg>
+      ),
+    },
+    {
+      published: false,
+      to: "/pilates",
+      title: "Clases de Pilates",
+      description:
+        "Entrenamiento guiado orientado a fortalecer la musculatura profunda, mejorar la postura y aumentar la flexibilidad de forma segura y progresiva.",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={res}
+          height={res}
+          fill="none"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-yoga"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+          <path d="M11 4a1 1 0 1 0 2 0 1 1 0 1 0-2 0M4 20h4l1.5-3m7.5 3-1-5h-5l1-7" />
+          <path d="m4 10 4-1 4-1 4 1.5 4 1.5" />
+        </svg>
+      ),
+    },
   ];
 
   return (
