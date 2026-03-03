@@ -6,8 +6,13 @@ export default function OsteoPage() {
     <main className="osteoPage">
       <header className="osteoHero">
         <div className="osteoHero__inner">
-          <h1 className="osteoHero__title">PSICONEUROINMONOLOGÍA CLÍNICA</h1>
-          <h1 className="osteoHero__title">OSTEOPATIA · QUIROPRAXIA</h1>
+          <h1 className="osteoHero__title title_desktop" alt="PSICONEUROINMONOLOGÍA CLÍNICA">
+            PSICONEUROINMONOLOGÍA CLÍNICA
+          </h1>
+          <h1 className="osteoHero__title title_mobile" alt="PSICONEUROINMONOLOGÍA CLÍNICA">
+            PNI CLÍNICA
+          </h1>
+          <h1 className="osteoHero__title">OSTEOPATÍA · QUIROPRAXIA</h1>
         </div>
       </header>
 

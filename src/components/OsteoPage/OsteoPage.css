@@ -26,6 +26,13 @@
   font-size: clamp(42px, 4.5vw, 56px);
 }
 
+.title_desktop {
+  display: block;
+}
+.title_mobile {
+  display: none;
+}
+
 /* =========================
    SECCIONES GENERALES
    ========================= */
@@ -229,6 +236,12 @@
   .osteoHero {
     padding: 92px 0 40px 0;
   }
+  .title_desktop {
+    display: none;
+  }
+  .title_mobile {
+    display: block;
+  }
 
   .osteoSection {
     padding: 44px 0;
@@ -252,5 +265,14 @@
   .osteoSpecialistBlock__img {
     max-height: 300px; /* evita foto infinita al apilar */
     object-position: center top;
+  }
+
+  .osteoSpecialistBlock__content__agenda__buttons {
+    gap: 2px;
+    flex-direction: column;
+  }
+
+  .osteoSpecialistBlock__agenda_title {
+    margin: 25px 0 10px 0;
   }
 }
