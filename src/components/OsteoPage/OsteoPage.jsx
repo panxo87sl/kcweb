@@ -6,6 +6,7 @@ export default function OsteoPage() {
     <main className="osteoPage">
       <header className="osteoHero">
         <div className="osteoHero__inner">
+          <h1 className="osteoHero__title">PSICONEUROINMONOLOGÍA CLÍNICA</h1>
           <h1 className="osteoHero__title">OSTEOPATIA · QUIROPRAXIA</h1>
         </div>
       </header>
@@ -30,7 +31,7 @@ export default function OsteoPage() {
 
               <ul className="osteoSpecialistBlock__list">
                 <li>
-                  <strong>Director y fundador</strong> Kineclin.
+                  <strong>Director y fundador</strong> Clínica Kineclin.
                 </li>
                 <li>
                   <strong>Kinesiólogo</strong>, Universidad de Antofagasta.
