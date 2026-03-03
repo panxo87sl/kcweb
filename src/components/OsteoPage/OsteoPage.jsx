@@ -83,7 +83,9 @@ export default function OsteoPage() {
                       label={"Whatsapp"}
                       href={"https://wa.me/56950833838"}
                       variant="whatsapp"
-                      wspmsg={"Hola, me gustaría agendar una cita con el kinesiólogo Diego"}
+                      wspmsg={
+                        "Hola, quisiera agendar una evaluación con el Kinesiólogo Diego Zúñiga. ¿Me podrían indicar disponibilidad?"
+                      }
                       size="nav"
                     />
                   </div>
