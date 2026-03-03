@@ -4,7 +4,8 @@ export default function ActionButton({
   title,
   label,
   href,
-  variant = "centro", //centro, estetica, kcplus
+  variant = "centro", // centro, estetica, kcplus, whatsapp, instagram
+  wspmsg,
   rightIcon,
   size = "nav", //nav, hero
   cname, //classname
@@ -23,21 +24,23 @@ export default function ActionButton({
     throw new Error("[ActionButton] Missing required prop: 'size'");
   }
 
+  const finalHref =
+    variant === "whatsapp" && wspmsg ? `${href}?text=${encodeURIComponent(wspmsg)}` : href;
+
   const wrapClass =
-    `actionButton actionButton--${variant} actionButton--${size} ${cname}`.trim();
+    `actionButton actionButton--${variant} actionButton--${size} ${cname || ""}`.trim();
 
   return (
     <div className={wrapClass}>
-      {title ? (
+      {title && (
         <div className="actionButton__titleWrap">
           <span className="actionButton__title">{title}</span>
         </div>
-      ) : null}
+      )}
 
-      <a className="actionButton__btn" href={href} target="_blank" rel="noreferrer">
+      <a className="actionButton__btn" href={finalHref} target="_blank" rel="noreferrer">
         <span className="actionButton__label">{label}</span>
-
-        {rightIcon ? <span className="actionButton__icon">{rightIcon}</span> : null}
+        {rightIcon && <span className="actionButton__icon">{rightIcon}</span>}
       </a>
     </div>
   );

@@ -27,48 +27,67 @@ export default function OsteoPage() {
             </div>
 
             <div className="osteoSpecialistBlock__content">
-              <h3 className="osteoSpecialistBlock__name">KLGO. DIEGO ZÚÑIGA</h3>
+              <div className="osteoSpecialistBlock__content_cv">
+                <h3 className="osteoSpecialistBlock__name">KLGO. DIEGO ZÚÑIGA</h3>
 
-              <ul className="osteoSpecialistBlock__list">
-                <li>
-                  <strong>Director y fundador</strong> Clínica Kineclin.
-                </li>
-                <li>
-                  <strong>Kinesiólogo</strong>, Universidad de Antofagasta.
-                </li>
-                <li>
-                  <strong>Osteópata C.O.</strong>, Escuela de Osteopatía de Madrid (formación
-                  oficial 5 años).
-                </li>
-                <li>
-                  <strong>Máster en Osteopatía</strong>, Universidad Pontificia de Salamanca
-                  (España).
-                </li>
-                <li>
-                  <strong>En formación</strong> como Psiconeuroinmunólogo Clínico, PNI Europe
-                  (formación oficial 3 años, Buenos Aires).
-                </li>
-                <li>
-                  <strong>Especializado</strong> en Punción Seca (agujas acupuntura) y
-                  Neuromodulación.
-                </li>
-                <li>
-                  <strong>+10 años</strong> de experiencia hospitalaria y ambulatoria.
-                </li>
-                <li>
-                  <strong>Diplomado</strong> en Kinesioterapia en Paciente Crítico Adulto, PUC.
-                </li>
-                <li>
-                  <strong>Docente universitario.</strong>
-                </li>
-              </ul>
-              <div className="osteoSpecialistBlock__agenda">
-                <ActionButton
-                  label={"Reservar hora"}
-                  href={"https://ff.healthatom.io/qn3RXi"}
-                  variant="centro"
-                  size="nav"
-                />
+                <ul className="osteoSpecialistBlock__list">
+                  <li>
+                    <strong>Director y fundador</strong> Clínica Kineclin.
+                  </li>
+                  <li>
+                    <strong>Kinesiólogo</strong>, Universidad de Antofagasta.
+                  </li>
+                  <li>
+                    <strong>Osteópata C.O.</strong>, Escuela de Osteopatía de Madrid (formación
+                    oficial 5 años).
+                  </li>
+                  <li>
+                    <strong>Máster en Osteopatía</strong>, Universidad Pontificia de Salamanca
+                    (España).
+                  </li>
+                  <li>
+                    <strong>En formación</strong> como Psiconeuroinmunólogo Clínico, PNI Europe
+                    (formación oficial 3 años, Buenos Aires).
+                  </li>
+                  <li>
+                    <strong>Especializado</strong> en Punción Seca (agujas acupuntura) y
+                    Neuromodulación.
+                  </li>
+                  <li>
+                    <strong>+10 años</strong> de experiencia hospitalaria y ambulatoria.
+                  </li>
+                  <li>
+                    <strong>Diplomado</strong> en Kinesioterapia en Paciente Crítico Adulto,
+                    PUC.
+                  </li>
+                  <li>
+                    <strong>Docente universitario.</strong>
+                  </li>
+                </ul>
+              </div>
+              <div className="osteoSpecialistBlock__content__agenda">
+                <h4 className="osteoSpecialistBlock__agenda_title">
+                  Agenda ahora con nuestro especialista:
+                </h4>
+                <div className="osteoSpecialistBlock__content__agenda__buttons">
+                  <div className="osteoSpecialistBlock__agenda">
+                    <ActionButton
+                      label={"Agenda Online"}
+                      href={"https://ff.healthatom.io/qn3RXi"}
+                      variant="centro"
+                      size="nav"
+                    />
+                  </div>
+                  <div className="osteoSpecialistBlock__agenda">
+                    <ActionButton
+                      label={"Whatsapp"}
+                      href={"https://wa.me/56950833838"}
+                      variant="whatsapp"
+                      wspmsg={"Hola, me gustaría agendar una cita con el especialista"}
+                      size="nav"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

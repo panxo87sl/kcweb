@@ -31,6 +31,12 @@
   --bShadow: 0 10px 20px rgba(216, 144, 0, 0.25);
 }
 
+.actionButton--whatsapp {
+  --bColor: #25d366;
+  --bColorHover: #1fb85a;
+  --bShadow: 0 10px 20px rgba(37, 211, 102, 0.28);
+}
+
 /* ===== Título opcional ===== */
 .actionButton__titleWrap {
   display: flex;
