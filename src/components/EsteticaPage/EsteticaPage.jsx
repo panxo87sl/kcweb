@@ -1,5 +1,5 @@
 import "./EsteticaPage.css";
-import ActionButton from "../ActionButton/ActionButton";
+import ActionButton from "../common/ActionButton/ActionButton";
 
 export default function EsteticaPage() {
   return (

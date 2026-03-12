@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import ActionButton from "../../ActionButton/ActionButton";
+import ActionButton from "../../common/ActionButton/ActionButton";
 
 import "./Navbar.css";
 
