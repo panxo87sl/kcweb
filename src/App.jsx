@@ -6,9 +6,9 @@ import ScrollToHash from "./components/layout/ScrollTo/ScrollToHash";
 import ScrollToTop from "./components/layout/ScrollTo/ScrollToTop";
 
 import Home from "./services/home/Home";
-import Kinesionologia from "./pages/Kinesiologia";
-import Osteopatia from "./pages/Osteopatia";
-import Estetica from "./pages/Estetica";
+import Kinesionologia from "./services/kinesiologia/KinePage";
+import Osteopatia from "./services/osteopatia/OsteoPage";
+import Estetica from "./services/estetica/EsteticaPage";
 
 export default function App() {
   return (
