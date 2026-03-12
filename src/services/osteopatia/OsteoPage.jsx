@@ -1,5 +1,5 @@
 import "./OsteoPage.css";
-import ActionButton from "../common/ActionButton/ActionButton";
+import ActionButton from "../../components/common/ActionButton/ActionButton";
 
 export default function OsteoPage() {
   return (

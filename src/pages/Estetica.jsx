@@ -1,5 +1,4 @@
-import EsteticaPage from "../components/EsteticaPage/EsteticaPage";
-
+import EsteticaPage from "../services/estetica/EsteticaPage";
 export default function ClinicaEstetica() {
   return (
     <>

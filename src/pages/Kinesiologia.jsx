@@ -1,4 +1,4 @@
-import KinePage from "../components/KinePage/KinePage";
+import KinePage from "../services/kinesiologia/KinePage";
 
 export default function Kinesiologia() {
   return (

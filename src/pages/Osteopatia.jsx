@@ -1,5 +1,4 @@
-import OsteoPage from "../components/OsteoPage/OsteoPage";
-
+import OsteoPage from "../services/osteopatia/OsteoPage";
 export default function Osteopatia() {
   return (
     <>
