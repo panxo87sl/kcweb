@@ -9,6 +9,7 @@ import Home from "./services/home/Home";
 import Kinesionologia from "./services/kinesiologia/KinePage";
 import Osteopatia from "./services/osteopatia/OsteoPage";
 import Estetica from "./services/estetica/EsteticaPage";
+import Contactanos from "./services/contactanos/ContactPage";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/osteopatia" element={<Osteopatia />} />
         <Route path="/kinesiologia" element={<Kinesionologia />} />
         <Route path="/kcestetica" element={<Estetica />} />
+        <Route path="/contactanos" element={<Contactanos />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,0 +1,90 @@
+.contactPage {
+  width: 100%;
+}
+
+.contactSection {
+  padding: 80px 0;
+  background: var(--kineclin-bg2);
+}
+
+.contactContainer {
+  width: min(var(--w-content), 700px);
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contactTitle {
+  text-align: center;
+  color: var(--kineclin-azul);
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contactField label {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.contactField input,
+.contactField select,
+.contactField textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-family: var(--font-primary);
+  font-size: 14px;
+}
+
+.contactField span {
+  color: #dc2626;
+  font-size: 12px;
+}
+
+.contactActions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btnPrimary {
+  background: var(--kineclin-azul);
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btnPrimary:hover {
+  background: var(--kineclin-azul-s);
+}
+
+.btnSecondary {
+  background: #e5e7eb;
+  color: #111827;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.btnSecondary:hover {
+  background: #d1d5db;
+}
