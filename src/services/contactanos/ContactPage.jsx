@@ -20,9 +20,16 @@ export default function ContactPage() {
   const validate = () => {
     const newErrors = {};
 
-    if (!form.nombre.trim()) newErrors.nombre = "Campo requerido";
+    // Nombre: letras + al menos 2 palabras + mínimo 4 caracteres
+    if (!form.nombre.trim()) {
+      newErrors.nombre = "Campo requerido";
+    } else if (form.nombre.trim().length < 3) {
+      newErrors.nombre = "Debe tener al menos 3 caracteres";
+    } else if (!form.nombre.match(/^[a-zA-ZáéíóúÁÉÍÓÚñÑ]+(\s[a-zA-ZáéíóúÁÉÍÓÚñÑ]+)+$/)) {
+      newErrors.nombre = "Ingresa nombre y apellido válido";
+    }
 
-    if (!form.telefono.match(/^[0-9]{8,15}$/)) {
+    if (!form.telefono.match(/^[0-9]{8,11}$/)) {
       newErrors.telefono = "Teléfono inválido";
     }
 
