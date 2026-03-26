@@ -92,6 +92,7 @@ export default function OsteoPage() {
                         "Hola, quisiera agendar una evaluación con el Kinesiólogo Diego Zúñiga. ¿Me podrían indicar disponibilidad?"
                       }
                       size="nav"
+                      googleTAG={true}
                     />
                   </div>
                 </div>

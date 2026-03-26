@@ -9,6 +9,7 @@ export default function ActionButton({
   rightIcon,
   size = "nav", //nav, hero
   cname, //classname
+  googleTAG = false,
 }) {
   //Menejo momentaneo de errores en caso de ni venir los datos necesarios para el boton
   if (!label) {
@@ -30,6 +31,17 @@ export default function ActionButton({
   const wrapClass =
     `actionButton actionButton--${variant} actionButton--${size} ${cname || ""}`.trim();
 
+  //Google TAG
+  const handleClick = () => {
+    if (googleTAG && window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-17683213103/hIexCNjQnJAcEK_WgfBB",
+        value: 1.0,
+        currency: "CLP",
+      });
+    }
+  };
+
   return (
     <div className={wrapClass}>
       {title && (
@@ -38,7 +50,13 @@ export default function ActionButton({
         </div>
       )}
 
-      <a className="actionButton__btn" href={finalHref} target="_blank" rel="noreferrer">
+      <a
+        className="actionButton__btn"
+        href={finalHref}
+        target="_blank"
+        rel="noreferrer"
+        onClick={handleClick}
+      >
         <span className="actionButton__label">{label}</span>
         {rightIcon && <span className="actionButton__icon">{rightIcon}</span>}
       </a>
