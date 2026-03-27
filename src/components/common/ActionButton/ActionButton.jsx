@@ -9,7 +9,7 @@ export default function ActionButton({
   rightIcon,
   size = "nav", //nav, hero
   cname, //classname
-  googleTAG = false,
+  glAdsConversionID,
 }) {
   //Menejo momentaneo de errores en caso de ni venir los datos necesarios para el boton
   if (!label) {
@@ -33,9 +33,9 @@ export default function ActionButton({
 
   //Google TAG
   const handleClick = () => {
-    if (googleTAG && window.gtag) {
+    if (glAdsConversionID && window.gtag) {
       window.gtag("event", "conversion", {
-        send_to: "AW-17683213103/hIexCNjQnJAcEK_WgfBB",
+        send_to: glAdsConversionID,
         value: 1.0,
         currency: "CLP",
       });

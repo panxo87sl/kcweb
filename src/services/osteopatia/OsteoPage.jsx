@@ -81,6 +81,7 @@ export default function OsteoPage() {
                       href={"https://ff.healthatom.io/qn3RXi"}
                       variant="centro"
                       size="nav"
+                      glAdsConversionID={"AW-17683213103/hCO8CLDxspAcEK_WgfBB"}
                     />
                   </div>
                   <div className="osteoSpecialistBlock__agenda">
@@ -92,7 +93,7 @@ export default function OsteoPage() {
                         "Hola, quisiera agendar una evaluación con el Kinesiólogo Diego Zúñiga. ¿Me podrían indicar disponibilidad?"
                       }
                       size="nav"
-                      googleTAG={true}
+                      glAdsConversionID={"AW-17683213103/hIexCNjQnJAcEK_WgfBB"}
                     />
                   </div>
                 </div>
