@@ -224,7 +224,7 @@ export default function ServicesSection() {
       to: "/domicilios",
       title: "Cuidados Domiciliarios",
       description:
-        "Tratamientos estéticos médicos profesionales para potenciar tu bienestar y confianza.",
+        "Atención integral en el hogar con profesionales de la salud, enfocada en acompañamiento clínico, rehabilitación y bienestar del paciente.",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
