@@ -1,3 +1,4 @@
+import pkg from "../../../../package.json";
 import "./Footer.css";
 
 export default function Footer() {
@@ -323,8 +324,13 @@ export default function Footer() {
       <div className="siteFooter__divider" aria-hidden="true" />
 
       <div className="siteFooter__bottom">
-        <p className="siteFooter__legal">
+        <p className="siteFooter__legal legal">
           © 2026 Kineclin. Marca registrada. Todos los derechos reservados.
+        </p>
+      </div>
+      <div className="siteFooter__bottom">
+        <p className="siteFooter__devs">
+          Diseño: Benjamín Díaz · Desarrollo: Francisco Orellana · v{pkg.version}
         </p>
 
         {/* <a className="siteFooter__policy" href="/politica-privacidad">

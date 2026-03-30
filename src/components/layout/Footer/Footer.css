@@ -185,7 +185,12 @@
 
 .siteFooter__legal {
   margin: 0;
-  font-size: 13px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.78);
+}
+.siteFooter__devs {
+  margin-top: 10px;
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.78);
 }
 
