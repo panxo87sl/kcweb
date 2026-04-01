@@ -9,7 +9,7 @@ export default function OsteoPage() {
         <title>Osteópata en Antofagasta | KINECLIN Centro de Salud</title>
         <meta
           name="description"
-          content="Atención de osteopatía y quiropraxia en Antofagasta para aliviar dolores musculares, articulares y problemas posturales. Agenda tu evaluación en Kineclin."
+          content="Atención de osteopatía y quiropraxia en Antofagasta para aliviar dolores musculares, articulares y problemas posturales. Atención profesional y agenda online en Kineclin."
         />
       </Helmet>
       <main className="osteoPage">
