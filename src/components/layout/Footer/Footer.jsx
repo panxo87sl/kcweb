@@ -327,8 +327,6 @@ export default function Footer() {
         <p className="siteFooter__legal legal">
           © 2026 Kineclin. Marca registrada. Todos los derechos reservados.
         </p>
-      </div>
-      <div className="siteFooter__bottom">
         <p className="siteFooter__devs">
           Diseño: Benjamín Díaz · Desarrollo: Francisco Orellana · v{pkg.version}
         </p>
