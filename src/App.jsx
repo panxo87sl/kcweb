@@ -22,6 +22,7 @@ function LayoutWrapper({ children }) {
   // Definicion de paginas islas (no usan layout)
   const isLanding = location.pathname === "/faciales" || location.pathname === "/corporales";
 
+  //Si no son "landing" se muestra el layout
   return (
     <>
       {!isLanding && <Navbar />}
