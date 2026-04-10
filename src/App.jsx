@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Navbar from "./components/layout/Navbar/Navbar";
 import Footer from "./components/layout/Footer/Footer";
@@ -11,20 +11,51 @@ import Osteopatia from "./services/osteopatia/OsteoPage";
 import Estetica from "./services/estetica/EsteticaPage";
 import Contactanos from "./services/contactanos/ContactPage";
 
+// IMPORTA TU LANDING
+import FacialesPage from "./services/estetica/promos/faciales/FacialesPage";
+// futuro:
+// import CorporalesPage from "./pages/corporales/CorporalesPage";
+
+function LayoutWrapper({ children }) {
+  const location = useLocation();
+
+  // AQUÍ DEFINES QUÉ RUTAS SON "ISLA"
+  const isLanding = location.pathname === "/faciales" || location.pathname === "/corporales";
+
+  return (
+    <>
+      {/* Navbar solo si NO es landing */}
+      {!isLanding && <Navbar />}
+
+      {children}
+
+      {/* Footer solo si NO es landing */}
+      {!isLanding && <Footer />}
+    </>
+  );
+}
+
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
       <ScrollToHash />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/osteopatia" element={<Osteopatia />} />
-        <Route path="/kinesiologia" element={<Kinesionologia />} />
-        <Route path="/kcestetica" element={<Estetica />} />
-        <Route path="/contactanos" element={<Contactanos />} />
-      </Routes>
-      <Footer />
+
+      <LayoutWrapper>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/osteopatia" element={<Osteopatia />} />
+          <Route path="/kinesiologia" element={<Kinesionologia />} />
+          <Route path="/kcestetica" element={<Estetica />} />
+          <Route path="/contactanos" element={<Contactanos />} />
+
+          {/* LANDING AISLADA */}
+          <Route path="/faciales" element={<FacialesPage />} />
+
+          {/* FUTURA */}
+          {/* <Route path="/corporales" element={<CorporalesPage />} /> */}
+        </Routes>
+      </LayoutWrapper>
     </BrowserRouter>
   );
 }
