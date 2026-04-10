@@ -19,17 +19,13 @@ import FacialesPage from "./services/estetica/promos/faciales/FacialesPage";
 function LayoutWrapper({ children }) {
   const location = useLocation();
 
-  // AQUÍ DEFINES QUÉ RUTAS SON "ISLA"
+  // Definicion de paginas islas (no usan layout)
   const isLanding = location.pathname === "/faciales" || location.pathname === "/corporales";
 
   return (
     <>
-      {/* Navbar solo si NO es landing */}
       {!isLanding && <Navbar />}
-
       {children}
-
-      {/* Footer solo si NO es landing */}
       {!isLanding && <Footer />}
     </>
   );
@@ -49,11 +45,8 @@ export default function App() {
           <Route path="/kcestetica" element={<Estetica />} />
           <Route path="/contactanos" element={<Contactanos />} />
 
-          {/* LANDING AISLADA */}
+          {/* LANDING SEPARADAS */}
           <Route path="/faciales" element={<FacialesPage />} />
-
-          {/* FUTURA */}
-          {/* <Route path="/corporales" element={<CorporalesPage />} /> */}
         </Routes>
       </LayoutWrapper>
     </BrowserRouter>
