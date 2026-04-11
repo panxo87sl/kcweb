@@ -30,6 +30,7 @@
   line-height: 1.65;
   color: #334155;
   text-align: center;
+  display: none;
 }
 
 /* SECCIONES */
@@ -45,6 +46,8 @@
   width: min(var(--w-hero), 1100px);
   margin: 0 auto;
   padding: 0 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .psicoSection__inner--center {
@@ -59,22 +62,31 @@
   font-size: 40px;
   font-weight: 600;
   color: var(--kineclin-azul);
-  margin-bottom: 14px;
+  margin-bottom: 25px;
+}
+.psicoText__lead {
+  max-width: 980px;
+  margin: 15px auto 14px auto;
+  font-size: 18px;
+  line-height: 1.65;
+  color: #334155;
+  text-align: center;
 }
 
 /* GRID */
 .psicoGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
 
 /* CARD */
 .psicoCard {
   background: #fff;
-  border-radius: 18px;
-  padding: 18px;
+  border-radius: 12px;
+  padding: 10px;
   box-shadow: 0 10px 20px rgba(0, 158, 219, 0.15);
+  text-align: center;
 }
 
 /* TEXTO */
@@ -121,9 +133,19 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .psicoGrid,
-  .psicoTeam {
-    grid-template-columns: 1fr;
+  /* GRID */
+  .psicoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  .psicoCard {
+    padding: 8px;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .psicoHero__lead {
     max-width: 900px;
@@ -137,10 +159,6 @@
   .psicoSection__title {
     font-size: 30px;
     text-align: center;
-  }
-
-  .psicoCard {
-    padding: 8px 18px 8px 18px;
   }
 
   .psicoText {

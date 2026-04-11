@@ -1,0 +1,126 @@
+.psicoTeamShowcase {
+  padding: 30px 0;
+}
+
+.psicoTeamShowcase__inner {
+  width: min(1100px, 92%);
+  height: 100%;
+  margin: 0 auto;
+}
+
+.psicoTeamShowcase__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.psicoTeamShowcase__card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.centercard {
+  align-items: center;
+  justify-content: center;
+}
+/* TEXTOS */
+.psicoTeamShowcase__textAndPhoto {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.psicoShowcase__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 320px;
+  text-align: justify;
+}
+
+.psicoShowcase__text h3 {
+  margin: 3px 0 8px 0;
+  font-weight: 600;
+  text-align: center;
+  color: var(--kineclin-azul);
+}
+
+.psicoShowcase__text p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #334155;
+}
+
+/* FOTOS */
+.psicoShowcase__photo {
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+}
+
+.psicoShowcase__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* CENTRO */
+.psicoShowcase__center {
+  text-align: center;
+  max-width: 220px;
+}
+
+.psicoShowcase__center h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--kineclin-azul);
+  margin-bottom: 10px;
+}
+
+/* ROMBOIDES */
+.psicoShowcase__diamonds {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.psicoShowcase__diamonds span {
+  width: 10px;
+  height: 10px;
+  background: var(--kineclin-azul);
+  transform: rotate(45deg);
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .psicoTeamShowcase__row {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .psicoTeamShowcase__card {
+    gap: 20px;
+  }
+
+  .psicoTeamShowcase__textAndPhoto {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightSide {
+    flex-direction: column-reverse;
+  }
+  .psicoShowcase__text {
+    text-align: center;
+  }
+  .psicoShowcase__text,
+  .psicoShowcase__center {
+    max-width: 100%;
+  }
+  .psicoShowcase__center h2 {
+    font-size: 26px;
+  }
+}

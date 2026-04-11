@@ -119,6 +119,12 @@
   font-size: 14px;
   min-height: 45px;
 }
+.actionButton--agenda .actionButton__btn {
+  width: 208px;
+  padding: 14px 44px;
+  font-size: 14px;
+  min-height: 45px;
+}
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
@@ -139,5 +145,11 @@
     padding: 12px 28px;
     font-size: 13px;
     min-width: 210px;
+  }
+  .actionButton--agenda .actionButton__btn {
+    width: 208px;
+    padding: 14px 44px;
+    font-size: 14px;
+    min-height: 45px;
   }
 }
