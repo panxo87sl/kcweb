@@ -9,6 +9,7 @@ import Home from "./services/home/Home";
 import Kinesionologia from "./services/kinesiologia/KinePage";
 import Osteopatia from "./services/osteopatia/OsteoPage";
 import Estetica from "./services/estetica/EsteticaPage";
+import Psicologia from "./services/psicologia/PsicoPage";
 import Contactanos from "./services/contactanos/ContactPage";
 
 // IMPORTA TU LANDING
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="/osteopatia" element={<Osteopatia />} />
           <Route path="/kinesiologia" element={<Kinesionologia />} />
           <Route path="/kcestetica" element={<Estetica />} />
+          <Route path="/psicologia" element={<Psicologia />} />
           <Route path="/contactanos" element={<Contactanos />} />
 
           {/* LANDING SEPARADAS */}

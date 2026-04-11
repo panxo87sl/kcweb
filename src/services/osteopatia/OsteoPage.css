@@ -3,8 +3,8 @@
 }
 
 /* =========================
-   HERO
-   ========================= */
+HERO
+========================= */
 .osteoHero {
   padding: 120px 0 60px 0;
   background: var(--kineclin-bg2);
@@ -34,8 +34,8 @@
 }
 
 /* =========================
-   SECCIONES GENERALES
-   ========================= */
+SECCIONES GENERALES
+========================= */
 .osteoSection {
   padding: 56px 0;
   background: #fff;
@@ -57,11 +57,16 @@
   text-align: center;
 }
 
+.osteoSection__inner--center .osteoText {
+  max-width: 900px; /* controla ancho para lectura */
+  margin: 0 auto 12px; /* centra párrafos */
+}
+
 .osteoTitle {
   margin: 0 0 14px 0;
   font-size: clamp(22px, 2.4vw, 34px);
-  font-size: 44px;
-  font-weight: 800;
+  font-size: 40px;
+  font-weight: 600;
   color: var(--kineclin-azul);
   margin-bottom: 14px;
 }
@@ -69,15 +74,10 @@
 .osteoText {
   margin: 0 0 12px 0;
 
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: var(--font-size-l);
+  line-height: 1.5;
   color: #4b5563;
   text-align: justify;
-}
-
-.osteoSection__inner--center .osteoText {
-  max-width: 900px; /* controla ancho para lectura pro */
-  margin: 0 auto 12px; /* centra párrafos */
 }
 
 .osteoText--spaced {
@@ -251,7 +251,7 @@
   }
 
   .osteoTitle {
-    font-size: 38px;
+    font-size: 30px;
   }
 
   .osteoCard {

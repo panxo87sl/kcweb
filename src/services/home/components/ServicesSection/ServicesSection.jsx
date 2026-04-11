@@ -149,8 +149,9 @@ export default function ServicesSection() {
       ),
     },
     {
-      published: false,
+      published: true,
       title: "Psicología",
+      to: "/psicologia",
       description:
         "Atención psicológica profesional para salud mental, manejo del estrés y bienestar emocional.",
       icon: (

@@ -1,0 +1,161 @@
+.psicoPage {
+  background: var(--kineclin-bg2);
+}
+
+/* HERO */
+.psicoHero {
+  padding: 140px 0 40px 0;
+}
+
+.psicoHero__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.psicoHero__title {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--kineclin-azul);
+  font-size: clamp(42px, 4.5vw, 56px);
+}
+
+.psicoHero__lead {
+  max-width: 980px;
+  margin: 15px auto 14px auto;
+  font-size: 18px;
+  line-height: 1.65;
+  color: #334155;
+  text-align: center;
+}
+
+/* SECCIONES */
+.psicoSection {
+  padding: 34px 0;
+}
+
+.psicoSection--alt {
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.psicoSection__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.psicoSection__inner--center {
+  text-align: center;
+  max-width: 900px; /* controla ancho para lectura */
+  margin: 0 auto 12px; /* centra párrafos */
+}
+
+.psicoSection__title {
+  margin: 0 0 14px 0;
+  font-size: clamp(22px, 2.4vw, 34px);
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--kineclin-azul);
+  margin-bottom: 14px;
+}
+
+/* GRID */
+.psicoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* CARD */
+.psicoCard {
+  background: #fff;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 20px rgba(0, 158, 219, 0.15);
+}
+
+/* TEXTO */
+.psicoText {
+  margin: 0 0 12px 0;
+
+  font-size: var(--font-size-l);
+  line-height: 1.5;
+  color: #4b5563;
+  text-align: justify;
+}
+
+/* TEAM */
+.psicoTeam {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.psicoPerson {
+  background: #fff;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 24px rgba(2, 132, 199, 0.1);
+}
+
+.psicoPerson__name {
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.psicoPerson__role {
+  margin-bottom: 10px;
+}
+
+.psicoAgenda__buttons {
+  height: auto;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .psicoGrid,
+  .psicoTeam {
+    grid-template-columns: 1fr;
+  }
+  .psicoHero__lead {
+    max-width: 900px;
+    margin: 20px auto 14px auto;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #334155;
+    text-align: center;
+  }
+
+  .psicoSection__title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .psicoCard {
+    padding: 8px 18px 8px 18px;
+  }
+
+  .psicoText {
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+    text-align: justify;
+  }
+  .psicoPerson__name {
+    text-align: center;
+  }
+  .psicoPerson__role {
+    text-align: justify;
+  }
+  .psicoAgenda__buttons {
+    gap: 5px;
+    flex-direction: column;
+  }
+}
