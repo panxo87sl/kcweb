@@ -66,7 +66,7 @@ export default function PsicoPage() {
           leftWsp={true}
           leftWspLink={"https://wa.me/56950833838"}
           leftWspMsg={
-            "Hola, quisiera agendar una cita con psicóloga Pualina Garcia. ¿Me podrían indicar disponibilidad?"
+            "Hola, quisiera agendar una cita con psicóloga Paulina Garcia. ¿Me podrían indicar disponibilidad?"
           }
           leftWspGTag="AW-17683213103/K8QLCM-4vJocEK_WgfBB"
           leftAgenda={true}
