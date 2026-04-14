@@ -70,7 +70,7 @@ export default function PsicoPage() {
           }
           leftWspGTag="AW-17683213103/K8QLCM-4vJocEK_WgfBB"
           leftAgenda={true}
-          leftAgendaLink="https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=10&id_sucursal=1&id_motivo_especialidad=17"
+          leftAgendaLink="https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=10&id_motivo_especialidad=17"
           leftAgendaGTag="AW-17683213103/yzWkCJ6bwJocEK_WgfBB"
           rightImage="/psicologia/psicFernanda.jpg"
           rightName="Psic. Fernanda Riveros"
@@ -84,7 +84,7 @@ export default function PsicoPage() {
           }
           rightWspGTag="AW-17683213103/6y8eCPbSp5ocEK_WgfBB"
           rightAgenda={true}
-          rightAgendaLink="https://ff.healthatom.io/5168MX"
+          rightAgendaLink="https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=36&id_motivo_especialidad=17"
           rightAgendaGTag="AW-17683213103/XXxMCNDEu5ocEK_WgfBB"
         />
       </section>
