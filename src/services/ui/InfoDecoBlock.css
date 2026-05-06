@@ -1,0 +1,131 @@
+.infoDecoBlock {
+  --infoDeco-color: var(--kineclin-azul);
+  --infoDeco-shadow: rgba(0, 158, 219, 0.14);
+
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 54px;
+  align-items: center;
+  padding: 34px 0;
+}
+
+/* perfiles de color */
+.infoDecoBlock--Centro {
+  --infoDeco-color: var(--kineclin-azul);
+  --infoDeco-shadow: rgba(0, 158, 219, 0.14);
+}
+
+.infoDecoBlock--Estetica {
+  --infoDeco-color: var(--kineclin-rose-s);
+  --infoDeco-shadow: rgba(218, 142, 129, 0.16);
+}
+
+.infoDecoBlock--KCPLUS {
+  --infoDeco-color: var(--kineclin-gold);
+  --infoDeco-shadow: rgba(216, 144, 0, 0.16);
+}
+
+/* reverse */
+.infoDecoBlock--reverse .infoDecoBlock__mediaWrap {
+  order: 2;
+}
+
+.infoDecoBlock--reverse .infoDecoBlock__content {
+  order: 1;
+}
+
+/* imagen + oreja decorativa */
+.infoDecoBlock__mediaWrap {
+  position: relative;
+  z-index: 2;
+}
+
+.infoDecoBlock__media {
+  position: relative;
+  z-index: 2;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #e9f5fb;
+  box-shadow: 0 12px 28px var(--infoDeco-shadow);
+}
+
+.infoDecoBlock__media img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+/* medio anillo */
+.infoDecoBlock__deco {
+  position: absolute;
+  top: 50%;
+  right: -26px;
+  width: 86px;
+  height: 150px;
+  transform: translateY(-50%);
+  border: 8px solid var(--infoDeco-color);
+  border-left: 0;
+  border-radius: 0 999px 999px 0;
+  opacity: 0.28;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* cuando la foto va a la derecha, la oreja aparece hacia la izquierda */
+.infoDecoBlock--reverse .infoDecoBlock__deco {
+  left: -26px;
+  right: auto;
+  border-left: 8px solid var(--infoDeco-color);
+  border-right: 0;
+  border-radius: 999px 0 0 999px;
+}
+
+/* contenido */
+.infoDecoBlock__content {
+  position: relative;
+  z-index: 2;
+}
+
+.infoDecoBlock__content h3 {
+  margin: 0 0 12px 0;
+  color: var(--infoDeco-color);
+  font-size: clamp(24px, 2.8vw, 36px);
+  font-weight: 800;
+}
+
+.infoDecoBlock__content p {
+  margin: 0;
+  color: #4b5563;
+  font-size: var(--font-size-l);
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .infoDecoBlock,
+  .infoDecoBlock--reverse {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 28px 0;
+  }
+
+  .infoDecoBlock--reverse .infoDecoBlock__mediaWrap,
+  .infoDecoBlock--reverse .infoDecoBlock__content {
+    order: initial;
+  }
+
+  .infoDecoBlock__content h3 {
+    text-align: center;
+  }
+
+  .infoDecoBlock__content p {
+    text-align: justify;
+  }
+
+  .infoDecoBlock__deco {
+    display: none;
+  }
+}
