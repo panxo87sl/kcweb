@@ -32,7 +32,7 @@ export default function EnfermeriaPage() {
           description="Enfermera con experiencia en atención clínica y procedimientos de enfermería. Cuenta con especialización de postítulo en manejo avanzado de heridas, ostomías y cuidados clínicos especializados por el Instituto Nacional de Heridas, además de formación complementaria en Medicina Estética Inyectable e Injector Expert® por Aesthetic Process Chile. Su experiencia incluye curaciones avanzadas, manejo de procedimientos invasivos y acompañamiento integral del paciente, combinando criterio profesional, cercanía y un enfoque centrado en la seguridad y bienestar de cada persona."
           wsp={true}
           wspLink="https://wa.me/56950833838"
-          wspMsg="Hola, quisiera consultar por el servicio de enfermería en KINECLIN."
+          wspMsg="Hola, quisiera consultar por el servicio de enfermería."
           agenda={true}
           agendaLink="https://ff.healthatom.io/3uAJx7"
         />
