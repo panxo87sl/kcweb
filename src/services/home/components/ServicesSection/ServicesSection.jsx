@@ -173,8 +173,9 @@ export default function ServicesSection() {
       ),
     },
     {
-      published: false,
+      published: true,
       title: "Enfermería",
+      to: "/enfermeria",
       description:
         "Cuidados de enfermería especializados, procedimientos médicos y seguimiento de tratamientos.",
       icon: (

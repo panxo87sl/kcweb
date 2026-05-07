@@ -53,6 +53,7 @@
   color: #4b5563;
   font-size: var(--font-size-l);
   line-height: 1.55;
+  text-align: justify;
 }
 
 .singleProfessional__buttons {
@@ -60,6 +61,7 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
