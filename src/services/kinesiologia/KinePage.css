@@ -1,130 +1,186 @@
 .kinePage {
+  width: 100%;
+  background: #fff;
+}
+
+/* =========================
+HERO
+========================= */
+.kineHero {
+  padding: 120px 0 48px 0;
   background: var(--kineclin-bg2);
 }
 
-.kineHero {
-  padding: 140px 0 40px 0; /* deja aire bajo el navbar flotante */
-}
-
-.kineHero__inner,
-.kineSection__inner {
-  width: min(1100px, 92%);
+.kineHero__inner {
+  width: min(var(--w-hero), 1100px);
   margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
 }
 
 .kineHero__title {
-  font-size: clamp(34px, 4.2vw, 54px);
+  margin: 0;
+  font-family: var(--font-primary);
   font-weight: 800;
+  letter-spacing: -0.02em;
   color: var(--kineclin-azul);
-  text-align: center;
-  margin: 0 0 18px 0;
+  font-size: clamp(42px, 4.5vw, 56px);
 }
 
 .kineHero__lead {
-  max-width: 980px;
-  margin: 0 auto 14px auto;
-  font-size: 18px;
-  line-height: 1.65;
+  max-width: 860px;
+  margin: 14px auto 0 auto;
   color: #334155;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+/* =========================
+SECCIONES
+========================= */
+.kineSection {
+  padding: 56px 0;
+  background: #fff;
+}
+
+.kineSection--soft {
+  background: var(--kineclin-bg2);
+}
+
+.kineSection__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.kineSection__inner--center {
+  max-width: 900px;
   text-align: center;
 }
 
-.kineSection {
-  padding: 34px 0;
-}
-
-.kineSection--alt {
-  background: rgba(255, 255, 255, 0.65);
-}
-
 .kineSection__title {
-  font-size: 22px;
-  font-weight: 800;
-  color: #0f172a;
-  margin: 0 0 18px 0;
+  margin: 0 0 20px 0;
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 600;
+  color: var(--kineclin-azul);
+  text-align: center;
 }
 
-.kineGrid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.kineCard {
-  background: #fff;
-  border-radius: 18px;
-  padding: 18px 18px;
-  box-shadow: 0 10px 24px rgba(2, 132, 199, 0.1);
-  border: 1px solid rgba(15, 23, 42, 0.06);
-}
-
-.kineCard__title {
-  margin: 0 0 8px 0;
-  font-size: 16px;
-  font-weight: 800;
-  color: #0f172a;
-}
-
-.kineCard__text {
-  margin: 0;
-  color: #334155;
-  line-height: 1.6;
-}
-
-.kineList {
-  margin: 10px 0 0 18px;
-  color: #334155;
-  line-height: 1.65;
-}
-
+/* =========================
+TEXTOS
+========================= */
 .kineText {
   margin: 0 0 12px 0;
+  font-size: var(--font-size-l);
+  line-height: 1.6;
+  color: #4b5563;
+  text-align: justify;
+}
+
+.kineText--lead {
+  max-width: 900px;
+  margin: 0 auto 24px auto;
+  text-align: center;
   color: #334155;
-  line-height: 1.7;
   font-size: 16px;
 }
 
-.kineChecks p {
+/* =========================
+SERVICIOS RELACIONADOS
+========================= */
+.kineRelatedGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.kineRelatedCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(0, 158, 219, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kineRelatedCard__title {
   margin: 0 0 10px 0;
-  color: #334155;
+  font-family: var(--font-secondary);
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--kineclin-azul);
+  text-align: center;
+}
+
+.kineRelatedCard__text {
+  margin: 0;
+  color: #4b5563;
+  font-size: var(--font-size-l);
+  line-height: 1.55;
+  text-align: justify;
+}
+
+.kineRelatedCard__button {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================
+CIERRE
+========================= */
+.kineClosingText {
+  margin: 0;
+  color: #4b5563;
+  font-size: 17px;
   line-height: 1.65;
 }
 
-.kineTeam {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.kinePerson {
-  background: #fff;
-  border-radius: 18px;
-  padding: 18px;
-  box-shadow: 0 10px 24px rgba(2, 132, 199, 0.1);
-  border: 1px solid rgba(15, 23, 42, 0.06);
-}
-
-.kinePerson__name {
-  margin: 0 0 8px 0;
-  font-size: 16px;
-  font-weight: 900;
-  color: #0f172a;
-}
-
-.kinePerson__role {
-  margin: 0;
-  color: #334155;
-  line-height: 1.6;
-}
-
+/* =========================
+RESPONSIVE
+========================= */
 @media (max-width: 900px) {
-  .kineGrid {
+  .kineRelatedGrid {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
-  .kineTeam {
-    grid-template-columns: 1fr;
+
+  .kineRelatedCard {
+    padding: 18px;
   }
+}
+
+@media (max-width: 768px) {
   .kineHero {
-    padding-top: 120px;
+    padding: 92px 0 40px 0;
+  }
+
+  .kineHero__lead {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .kineSection {
+    padding: 44px 0;
+  }
+
+  .kineSection__title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+
+  .kineText,
+  .kineText--lead,
+  .kineClosingText {
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .kineRelatedCard__title {
+    font-size: 18px;
   }
 }
