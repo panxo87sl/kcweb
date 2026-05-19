@@ -1,7 +1,8 @@
 import "./KinePage.css";
 import { Helmet } from "react-helmet-async";
-import InfoDecoBlock from "../ui/InfoDecoBlock";
 import ActionButton from "../../components/common/ActionButton/ActionButton";
+import InfoDecoBlock from "../ui/InfoDecoBlock";
+import KineTeamShowcase from "../ui/KineTeamShowcase";
 
 export default function KinePage() {
   return (
@@ -84,11 +85,85 @@ export default function KinePage() {
           </div>
         </section>
 
-        {/* 
-          Aquí irá el futuro componente de equipo kinésico.
-          Ejemplo futuro:
-          <KineTeamGrid professionals={...} />
-        */}
+        <KineTeamShowcase
+          members={[
+            {
+              image: "/kinesiologia/equipo/kineDiego.png",
+              name: "Diego Zúñiga",
+              specialtyLine1: "Musculoesquelético",
+              specialtyLine2: "Osteopatía · Respiratorio",
+              colorProfile: "Centro",
+              decoCorner: "topRight",
+              wsp: true,
+              wspLink: "https://wa.me/56950833838",
+              agenda: true,
+              agendaLink: "#",
+              more: true,
+              moreLink: "/osteopatia",
+            },
+            {
+              image: "/kinesiologia/equipo/kineCarolina.png",
+              name: "Carolina Llave",
+              specialtyLine1: "Dermato funcional",
+              specialtyLine2: "Estética corporal",
+              colorProfile: "Estetica",
+              decoCorner: "bottomLeft",
+              wsp: true,
+              wspLink: "https://wa.me/56950833838",
+              agenda: true,
+              agendaLink: "#",
+              more: true,
+              moreLink: "/kcestetica",
+            },
+            {
+              image: "/kinesiologia/equipo/kineCatalina.png",
+              name: "Catalina",
+              specialtyLine1: "Musculoesquelético",
+              specialtyLine2: "Respiratorio",
+              colorProfile: "Centro",
+              decoCorner: "bottomRight",
+              wsp: true,
+              wspLink: "https://wa.me/56950833838",
+              agenda: true,
+              agendaLink: "#",
+            },
+            {
+              image: "/kinesiologia/equipo/kineNicole.png",
+              name: "Nicole Silva",
+              specialtyLine1: "Neurorehabilitación",
+              specialtyLine2: "Respiratorio",
+              colorProfile: "Centro",
+              decoCorner: "topLeft",
+              wsp: true,
+              wspLink: "https://wa.me/56950833838",
+              agenda: true,
+              agendaLink: "#",
+            },
+            {
+              image: "/kinesiologia/equipo/kineJaviera.png",
+              name: "Javiera",
+              specialtyLine1: "Neuro · Trauma",
+              specialtyLine2: "Respiratorio",
+              colorProfile: "Centro",
+              decoCorner: "none",
+              wsp: true,
+              wspLink: "https://wa.me/56950833838",
+              agenda: true,
+              agendaLink: "#",
+            },
+            {
+              image: "/kinesiologia/equipo/kineAlejandra.png",
+              name: "Alejandra",
+              specialtyLine1: "Domiciliaria",
+              specialtyLine2: "Neuro · Musculoesquelética",
+              colorProfile: "centro",
+              decoCorner: "topLeft",
+              wsp: true,
+              wspLink: "https://wa.me/56950833838",
+              agenda: false,
+            },
+          ]}
+        />
 
         <section className="kineSection">
           <div className="kineSection__inner">
@@ -122,7 +197,7 @@ export default function KinePage() {
                 </p>
 
                 <div className="kineRelatedCard__button">
-                  {/* <ActionButton label="Ver servicio" href="/#" variant="estetica" /> */}
+                  <ActionButton label="Ver servicio" href="/#" variant="estetica" />
                 </div>
               </article>
 
