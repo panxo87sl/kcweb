@@ -2,24 +2,83 @@ import "./KineTeamShowcase.css";
 
 function WhatsAppIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M20.5 11.8a8.4 8.4 0 0 1-12.4 7.4L4 20.4l1.3-4a8.4 8.4 0 1 1 15.2-4.6Zm-8.4-6.5a6.5 6.5 0 0 0-5.5 9.9l.2.4-.7 2.1 2.2-.7.4.2a6.5 6.5 0 1 0 3.4-12Zm3.8 9.4c-.2.6-1.2 1.1-1.7 1.2-.5.1-1.1.1-1.8-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.7-4.4-3.9-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.2c.2-.2.5-.3.8-.3h.6c.2 0 .4 0 .6.5.2.5.7 1.7.8 1.8.1.2.1.3 0 .5-.1.2-.2.3-.3.5l-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.1 1.4 1.8 1 .9 1.8 1.2 2.1 1.3.3.2.5.1.6-.1.2-.2.7-.8.8-1 .2-.3.4-.2.6-.1.2.1 1.5.7 1.7.8.2.1.4.2.5.3 0 .1 0 .7-.2 1.3Z" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"
+      viewBox="0 0 24 24"
+    >
+      <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+      <path d="m3 21 1.65-3.8a9 9 0 1 1 3.4 2.9z" />
+      <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
     </svg>
   );
 }
 
 function CalendarIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1.2A2.8 2.8 0 0 1 22 6.8v11.4a2.8 2.8 0 0 1-2.8 2.8H4.8A2.8 2.8 0 0 1 2 18.2V6.8A2.8 2.8 0 0 1 4.8 4H6V3a1 1 0 0 1 1-1Zm13 8H4v8.2c0 .4.4.8.8.8h14.4c.4 0 .8-.4.8-.8V10ZM4.8 6a.8.8 0 0 0-.8.8V8h16V6.8a.8.8 0 0 0-.8-.8H18v1a1 1 0 1 1-2 0V6H8v1a1 1 0 1 1-2 0V6H4.8Zm2.7 6h2v2h-2v-2Zm3.5 0h2v2h-2v-2Zm3.5 0h2v2h-2v-2Zm-7 3.5h2v2h-2v-2Zm3.5 0h2v2h-2v-2Z" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-event"
+      viewBox="0 0 24 24"
+    >
+      <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+      <path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm12-4v4M8 3v4m-4 4h16" />
+      <path d="M8 15h2v2H8z" />
     </svg>
   );
 }
 
 function MoreIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M13 5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0V7.4l-7.3 7.3a1 1 0 0 1-1.4-1.4L16.6 6H14a1 1 0 0 1-1-1ZM5.8 6A1.8 1.8 0 0 0 4 7.8v10.4A1.8 1.8 0 0 0 5.8 20h10.4a1.8 1.8 0 0 0 1.8-1.8V14a1 1 0 1 1 2 0v4.2a3.8 3.8 0 0 1-3.8 3.8H5.8A3.8 3.8 0 0 1 2 18.2V7.8A3.8 3.8 0 0 1 5.8 4H10a1 1 0 1 1 0 2H5.8Z" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.75"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-circle-plus"
+      viewBox="0 0 24 24"
+    >
+      <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+      <path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0m6 0h6m-3-3v6" />
+    </svg>
+  );
+}
+
+function infoIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.75"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-info-circle"
+      viewBox="0 0 24 24"
+    >
+      <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+      <path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0m9-3h.01" />
+      <path d="M11 12h1v4h1" />
     </svg>
   );
 }
