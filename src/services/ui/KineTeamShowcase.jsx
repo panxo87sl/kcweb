@@ -52,35 +52,21 @@ function MoreIcon() {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="1.75"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-circle-plus"
+      stroke-width="2"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-plus"
       viewBox="0 0 24 24"
     >
       <path fill="none" stroke="none" d="M0 0h24v24H0z" />
-      <path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0m6 0h6m-3-3v6" />
+      <path d="M12 5v14m-7-7h14" />
     </svg>
   );
 }
 
-function infoIcon() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      fill="none"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="1.75"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-info-circle"
-      viewBox="0 0 24 24"
-    >
-      <path fill="none" stroke="none" d="M0 0h24v24H0z" />
-      <path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0m9-3h.01" />
-      <path d="M11 12h1v4h1" />
-    </svg>
-  );
+function buildWhatsAppLink(wspLink, wspMsg) {
+  if (!wspMsg) return wspLink;
+
+  const separator = wspLink.includes("?") ? "&" : "?";
+  return `${wspLink}${separator}text=${encodeURIComponent(wspMsg)}`; //convierte el mensaje de wsp para no tener que poner el %20
 }
 
 function StarDeco() {
@@ -91,7 +77,7 @@ function StarDeco() {
   );
 }
 
-function KineTeamMemberCard({ member }) {
+function KineTeamMemberCard({ member, showDecoStars, showPhotoBorder }) {
   const {
     image,
     name,
@@ -101,17 +87,21 @@ function KineTeamMemberCard({ member }) {
     decoCorner = "none", // none | topLeft | topRight | bottomLeft | bottomRight
     wsp = false,
     wspLink = "#",
+    wspMsg = "",
     agenda = false,
     agendaLink = "#",
     more = false,
+    moreTitle = "Ver más",
     moreLink = "#",
   } = member;
 
   return (
     <article
-      className={`kineTeamShowcase__card kineTeamShowcase__card--${colorProfile} kineTeamShowcase__card--deco-${decoCorner}`}
+      className={`kineTeamShowcase__card kineTeamShowcase__card--${colorProfile} kineTeamShowcase__card--deco-${decoCorner} ${
+        showPhotoBorder ? "kineTeamShowcase__card--photoBorder" : ""
+      }`}
     >
-      {decoCorner !== "none" && <StarDeco />}
+      {showDecoStars && decoCorner !== "none" && <StarDeco />}
 
       <div className="kineTeamShowcase__photoWrap">
         <img className="kineTeamShowcase__photo" src={image} alt={name} />
@@ -130,7 +120,7 @@ function KineTeamMemberCard({ member }) {
             {wsp && (
               <a
                 className="kineTeamShowcase__iconButton kineTeamShowcase__iconButton--whatsapp"
-                href={wspLink}
+                href={buildWhatsAppLink(wspLink, wspMsg)}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Contactar a ${name} por WhatsApp`}
@@ -158,7 +148,7 @@ function KineTeamMemberCard({ member }) {
                 className="kineTeamShowcase__iconButton kineTeamShowcase__iconButton--more"
                 href={moreLink}
                 aria-label={`Ver más sobre ${name}`}
-                title="Ver más"
+                title={moreTitle}
               >
                 <MoreIcon />
               </a>
@@ -170,7 +160,12 @@ function KineTeamMemberCard({ member }) {
   );
 }
 
-export default function KineTeamShowcase({ title = "Conoce a nuestro equipo", members = [] }) {
+export default function KineTeamShowcase({
+  title = "Conoce a nuestro equipo",
+  members = [],
+  showDecoStars = true,
+  showPhotoBorder = false,
+}) {
   return (
     <section className="kineTeamShowcase">
       <div className="kineTeamShowcase__inner">
@@ -182,7 +177,12 @@ export default function KineTeamShowcase({ title = "Conoce a nuestro equipo", me
 
         <div className="kineTeamShowcase__grid">
           {members.map((member) => (
-            <KineTeamMemberCard key={member.name} member={member} />
+            <KineTeamMemberCard
+              key={member.name}
+              member={member}
+              showDecoStars={showDecoStars}
+              showPhotoBorder={showPhotoBorder}
+            />
           ))}
         </div>
       </div>

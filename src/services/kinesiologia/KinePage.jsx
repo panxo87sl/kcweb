@@ -11,7 +11,7 @@ export default function KinePage() {
         <title>Kinesiología en Antofagasta | KINECLIN Centro de Salud</title>
         <meta
           name="description"
-          content="Servicio de kinesiología en Antofagasta: rehabilitación musculoesquelética, kinesiología neurológica, respiratoria, fortalecimiento terapéutico y recuperación funcional en KINECLIN."
+          content="Servicio de kinesiología en Antofagasta: rehabilitación musculoesquelética, kinesiología neurológica, respiratoria, geriátrica, fortalecimiento terapéutico y recuperación funcional en KINECLIN."
         />
       </Helmet>
 
@@ -31,17 +31,20 @@ export default function KinePage() {
             <h2 className="kineSection__title">Nuestro enfoque</h2>
 
             <p className="kineText">
-              En KINECLIN entendemos la kinesiología como un proceso de recuperación integral,
-              orientado a mejorar la movilidad, disminuir el dolor, fortalecer el cuerpo y
-              recuperar la funcionalidad en la vida diaria. Nuestro equipo trabaja desde una
-              mirada personalizada, combinando evaluación clínica, ejercicio terapéutico,
+              En KINECLIN entendemos la kinesiología como un proceso de{" "}
+              <strong>recuperación integral</strong>, orientado a mejorar la{" "}
+              <strong>movilidad</strong>, disminuir el <strong>dolor</strong>, fortalecer el
+              cuerpo y recuperar la <strong>funcionalidad en la vida diaria</strong>. Nuestro
+              equipo trabaja desde una <strong>mirada personalizada</strong>, combinando{" "}
+              <strong>evaluación clínica</strong>, <strong>ejercicio terapéutico</strong>,
               técnicas específicas y educación al paciente para acompañar cada etapa de la
-              rehabilitación con seguridad, cercanía y criterio profesional.
+              rehabilitación con <strong>seguridad, cercanía y criterio profesional</strong>.
             </p>
           </div>
         </section>
 
         <section className="kineSection kineSection--soft">
+          <h2 className="kineSection__title">Servicios Kinesiológicos</h2>
           <div className="kineSection__inner">
             <InfoDecoBlock
               title="Rehabilitación musculoesquelética y traumatológica"
@@ -82,10 +85,22 @@ export default function KinePage() {
               colorProfile="Centro"
               text="Contamos con un espacio de gimnasio terapéutico para complementar la rehabilitación mediante ejercicio progresivo, fortalecimiento, control motor, entrenamiento funcional y retorno seguro a la actividad física. Este trabajo permite mejorar la capacidad física, prevenir recaídas y consolidar los avances logrados durante el tratamiento."
             />
+            <InfoDecoBlock
+              title="Kinesiología geriátrica"
+              image="/kinesiologia/kineGeriatria.jpg"
+              imageAlt="Kinesiología geriátrica"
+              reverse={false}
+              showDeco={true}
+              colorProfile="Centro"
+              text="Acompañamos a personas mayores en procesos orientados a mantener o recuperar movilidad, fuerza, equilibrio, seguridad en la marcha e independencia funcional. Esta área busca prevenir caídas, favorecer la autonomía y apoyar la calidad de vida mediante ejercicio terapéutico, educación y un abordaje adaptado a las necesidades de cada paciente."
+            />
           </div>
         </section>
 
         <KineTeamShowcase
+          title="Conoce a nuestro equipo"
+          showDecoStars={false}
+          showPhotoBorder={true}
           members={[
             {
               image: "/kinesiologia/equipo/kineDiego.png",
@@ -96,9 +111,12 @@ export default function KinePage() {
               decoCorner: "topRight",
               wsp: true,
               wspLink: "https://wa.me/56950833838",
+              wspMsg: "Hola! me gustaría agendar una cita para kinesiología con Diego Zúñiga",
               agenda: true,
-              agendaLink: "#",
+              agendaLink:
+                "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=1",
               more: true,
+              moreTitle: "Ver sobre Servicio de Osteopatía",
               moreLink: "/osteopatia",
             },
             {
@@ -106,26 +124,32 @@ export default function KinePage() {
               name: "Carolina Llave",
               specialtyLine1: "Dermato funcional",
               specialtyLine2: "Estética corporal",
-              colorProfile: "Centro",
+              colorProfile: "Estetica",
               decoCorner: "topRight",
               wsp: true,
               wspLink: "https://wa.me/56950833838",
-              agenda: true,
+              wspMsg:
+                "Hola! me gustaría agendar una cita para una evaluación estética con Carolina Llave",
+              agenda: false,
               agendaLink: "#",
               more: true,
-              moreLink: "/kcestetica",
+              moreTitle: "Conoce Kineclin Clinica Estética",
+              moreLink: "https://www.instagram.com/kineclin_estetica/",
             },
             {
               image: "/kinesiologia/equipo/kineCatalina.png",
-              name: "Catalina",
+              name: "Catalina Reyes",
               specialtyLine1: "Musculoesquelético",
               specialtyLine2: "Respiratorio",
               colorProfile: "Centro",
               decoCorner: "topRight",
               wsp: true,
               wspLink: "https://wa.me/56950833838",
+              wspMsg:
+                "Hola! me gustaría agendar una cita para kinesiología con Catalina Reyes",
               agenda: true,
-              agendaLink: "#",
+              agendaLink:
+                "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=30",
             },
             {
               image: "/kinesiologia/equipo/kineNicole.png",
@@ -136,36 +160,41 @@ export default function KinePage() {
               decoCorner: "topRight",
               wsp: true,
               wspLink: "https://wa.me/56950833838",
+              wspMsg: "Hola! me gustaría agendar una cita para kinesiología con Nicole Silva",
               agenda: true,
-              agendaLink: "#",
+              agendaLink:
+                "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=29",
             },
             {
               image: "/kinesiologia/equipo/kineJaviera.png",
-              name: "Javiera",
-              specialtyLine1: "Neuro · Trauma",
-              specialtyLine2: "Respiratorio",
+              name: "Javiera Peña",
+              specialtyLine1: "Musculoesquelético",
+              specialtyLine2: "Neurorehabilitación",
               colorProfile: "Centro",
               decoCorner: "topRight",
               wsp: true,
               wspLink: "https://wa.me/56950833838",
-              agenda: true,
+              wspMsg: "Hola! me gustaría agendar una cita para kinesiología con Javiera Peña",
+              agenda: false,
               agendaLink: "#",
             },
             {
               image: "/kinesiologia/equipo/kineAlejandra.png",
-              name: "Alejandra",
+              name: "Alejandra Piñones",
               specialtyLine1: "Domiciliaria",
-              specialtyLine2: "Neuro · Musculoesquelética",
+              specialtyLine2: "Neuro · Musculoesquelético",
               colorProfile: "Centro",
               decoCorner: "topRight",
               wsp: true,
               wspLink: "https://wa.me/56950833838",
+              wspMsg:
+                "Hola! me gustaría consultar por el servivicio de cuidado domiciliario de Alejandra Piñones",
               agenda: false,
             },
           ]}
         />
 
-        <section className="kineSection">
+        <section className="kineSection kineSection--soft">
           <div className="kineSection__inner">
             <h2 className="kineSection__title">Servicios especializados relacionados</h2>
 
@@ -197,7 +226,11 @@ export default function KinePage() {
                 </p>
 
                 <div className="kineRelatedCard__button">
-                  <ActionButton label="Ver servicio" href="/#" variant="estetica" />
+                  <ActionButton
+                    label="Ver servicio"
+                    href="https://www.instagram.com/kineclin_estetica/"
+                    variant="estetica"
+                  />
                 </div>
               </article>
 
@@ -214,7 +247,7 @@ export default function KinePage() {
                     label="Consultar"
                     href="https://wa.me/56950833838"
                     variant="whatsapp"
-                    wspmsg="Hola, quisiera consultar por atención kinésica domiciliaria."
+                    wspmsg="Hola! Quisiera consultar por atención kinésica domiciliaria."
                   />
                 </div>
               </article>
@@ -222,7 +255,7 @@ export default function KinePage() {
           </div>
         </section>
 
-        <section className="kineSection kineSection--soft">
+        <section className="kineSection">
           <div className="kineSection__inner kineSection__inner--center">
             <p className="kineClosingText">
               En KINECLIN buscamos que cada proceso de rehabilitación sea claro, seguro y

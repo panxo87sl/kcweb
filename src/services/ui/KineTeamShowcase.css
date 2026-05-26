@@ -46,7 +46,7 @@
 
 .kineTeamShowcase__grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 220px));
+  grid-template-columns: repeat(3, minmax(0, 250px));
   justify-content: center;
   gap: 26px 22px;
 }
@@ -66,17 +66,26 @@
 
 .kineTeamShowcase__card--Centro {
   --kineTeam-color: var(--kineclin-azul);
+  --kineTeam-border: rgba(0, 158, 219, 0.35);
   --kineTeam-soft: rgba(0, 158, 219, 0.14);
 }
 
 .kineTeamShowcase__card--Estetica {
-  --kineTeam-color: var(--kineclin-rose-s);
+  --kineTeam-color: var(--kineclin-rose);
+  --kineTeam-border: rgba(218, 142, 129, 0.35);
   --kineTeam-soft: rgba(218, 142, 129, 0.16);
 }
 
 .kineTeamShowcase__card--KCPLUS {
   --kineTeam-color: var(--kineclin-gold);
+  --kineTeam-border: rgba(216, 144, 0, 0.35);
   --kineTeam-soft: rgba(216, 144, 0, 0.16);
+}
+
+.kineTeamShowcase__card--Gris {
+  --kineTeam-color: var(--kineclin-grey);
+  --kineTeam-border: rgba(112, 116, 117, 0.35);
+  --kineTeam-soft: rgba(112, 116, 117, 0.16);
 }
 
 /* =========================
@@ -91,6 +100,9 @@
   overflow: hidden;
   background: #e9f5fb;
   box-shadow: 0 12px 26px var(--kineTeam-soft);
+}
+.kineTeamShowcase__card--photoBorder .kineTeamShowcase__photoWrap {
+  border: 3px solid var(--kineTeam-border);
 }
 
 .kineTeamShowcase__photo {
@@ -204,6 +216,7 @@
   height: 18px;
   fill: none;
   stroke: currentColor;
+  stroke-width: 1.8;
 }
 
 .kineTeamShowcase__iconButton:hover {
@@ -213,15 +226,15 @@
 }
 
 .kineTeamShowcase__iconButton--whatsapp {
-  background: #25d366;
+  background: #67be87;
 }
 
 .kineTeamShowcase__iconButton--agenda {
-  background: var(--kineclin-azul);
+  background: var(--kineTeam-color);
 }
 
 .kineTeamShowcase__iconButton--more {
-  background: var(--kineTeam-color);
+  background: var(--kineclin-grey);
 }
 
 /* =========================
@@ -243,7 +256,7 @@
     height: 12px;
   }
 
-  .kineTeamShowcase__heading h2 {
+  .kineTeamShowcase__title {
     font-size: 30px;
   }
 
