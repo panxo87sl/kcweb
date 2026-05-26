@@ -52,8 +52,9 @@ export default function ServicesSection() {
       ),
     },
     {
-      published: false,
+      published: true,
       title: "Kinesiología",
+      to: "/kinesiologia",
       description:
         "Evaluación y tratamiento kinesiológico para la recuperación funcional y mejora de la movilidad.",
       icon: (
