@@ -1,0 +1,134 @@
+.gimnasioPage {
+  width: 100%;
+  background: #fff;
+}
+
+/* =========================
+HERO
+========================= */
+.gimnasioHero {
+  padding: 120px 0 48px 0;
+  background: var(--kineclin-bg2);
+}
+
+.gimnasioHero__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.gimnasioHero__title {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--kineclin-azul);
+  font-size: clamp(42px, 4.5vw, 56px);
+}
+
+.gimnasioHero__lead {
+  max-width: 860px;
+  margin: 14px auto 0 auto;
+  color: #334155;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+/* =========================
+SECCIONES
+========================= */
+.gimnasioSection {
+  padding: 56px 0;
+  background: #fff;
+}
+
+.gimnasioSection--soft {
+  background: var(--kineclin-bg2);
+}
+
+.gimnasioSection__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.gimnasioSection__inner--center {
+  max-width: 900px;
+  text-align: center;
+}
+
+.gimnasioSection__title {
+  margin: 0 0 20px 0;
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 600;
+  color: var(--kineclin-azul);
+  text-align: center;
+}
+
+/* =========================
+TEXTOS
+========================= */
+.gimnasioText {
+  margin: 0 0 12px 0;
+  font-size: var(--font-size-l);
+  line-height: 1.6;
+  color: #4b5563;
+  text-align: justify;
+}
+
+.gimnasioText--lead {
+  max-width: 900px;
+  margin: 0 auto 24px auto;
+  text-align: center;
+  color: #334155;
+  font-size: 16px;
+}
+
+/* =========================
+AGENDA / CIERRE
+========================= */
+.gimnasioAgenda {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.gimnasioClosingText {
+  margin: 0;
+  color: #4b5563;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .gimnasioHero {
+    padding: 92px 0 40px 0;
+  }
+
+  .gimnasioHero__lead {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .gimnasioSection {
+    padding: 44px 0;
+  }
+
+  .gimnasioSection__title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+
+  .gimnasioText,
+  .gimnasioText--lead,
+  .gimnasioClosingText {
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+    text-align: justify;
+  }
+}

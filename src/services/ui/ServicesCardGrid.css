@@ -1,0 +1,111 @@
+.servicesCardGrid {
+  --servicesCardGrid-color: var(--kineclin-azul);
+  --servicesCardGrid-shadow: rgba(0, 158, 219, 0.12);
+
+  padding: 0;
+}
+
+.servicesCardGrid--Centro {
+  --servicesCardGrid-color: var(--kineclin-azul);
+  --servicesCardGrid-shadow: rgba(0, 158, 219, 0.12);
+}
+
+.servicesCardGrid--Estetica {
+  --servicesCardGrid-color: var(--kineclin-rose-s);
+  --servicesCardGrid-shadow: rgba(218, 142, 129, 0.14);
+}
+
+.servicesCardGrid--KCPLUS {
+  --servicesCardGrid-color: var(--kineclin-gold);
+  --servicesCardGrid-shadow: rgba(216, 144, 0, 0.14);
+}
+
+.servicesCardGrid--Gris {
+  --servicesCardGrid-color: var(--kineclin-grey);
+  --servicesCardGrid-shadow: rgba(112, 116, 117, 0.14);
+}
+
+.servicesCardGrid__inner {
+  width: 100%;
+}
+
+.servicesCardGrid__title {
+  margin: 0 0 20px 0;
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 600;
+  color: var(--servicesCardGrid-color);
+  text-align: center;
+}
+
+.servicesCardGrid__lead {
+  max-width: 900px;
+  margin: 0 auto 24px auto;
+  text-align: center;
+  color: #334155;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.servicesCardGrid__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.servicesCardGrid__card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 24px var(--servicesCardGrid-shadow);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.servicesCardGrid__cardTitle {
+  margin: 0 0 10px 0;
+  font-family: var(--font-secondary);
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--servicesCardGrid-color);
+  text-align: center;
+}
+
+.servicesCardGrid__cardText {
+  margin: 0;
+  color: #4b5563;
+  font-size: var(--font-size-l);
+  line-height: 1.55;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .servicesCardGrid__grid {
+    grid-template-columns: 2fr;
+    gap: 14px;
+  }
+
+  .servicesCardGrid__card {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesCardGrid__title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+
+  .servicesCardGrid__lead,
+  .servicesCardGrid__cardText {
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .servicesCardGrid__cardTitle {
+    font-size: 18px;
+  }
+}

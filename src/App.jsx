@@ -12,6 +12,7 @@ import Estetica from "./services/estetica/EsteticaPage";
 import Psicologia from "./services/psicologia/PsicoPage";
 import Enfermeria from "./services/enfermeria/EnfermeriaPage";
 import Contactanos from "./services/contactanos/ContactPage";
+import Gimnasio from "./services/gimnasio/GymPage";
 
 // IMPORTA TU LANDING
 import FacialesPage from "./services/estetica/promos/faciales/FacialesPage";
@@ -49,6 +50,7 @@ export default function App() {
           <Route path="/psicologia" element={<Psicologia />} />
           <Route path="/contactanos" element={<Contactanos />} />
           <Route path="/enfermeria" element={<Enfermeria />} />
+          <Route path="/gimnasio" element={<Gimnasio />} />
 
           {/* LANDING SEPARADAS */}
           <Route path="/faciales" element={<FacialesPage />} />

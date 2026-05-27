@@ -47,6 +47,16 @@ export default function PsicoTeamShowcase({
             </div>
             {(leftWsp || leftAgenda) && (
               <div className="psicoAgenda__buttons">
+                {leftAgenda && (
+                  <div className="psicoAgenda">
+                    <ActionButton
+                      label="Agenda"
+                      href={leftAgendaLink}
+                      variant="centro"
+                      glAdsConversionID={leftAgendaGTag}
+                    />
+                  </div>
+                )}
                 {leftWsp && (
                   <div className="psicoAgenda">
                     <ActionButton
@@ -55,17 +65,6 @@ export default function PsicoTeamShowcase({
                       variant="whatsapp"
                       wspmsg={leftWspMsg}
                       glAdsConversionID={leftWspGTag}
-                    />
-                  </div>
-                )}
-
-                {leftAgenda && (
-                  <div className="psicoAgenda">
-                    <ActionButton
-                      label="Agenda"
-                      href={leftAgendaLink}
-                      variant="centro"
-                      glAdsConversionID={leftAgendaGTag}
                     />
                   </div>
                 )}

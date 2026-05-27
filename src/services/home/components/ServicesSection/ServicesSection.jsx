@@ -101,8 +101,9 @@ export default function ServicesSection() {
       ),
     },
     {
-      published: false,
+      published: true,
       title: "Gimnasio Médico",
+      to: "/gimnasio",
       description:
         "Ejercicio terapéutico supervisado, enfocado en rehabilitación física y bienestar corporal.",
       icon: (
