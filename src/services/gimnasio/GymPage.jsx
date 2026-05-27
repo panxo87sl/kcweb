@@ -117,7 +117,7 @@ export default function GymPage() {
             leftAgenda={true}
             leftAgendaLink="https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=30"
             rightImage="/gimnasio/gymJaviera.jpg"
-            rightName="Klga. Javiera Vera"
+            rightName="Klga. Javiera Vega"
             rightText="Kinesióloga con enfoque transversal en rehabilitación, movimiento terapéutico y entrenamiento guiado. Acompaña a pacientes en procesos de recuperación funcional, fortalecimiento y retorno progresivo a la actividad física."
             rightWsp={true}
             rightWspLink="https://wa.me/56950833838"
