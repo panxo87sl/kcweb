@@ -150,6 +150,9 @@ export default function KinePage() {
               agenda: true,
               agendaLink:
                 "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=30",
+              more: true,
+              moreTitle: "Conoce Gimnasio Médico",
+              moreLink: "/gimnasio",
             },
             {
               image: "/kinesiologia/equipo/kineNicole.png",
@@ -175,8 +178,12 @@ export default function KinePage() {
               wsp: true,
               wspLink: "https://wa.me/56950833838",
               wspMsg: "Hola! me gustaría agendar una cita para kinesiología con Javiera Vega",
-              agenda: false,
-              agendaLink: "#",
+              agenda: true,
+              agendaLink:
+                "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=37",
+              more: true,
+              moreTitle: "Conoce Gimnasio Médico",
+              moreLink: "/gimnasio",
             },
             {
               image: "/kinesiologia/equipo/kineAlejandra.png",
@@ -215,6 +222,17 @@ export default function KinePage() {
 
                 <div className="kineRelatedCard__button">
                   <ActionButton label="Ver servicio" href="/osteopatia" variant="centro" />
+                </div>
+              </article>
+              <article className="kineRelatedCard">
+                <h3 className="kineRelatedCard__title">Gimnasio Médico</h3>
+                <p className="kineRelatedCard__text">
+                  Entrenamiento terapéutico y fortalecimiento funcional guiado por
+                  profesionales, ideal para complementar procesos de rehabilitación, mejorar la
+                  condición física y recuperar confianza en el movimiento.
+                </p>
+                <div className="kineRelatedCard__button">
+                  <ActionButton label="Ver servicio" href="/gimnasio" variant="centro" />
                 </div>
               </article>
 

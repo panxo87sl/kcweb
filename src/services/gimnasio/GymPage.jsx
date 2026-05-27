@@ -122,7 +122,8 @@ export default function GymPage() {
             rightWsp={true}
             rightWspLink="https://wa.me/56950833838"
             rightWspMsg="Hola, me gustaría consultar por una evaluación para el gimnasio médico con Javiera Vera."
-            rightAgenda={false}
+            rightAgenda={true}
+            rightAgendaLink="https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=37"
           />
         </section>
 
