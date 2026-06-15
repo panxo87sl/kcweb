@@ -1,6 +1,7 @@
 import "./InfoDecoBlock.css";
 
 export default function InfoDecoBlock({
+  sectionID,
   title,
   text,
   image,
@@ -11,6 +12,7 @@ export default function InfoDecoBlock({
 }) {
   return (
     <article
+      id={sectionID || undefined}
       className={`infoDecoBlock ${reverse ? "infoDecoBlock--reverse" : ""} ${
         showDeco ? "infoDecoBlock--withDeco" : ""
       } infoDecoBlock--${colorProfile}`}

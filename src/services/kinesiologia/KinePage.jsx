@@ -11,7 +11,7 @@ export default function KinePage() {
         <title>Kinesiología en Antofagasta | KINECLIN Centro de Salud</title>
         <meta
           name="description"
-          content="Servicio de kinesiología en Antofagasta: rehabilitación musculoesquelética, kinesiología neurológica, respiratoria, geriátrica, fortalecimiento terapéutico y recuperación funcional en KINECLIN."
+          content="Servicio de kinesiología en Antofagasta: rehabilitación musculoesquelética, fisioterapia, kinesiología neurológica, respiratoria, geriátrica, fortalecimiento terapéutico y recuperación funcional en KINECLIN."
         />
       </Helmet>
 
@@ -47,6 +47,7 @@ export default function KinePage() {
           <h2 className="kineSection__title">Servicios Kinesiológicos</h2>
           <div className="kineSection__inner">
             <InfoDecoBlock
+              sectionID="traumatologia"
               title="Rehabilitación musculoesquelética y traumatológica"
               image="/kinesiologia/kineTraumatologia.jpg"
               imageAlt="Rehabilitación musculoesquelética y traumatológica"
@@ -57,6 +58,7 @@ export default function KinePage() {
             />
 
             <InfoDecoBlock
+              sectionID="neurologia"
               title="Kinesiología neurológica y funcional"
               image="/kinesiologia/kineNeurologia.jpg"
               imageAlt="Kinesiología neurológica y funcional"
@@ -67,6 +69,7 @@ export default function KinePage() {
             />
 
             <InfoDecoBlock
+              sectionID="respiratoria"
               title="Kinesioterapia respiratoria"
               image="/kinesiologia/kineRespiratoria.jpg"
               imageAlt="Kinesioterapia respiratoria"
@@ -77,6 +80,7 @@ export default function KinePage() {
             />
 
             <InfoDecoBlock
+              sectionID="fisioterapia"
               title="Fortalecimiento y gimnasio terapéutico"
               image="/kinesiologia/kineEntrenamiento.jpg"
               imageAlt="Fortalecimiento y gimnasio terapéutico"
@@ -86,6 +90,7 @@ export default function KinePage() {
               text="Contamos con un espacio de gimnasio terapéutico para complementar la rehabilitación mediante ejercicio progresivo, fortalecimiento, control motor, entrenamiento funcional y retorno seguro a la actividad física. Este trabajo permite mejorar la capacidad física, prevenir recaídas y consolidar los avances logrados durante el tratamiento."
             />
             <InfoDecoBlock
+              sectionID="geriatria"
               title="Kinesiología geriátrica"
               image="/kinesiologia/kineGeriatria.jpg"
               imageAlt="Kinesiología geriátrica"
