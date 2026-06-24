@@ -77,8 +77,9 @@ export default function ServicesSection() {
       ),
     },
     {
-      published: false,
+      published: true,
       title: "Nutricionista",
+      to: "/nutricion",
       description:
         "Planes alimenticios personalizados para mejorar tu salud, control de peso y condiciones específicas.",
       icon: (
