@@ -1,0 +1,103 @@
+.nutricionPage {
+  width: 100%;
+  background: #fff;
+}
+
+.nutricionHero {
+  padding: 120px 0 48px 0;
+  background: var(--kineclin-bg2);
+}
+
+.nutricionHero__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.nutricionHero__title {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--kineclin-azul);
+  font-size: clamp(42px, 4.5vw, 56px);
+}
+
+.nutricionHero__lead {
+  max-width: 860px;
+  margin: 14px auto 0 auto;
+  color: #334155;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.nutricionSection {
+  padding: 56px 0;
+  background: #fff;
+}
+
+.nutricionSection--soft {
+  background: var(--kineclin-bg2);
+}
+
+.nutricionSection__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.nutricionSection__inner--center {
+  max-width: 900px;
+  text-align: center;
+}
+
+.nutricionSection__title {
+  margin: 0 0 20px 0;
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 600;
+  color: var(--kineclin-azul);
+  text-align: center;
+}
+
+.nutricionText {
+  margin: 0 0 12px 0;
+  font-size: var(--font-size-l);
+  line-height: 1.6;
+  color: #4b5563;
+  text-align: justify;
+}
+
+.nutricionClosingText {
+  margin: 0;
+  color: #4b5563;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .nutricionHero {
+    padding: 92px 0 40px 0;
+  }
+
+  .nutricionHero__lead {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .nutricionSection {
+    padding: 44px 0;
+  }
+
+  .nutricionSection__title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+
+  .nutricionText,
+  .nutricionClosingText {
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+    text-align: justify;
+  }
+}

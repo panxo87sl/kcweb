@@ -6,13 +6,14 @@ import ScrollToHash from "./components/layout/ScrollTo/ScrollToHash";
 import ScrollToTop from "./components/layout/ScrollTo/ScrollToTop";
 
 import Home from "./services/home/Home";
-import Kinesionologia from "./services/kinesiologia/KinePage";
 import Osteopatia from "./services/osteopatia/OsteoPage";
 import Estetica from "./services/estetica/EsteticaPage";
 import Psicologia from "./services/psicologia/PsicoPage";
-import Enfermeria from "./services/enfermeria/EnfermeriaPage";
 import Contactanos from "./services/contactanos/ContactPage";
+import Enfermeria from "./services/enfermeria/EnfermeriaPage";
 import Gimnasio from "./services/gimnasio/GymPage";
+import Kinesionologia from "./services/kinesiologia/KinePage";
+import Nutricion from "./services/nutricion/NutricionPage";
 
 // IMPORTA TU LANDING
 import FacialesPage from "./services/estetica/promos/faciales/FacialesPage";
@@ -45,12 +46,13 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/osteopatia" element={<Osteopatia />} />
-          <Route path="/kinesiologia" element={<Kinesionologia />} />
           <Route path="/kcestetica" element={<Estetica />} />
           <Route path="/psicologia" element={<Psicologia />} />
           <Route path="/contactanos" element={<Contactanos />} />
           <Route path="/enfermeria" element={<Enfermeria />} />
+          <Route path="/kinesiologia" element={<Kinesionologia />} />
           <Route path="/gimnasio" element={<Gimnasio />} />
+          <Route path="/nutricion" element={<Nutricion />} />
 
           {/* LANDING SEPARADAS */}
           <Route path="/faciales" element={<FacialesPage />} />
