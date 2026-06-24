@@ -1,0 +1,221 @@
+.serviceDropdown {
+  --serviceDropdown-color: var(--kineclin-azul);
+  --serviceDropdown-soft: rgba(0, 158, 219, 0.12);
+  --serviceDropdown-soft-strong: rgba(0, 158, 219, 0.18);
+
+  width: 100%;
+  margin: -8px 0 34px 0;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px var(--serviceDropdown-soft);
+  overflow: hidden;
+}
+
+/* =========================
+   PERFILES DE COLOR
+========================= */
+.serviceDropdown--Centro {
+  --serviceDropdown-color: var(--kineclin-azul);
+  --serviceDropdown-soft: rgba(0, 158, 219, 0.12);
+  --serviceDropdown-soft-strong: rgba(0, 158, 219, 0.18);
+}
+
+.serviceDropdown--Estetica {
+  --serviceDropdown-color: var(--kineclin-rose-s);
+  --serviceDropdown-soft: rgba(218, 142, 129, 0.14);
+  --serviceDropdown-soft-strong: rgba(218, 142, 129, 0.2);
+}
+
+.serviceDropdown--KCPLUS {
+  --serviceDropdown-color: var(--kineclin-gold);
+  --serviceDropdown-soft: rgba(216, 144, 0, 0.14);
+  --serviceDropdown-soft-strong: rgba(216, 144, 0, 0.2);
+}
+
+/* =========================
+   BOTÓN CABECERA
+========================= */
+.serviceDropdown__summary {
+  width: 100%;
+  min-height: 54px;
+  padding: 14px 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(90deg, #fff, rgba(0, 158, 219, 0.035));
+  border-bottom: 1px solid transparent;
+
+  font-family: var(--font-primary);
+  text-align: left;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.serviceDropdown__summary:hover {
+  background: linear-gradient(90deg, #fff, var(--serviceDropdown-soft));
+}
+
+.serviceDropdown--open .serviceDropdown__summary {
+  border-bottom-color: var(--serviceDropdown-soft-strong);
+  background: linear-gradient(90deg, #fff, var(--serviceDropdown-soft));
+}
+
+.serviceDropdown__summaryText {
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  color: #334155;
+}
+
+/* =========================
+   ICONO
+========================= */
+.serviceDropdown__icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: var(--serviceDropdown-color);
+  transition: transform 0.25s ease;
+}
+
+.serviceDropdown--open .serviceDropdown__icon {
+  transform: rotate(180deg);
+}
+
+/* =========================
+   CONTENIDO ANIMADO
+========================= */
+.serviceDropdown__content {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  transition: max-height 0.3s ease;
+}
+
+.serviceDropdown__contentInner {
+  padding: 16px 18px 18px 18px;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity 0.22s ease,
+    transform 0.22s ease;
+}
+
+.serviceDropdown--open .serviceDropdown__contentInner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   ITEMS
+========================= */
+.serviceDropdown__item {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(112, 116, 117, 0.16);
+}
+
+.serviceDropdown__item:first-child {
+  padding-top: 0;
+}
+
+.serviceDropdown__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.serviceDropdown__itemHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 5px;
+}
+
+.serviceDropdown__itemName {
+  margin: 0;
+  color: var(--serviceDropdown-color);
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.serviceDropdown__itemPrice {
+  flex-shrink: 0;
+  color: var(--serviceDropdown-color);
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.serviceDropdown__itemDescription {
+  margin: 0;
+  color: #4b5563;
+  font-size: var(--font-size-m);
+  line-height: 1.55;
+  text-align: justify;
+}
+
+/* =========================
+   OBSERVACIONES
+========================= */
+.serviceDropdown__note {
+  margin: 12px 0 0 0;
+  color: #606363;
+  font-size: var(--font-size-m);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .serviceDropdown {
+    margin: -4px 0 28px 0;
+    border-radius: 12px;
+  }
+
+  .serviceDropdown__summary {
+    min-height: 50px;
+    padding: 13px 14px;
+  }
+
+  .serviceDropdown__summaryText {
+    font-size: var(--font-size-l);
+  }
+
+  .serviceDropdown__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .serviceDropdown__contentInner {
+    padding: 14px;
+  }
+
+  .serviceDropdown__item {
+    padding: 11px 0;
+  }
+
+  .serviceDropdown__itemHeader {
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 6px;
+  }
+
+  .serviceDropdown__itemName,
+  .serviceDropdown__itemPrice {
+    font-size: var(--font-size-l);
+  }
+
+  .serviceDropdown__itemDescription,
+  .serviceDropdown__note {
+    font-size: var(--font-size-m);
+  }
+}
