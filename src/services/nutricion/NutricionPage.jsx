@@ -10,7 +10,7 @@ export default function NutricionPage() {
         <title>Nutrición clínica y deportiva en Antofagasta | KINECLIN</title>
         <meta
           name="description"
-          content="Servicio de nutrición clínica y deportiva en Antofagasta: evaluación nutricional, bioimpedancia BODYPRO, planificación alimentaria, nutrición deportiva y manejo nutricional clínico."
+          content="Servicio de nutrición clínica y deportiva en Antofagasta: evaluación nutricional, bioimpedancia BODYPRO INBODY, planificación alimentaria, nutrición deportiva y manejo nutricional clínico."
         />
       </Helmet>
 
@@ -46,45 +46,14 @@ export default function NutricionPage() {
           </div>
         </section>
 
-        <PsicoTeamShowcase
-          leftImage="/nutricion/nutriJennifer.jpg"
-          leftName="Jennifer Cortes"
-          leftDescription={
-            <>
-              Nutricionista especializada en nutrición deportiva y clínica. Acompaña a personas
-              que buscan mejorar su salud, rendimiento físico o composición corporal,
-              trabajando con deportistas, pacientes que desean mejorar hábitos alimentarios,
-              bajar de peso, aumentar masa muscular o apoyar el manejo de condiciones
-              metabólicas.
-            </>
-          }
-          leftWsp={true}
-          leftWspLink="https://wa.me/56950833838"
-          leftWspMsg="Hola, quisiera consultar por atención nutricional con Jennifer."
-          leftAgenda={false}
-          rightImage="/nutricion/nutriValeria.jpg"
-          rightName="Valeria"
-          rightDescription={
-            <>
-              Nutricionista del equipo KINECLIN, orientada al acompañamiento profesional, la
-              educación alimentaria y la creación de estrategias nutricionales adaptadas a cada
-              paciente. Su atención permite fortalecer el abordaje integral del área
-              nutricional y ampliar la disponibilidad del servicio.
-            </>
-          }
-          rightWsp={true}
-          rightWspLink="https://wa.me/56950833838"
-          rightWspMsg="Hola, quisiera consultar por atención nutricional con Valeria."
-          rightAgenda={false}
-        />
-
         <section className="nutricionSection nutricionSection--soft">
+          <h2 className="kineSection__title">Servicios Nutricionales</h2>
           <div className="nutricionSection__inner">
             <div id="nutricion-evaluacion">
               <InfoDecoBlock
-                sectionID="nutricion-evaluacion"
+                sectionID="evaluacion"
                 title="Evaluación nutricional y planificación personalizada"
-                image="/nutricion/evaluacion-nutricional.jpg"
+                image="/nutricion/evaluacion.jpg"
                 imageAlt="Evaluación nutricional personalizada"
                 reverse={false}
                 showDeco={true}
@@ -95,7 +64,7 @@ export default function NutricionPage() {
 
             <div id="nutricion-bodypro">
               <InfoDecoBlock
-                sectionID="nutricion-bodypro"
+                sectionID="bioinpedancia"
                 title="Bioimpedancia BODYPRO y composición corporal"
                 image="/nutricion/bodypro.jpg"
                 imageAlt="Evaluación con bioimpedancia BODYPRO"
@@ -108,9 +77,9 @@ export default function NutricionPage() {
 
             <div id="nutricion-deportiva">
               <InfoDecoBlock
-                sectionID="nutricion-deportiva"
+                sectionID="deportiva"
                 title="Nutrición deportiva y recomposición corporal"
-                image="/nutricion/nutricion-deportiva.jpg"
+                image="/nutricion/deportiva.jpg"
                 imageAlt="Nutrición deportiva y composición corporal"
                 reverse={false}
                 showDeco={true}
@@ -121,9 +90,9 @@ export default function NutricionPage() {
 
             <div id="nutricion-clinica">
               <InfoDecoBlock
-                sectionID="nutricion-clinica"
+                sectionID="clinica"
                 title="Manejo nutricional clínico"
-                image="/nutricion/nutricion-clinica.jpg"
+                image="/nutricion/clinica.jpg"
                 imageAlt="Manejo nutricional clínico"
                 reverse={true}
                 showDeco={true}
@@ -133,8 +102,44 @@ export default function NutricionPage() {
             </div>
           </div>
         </section>
-
         <section className="nutricionSection">
+          <PsicoTeamShowcase
+            leftImage="/nutricion/nutriJennifer.jpg"
+            leftName="Jennifer Cortés"
+            leftText={
+              <>
+                Nutricionista especializada en nutrición deportiva y clínica. Acompaña a
+                personas que buscan mejorar su salud, rendimiento físico o composición
+                corporal, trabajando con deportistas, pacientes que desean mejorar hábitos
+                alimentarios, bajar de peso, aumentar masa muscular o apoyar el manejo de
+                condiciones metabólicas.
+              </>
+            }
+            leftWsp={true}
+            leftWspLink="https://wa.me/56950833838"
+            leftWspMsg="Hola, quisiera consultar por atención nutricional con Jennifer."
+            leftAgenda={true}
+            leftAgendaLink={"https://ff.healthatom.io/1PhBir"}
+            rightImage="/nutricion/nutriValeria.jpg"
+            rightName="Valeria Gutiérrez"
+            rightText={
+              <>
+                Nutricionista con enfoque en psiconutrición, bienestar integral y alimentación
+                consciente. Acompaña a personas que buscan mejorar su relación con la comida,
+                el cuerpo y sus hábitos, promoviendo cambios reales sin culpas ni dietas
+                extremas. Su atención integra educación alimentaria, empatía y una mirada
+                cercana, humana y respetuosa.
+              </>
+            }
+            rightWsp={true}
+            rightWspLink="https://wa.me/56950833838"
+            rightWspMsg="Hola, quisiera consultar por atención nutricional con Valeria."
+            rightAgenda={true}
+            rightAgendaLink={"https://ff.healthatom.io/qOtn64"}
+          />
+        </section>
+
+        <section className="nutricionSection nutricionSection--soft">
           <div className="nutricionSection__inner nutricionSection__inner--center">
             <p className="nutricionClosingText">
               En KINECLIN buscamos que cada proceso nutricional sea cercano, realista y
