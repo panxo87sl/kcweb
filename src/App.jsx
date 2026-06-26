@@ -14,6 +14,7 @@ import Enfermeria from "./services/enfermeria/EnfermeriaPage";
 import Gimnasio from "./services/gimnasio/GymPage";
 import Kinesionologia from "./services/kinesiologia/KinePage";
 import Nutricion from "./services/nutricion/NutricionPage";
+import Fonoaudiologia from "./services/fonoaudiologia/FonoPage";
 
 // IMPORTA TU LANDING
 import FacialesPage from "./services/estetica/promos/faciales/FacialesPage";
@@ -53,6 +54,7 @@ export default function App() {
           <Route path="/kinesiologia" element={<Kinesionologia />} />
           <Route path="/gimnasio" element={<Gimnasio />} />
           <Route path="/nutricion" element={<Nutricion />} />
+          <Route path="/fonoaudiologia" element={<Fonoaudiologia />} />
 
           {/* LANDING SEPARADAS */}
           <Route path="/faciales" element={<FacialesPage />} />

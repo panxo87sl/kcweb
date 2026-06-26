@@ -126,8 +126,9 @@ export default function ServicesSection() {
       ),
     },
     {
-      published: false,
-      title: "Fonoaudiología y Terapia Ocupacional",
+      published: true,
+      title: "Fonoaudiología",
+      to: "/fonoaudiologia",
       description:
         "Atención orientada a la rehabilitación funcional, autonomía y calidad de vida, cobertura GES con indicación clínica",
       icon: (
