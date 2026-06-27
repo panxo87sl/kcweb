@@ -14,7 +14,7 @@ import {
   PsicologiaIcon,
   PsiconeuroIcon,
   TerapiaOcupacionalIcon,
-} from "./serviceIcons";
+} from "./ServiceIcons";
 
 export default function ServicesSection() {
   const res = 30;
