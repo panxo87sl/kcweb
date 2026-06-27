@@ -45,10 +45,15 @@
 ========================= */
 
 .kineTeamShowcase__grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 250px));
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 26px 22px;
+}
+
+.kineTeamShowcase__card {
+  flex: 0 1 250px;
+  max-width: 250px;
 }
 
 /* =========================
@@ -243,8 +248,12 @@
 
 @media (max-width: 900px) {
   .kineTeamShowcase__grid {
-    grid-template-columns: repeat(2, 1fr);
     gap: 28px 14px;
+  }
+
+  .kineTeamShowcase__card {
+    flex: 0 1 calc((100% - 14px) / 2);
+    max-width: calc((100% - 14px) / 2);
   }
 
   .kineTeamShowcase__heading {
@@ -285,6 +294,10 @@
 @media (max-width: 420px) {
   .kineTeamShowcase__grid {
     gap: 24px 10px;
+  }
+  .kineTeamShowcase__card {
+    flex-basis: calc((100% - 10px) / 2);
+    max-width: calc((100% - 10px) / 2);
   }
 
   .kineTeamShowcase__iconButton {

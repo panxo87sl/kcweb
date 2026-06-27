@@ -108,7 +108,7 @@ export default function KinePage() {
           showPhotoBorder={true}
           members={[
             {
-              image: "/kinesiologia/equipo/kineDiego.png",
+              image: "/kinesiologia/equipo/kineDiego.jpg",
               name: "Diego Zúñiga",
               specialtyLine1: "Musculoesquelético",
               specialtyLine2: "Osteopatía · Respiratorio",
@@ -125,7 +125,7 @@ export default function KinePage() {
               moreLink: "/osteopatia",
             },
             {
-              image: "/kinesiologia/equipo/kineCarolina.png",
+              image: "/kinesiologia/equipo/kineCarolina.jpg",
               name: "Carolina Llave",
               specialtyLine1: "Dermato funcional",
               specialtyLine2: "Estética corporal",
@@ -135,14 +135,33 @@ export default function KinePage() {
               wspLink: "https://wa.me/56950833838",
               wspMsg:
                 "Hola! me gustaría agendar una cita para una evaluación estética con Carolina Llave",
-              agenda: false,
-              agendaLink: "#",
+              agenda: true,
+              agendaLink:
+                "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=7",
               more: true,
               moreTitle: "Conoce Kineclin Clinica Estética",
               moreLink: "https://www.instagram.com/kineclin_estetica/",
             },
             {
-              image: "/kinesiologia/equipo/kineCatalina.png",
+              image: "/kinesiologia/equipo/kineFernanda.jpg",
+              name: "Fernanda Piñones",
+              specialtyLine1: "Dermato funcional",
+              specialtyLine2: "Estética corporal",
+              colorProfile: "Estetica",
+              decoCorner: "topRight",
+              wsp: true,
+              wspLink: "https://wa.me/56950833838",
+              wspMsg:
+                "Hola! me gustaría agendar una cita para una evaluación estética con Fernanda Piñones",
+              agenda: true,
+              agendaLink:
+                "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=24",
+              more: true,
+              moreTitle: "Conoce Kineclin Clinica Estética",
+              moreLink: "https://www.instagram.com/kineclin_estetica/",
+            },
+            {
+              image: "/kinesiologia/equipo/kineCatalina.jpg",
               name: "Catalina Reyes",
               specialtyLine1: "Musculoesquelético",
               specialtyLine2: "Respiratorio",
@@ -160,7 +179,7 @@ export default function KinePage() {
               moreLink: "/gimnasio",
             },
             {
-              image: "/kinesiologia/equipo/kineNicole.png",
+              image: "/kinesiologia/equipo/kineNicole.jpg",
               name: "Nicole Silva",
               specialtyLine1: "Neurorehabilitación",
               specialtyLine2: "Respiratorio",
@@ -174,7 +193,7 @@ export default function KinePage() {
                 "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=29",
             },
             {
-              image: "/kinesiologia/equipo/kineJaviera.png",
+              image: "/kinesiologia/equipo/kineJaviera.jpg",
               name: "Javiera Vega",
               specialtyLine1: "Musculoesquelético",
               specialtyLine2: "Neurorehabilitación",
@@ -191,7 +210,7 @@ export default function KinePage() {
               moreLink: "/gimnasio",
             },
             {
-              image: "/kinesiologia/equipo/kineAlejandra.png",
+              image: "/kinesiologia/equipo/kineAlejandra.jpg",
               name: "Alejandra Piñones",
               specialtyLine1: "Domiciliaria",
               specialtyLine2: "Neuro · Musculoesquelético",
