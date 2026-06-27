@@ -5,7 +5,7 @@ export default function ServiceCard({ title, description, icon, to, published })
   const CardInner = (
     <>
       <header className="serviceCard__header">
-        <span className="serviceCard__iconWrap" aria-hidden="true" alt={title}>
+        <span className="serviceCard__iconWrap" aria-hidden="true">
           {icon}
         </span>
 
