@@ -126,12 +126,11 @@ export default function OsteoPage() {
             "Contracturas musculares",
             "Problemas posturales",
             "Alteraciones del sistema digestivo",
-            "Entre otros trastornos",
           ]}
         />
 
         <TopicChipGrid
-          lead="También podemos encontrar que la osteopatía puede tratar diversas patologías en pacientes pediátricos, entre ellas:"
+          lead="También podemos encontrar que la osteopatía puede tratar diversas patologías en pacientes pediátricos:"
           background="soft"
           items={[
             "Infecciones respiratorias",

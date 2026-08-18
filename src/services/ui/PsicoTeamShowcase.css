@@ -10,14 +10,14 @@
 
 .psicoTeamShowcase__row {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
 }
 
 .psicoTeamShowcase__card {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -98,6 +98,7 @@
 @media (max-width: 900px) {
   .psicoTeamShowcase__row {
     flex-direction: column;
+    align-items: center;
     text-align: center;
     gap: 40px;
   }

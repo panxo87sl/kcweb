@@ -108,11 +108,11 @@ export default function NutricionPage() {
             leftName="Jennifer Cortés"
             leftText={
               <>
-                Nutricionista especializada en nutrición deportiva y clínica. Acompaña a
-                personas que buscan mejorar su salud, rendimiento físico o composición
-                corporal, trabajando con deportistas, pacientes que desean mejorar hábitos
-                alimentarios, bajar de peso, aumentar masa muscular o apoyar el manejo de
-                condiciones metabólicas.
+                Nutricionista especializada en nutrición clínica y deportiva, con enfoque en
+                composición corporal, salud digestiva y educación alimentaria. Acompaña
+                procesos de pérdida de grasa, aumento de masa muscular, rendimiento deportivo y
+                alteraciones intestinales como colon irritable, dieta baja en FODMAP y
+                enfermedad celíaca, mediante planes personalizados y sostenibles.
               </>
             }
             leftWsp={true}
