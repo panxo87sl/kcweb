@@ -10,7 +10,7 @@ export default function NutricionPage() {
         <title>Nutrición clínica y deportiva en Antofagasta | KINECLIN</title>
         <meta
           name="description"
-          content="Servicio de nutrición clínica y deportiva en Antofagasta: evaluación nutricional, bioimpedancia BODYPRO INBODY, planificación alimentaria, nutrición deportiva y manejo nutricional clínico."
+          content="Servicio de nutrición clínica y deportiva en Antofagasta: evaluación nutricional, bioimpedancia BODYPRO INBODY y planificación alimentaria en KINECLIN."
         />
       </Helmet>
 

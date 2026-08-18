@@ -1,0 +1,129 @@
+.approachSection {
+  --approachSection-color: var(--kineclin-azul);
+
+  padding: 56px 0;
+}
+
+.approachSection--white {
+  background: #fff;
+}
+
+.approachSection--soft {
+  background: var(--kineclin-bg2);
+}
+
+.approachSection--Centro {
+  --approachSection-color: var(--kineclin-azul);
+}
+
+.approachSection--Estetica {
+  --approachSection-color: var(--kineclin-rose-s);
+}
+
+.approachSection--KCPLUS {
+  --approachSection-color: var(--kineclin-gold);
+}
+
+.approachSection__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===== Sin imagen: bloque centrado (estilo "Nuestro enfoque") ===== */
+.approachSection--centered .approachSection__inner {
+  max-width: 900px;
+}
+
+.approachSection--centered .approachSection__title {
+  text-align: center;
+}
+
+.approachSection--centered .approachSection__text {
+  text-align: justify;
+}
+
+/* ===== Con imagen: dos columnas ===== */
+.approachSection--withImage .approachSection__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 54px;
+  align-items: center;
+}
+
+.approachSection--withImage.approachSection--reverse .approachSection__media {
+  order: 2;
+}
+
+.approachSection--withImage.approachSection--reverse .approachSection__content {
+  order: 1;
+}
+
+.approachSection__media {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #e9f5fb;
+  box-shadow: 0 12px 28px rgba(0, 158, 219, 0.14);
+}
+
+.approachSection__media img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.approachSection--withImage .approachSection__title {
+  text-align: left;
+}
+
+.approachSection--withImage .approachSection__text {
+  text-align: justify;
+}
+
+/* ===== Textos comunes ===== */
+.approachSection__title {
+  margin: 0 0 20px 0;
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 600;
+  color: var(--approachSection-color);
+}
+
+.approachSection__text {
+  margin: 0 0 12px 0;
+  font-size: var(--font-size-l);
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.approachSection__text:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .approachSection {
+    padding: 44px 0;
+  }
+
+  .approachSection__title {
+    font-size: 30px;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  .approachSection__text {
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .approachSection--withImage .approachSection__inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .approachSection--withImage.approachSection--reverse .approachSection__media,
+  .approachSection--withImage.approachSection--reverse .approachSection__content {
+    order: initial;
+  }
+}

@@ -1,12 +1,13 @@
 .osteoPage {
   width: 100%;
+  background: #fff;
 }
 
 /* =========================
 HERO
 ========================= */
 .osteoHero {
-  padding: 120px 0 60px 0;
+  padding: 120px 0 48px 0;
   background: var(--kineclin-bg2);
 }
 
@@ -26,11 +27,12 @@ HERO
   font-size: clamp(42px, 4.5vw, 56px);
 }
 
-.title_desktop {
-  display: block;
-}
-.title_mobile {
-  display: none;
+.osteoHero__lead {
+  max-width: 860px;
+  margin: 14px auto 0 auto;
+  color: #334155;
+  font-size: 17px;
+  line-height: 1.55;
 }
 
 /* =========================
@@ -41,7 +43,6 @@ SECCIONES GENERALES
   background: #fff;
 }
 
-/* Sección con fondo suave (para separar “Qué es…”) */
 .osteoSection--soft {
   background: var(--kineclin-bg2);
 }
@@ -52,227 +53,42 @@ SECCIONES GENERALES
   padding: 0 16px;
 }
 
-/* Centrado para “¿Qué es la osteopatía?” */
 .osteoSection__inner--center {
+  max-width: 900px;
   text-align: center;
-}
-
-.osteoSection__inner--center .osteoText {
-  max-width: 900px; /* controla ancho para lectura */
-  margin: 0 auto 12px; /* centra párrafos */
-}
-
-.osteoTitle {
-  margin: 0 0 14px 0;
-  font-size: clamp(22px, 2.4vw, 34px);
-  font-size: 40px;
-  font-weight: 600;
-  color: var(--kineclin-azul);
-  margin-bottom: 14px;
-}
-
-.osteoText {
-  margin: 0 0 12px 0;
-
-  font-size: var(--font-size-l);
-  line-height: 1.5;
-  color: #4b5563;
-  text-align: justify;
-}
-
-.osteoText--spaced {
-  margin-top: 18px;
+  margin: 0 auto;
 }
 
 /* =========================
-   GRIDS / CARDS
-   ========================= */
-.osteoGrid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 18px;
-  margin-top: 18px;
-}
-
-.osteoCard {
-  grid-column: span 4;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-}
-
-.osteoCard__media {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: #e9f5fb;
-}
-
-.osteoImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.osteoCard__body {
-  padding: 16px 16px 18px 16px;
-}
-
-.osteoCard__title {
-  margin: 5px 0 5px 0;
-  font-family: var(--font-secondary);
-  font-weight: 800;
-  color: #0b2b3a;
-  font-size: 18px;
-  text-align: center;
-  height: 40px;
-}
-
-.osteoList {
-  margin: 10px 0 0 0;
-  padding-left: 18px;
-  color: #2b3941;
-  line-height: 1.7;
-  font-family: var(--font-primary);
-}
-
-.osteoList--compact {
-  margin-top: 8px;
-}
-
-/* =========================
-   ESPECIALISTA (BLOQUE UNIFICADO)
-   - Foto y contenido pegados (una sola pieza)
-   - Nombre centrado como título
-   ========================= */
-.osteoSpecialistBlock {
-  /* max-height: 400px; */
-  display: grid;
-  grid-template-columns: 420px 1fr;
-  gap: 0; /* clave: sin separación */
-  align-items: stretch;
-  margin-top: 18px;
-
-  background: #ffffff;
-  border-radius: 16px;
-  overflow: hidden; /* clave: se sienta como un solo bloque */
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
-}
-
-.osteoSpecialistBlock__photo {
-  background: #fff;
-}
-
-.osteoSpecialistBlock__img {
-  width: 100%;
-  height: 100%;
-  max-height: 420px;
-  display: block;
-  object-fit: cover;
-  object-position: center center;
-}
-
-.osteoSpecialistBlock__content {
-  padding: 18px 18px 20px 18px;
-}
-.osteoSpecialistBlock__content__agenda {
-  display: flex;
-  flex-direction: column;
-}
-.osteoSpecialistBlock__content__agenda__buttons {
-  height: 100%;
-  display: flex;
-  gap: 10px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.osteoSpecialistBlock__name {
-  margin: 0 0 14px 0;
-  text-align: center; /* pedido: nombre centrado */
-  font-family: var(--font-secondary);
-  font-weight: 800;
-  color: #0b2b3a;
-  font-size: 18px;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-}
-
-.osteoSpecialistBlock__list {
+CIERRE
+========================= */
+.osteoClosingText {
   margin: 0;
-  padding-left: 18px;
-  color: #2b3941;
-  line-height: 1.7;
-  font-family: var(--font-primary);
-  font-size: 15px;
-}
-
-.osteoSpecialistBlock__agenda {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.osteoSpecialistBlock__agenda_title {
-  text-align: center;
-  margin: 12px 0 5px 0;
+  color: #4b5563;
+  font-size: 17px;
+  line-height: 1.65;
 }
 
 /* =========================
-   RESPONSIVE
-   ========================= */
-
-/* Tablet: cards en 2 columnas */
-/* @media (max-width: 980px) {
-  .osteoCard {
-    grid-column: span 6;
-  }
-} */
-
-/* Mobile: todo apilado */
+RESPONSIVE
+========================= */
 @media (max-width: 768px) {
   .osteoHero {
     padding: 92px 0 40px 0;
   }
-  .title_desktop {
-    display: none;
-  }
-  .title_mobile {
-    display: block;
+
+  .osteoHero__lead {
+    font-size: 15px;
+    line-height: 1.5;
   }
 
   .osteoSection {
     padding: 44px 0;
   }
-  .osteoSection h2 {
-    text-align: center;
-  }
 
-  .osteoTitle {
-    font-size: 30px;
-  }
-
-  .osteoCard {
-    grid-column: span 12;
-  }
-
-  .osteoSpecialistBlock {
-    grid-template-columns: 1fr;
-  }
-
-  .osteoSpecialistBlock__img {
-    max-height: 300px; /* evita foto infinita al apilar */
-    object-position: center top;
-  }
-
-  .osteoSpecialistBlock__content__agenda__buttons {
-    gap: 2px;
-    flex-direction: column;
-  }
-
-  .osteoSpecialistBlock__agenda_title {
-    margin: 25px 0 10px 0;
+  .osteoClosingText {
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+    text-align: justify;
   }
 }

@@ -13,9 +13,10 @@ export default function SingleProfessionalShowcase({
   agenda = false,
   agendaLink = "#",
   agendaGTag,
+  background = "white", // white | soft
 }) {
   return (
-    <section className="singleProfessional">
+    <section className={`singleProfessional singleProfessional--${background}`}>
       <div className="singleProfessional__inner">
         <div className="singleProfessional__photo">
           <img src={image} alt={name} />

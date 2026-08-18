@@ -1,0 +1,108 @@
+.topicChipGrid {
+  --topicChipGrid-color: var(--kineclin-azul);
+  --topicChipGrid-shadow: rgba(0, 158, 219, 0.15);
+
+  padding: 56px 0;
+}
+
+.topicChipGrid--white {
+  background: #fff;
+}
+
+.topicChipGrid--soft {
+  background: var(--kineclin-bg2);
+}
+
+.topicChipGrid--Centro {
+  --topicChipGrid-color: var(--kineclin-azul);
+  --topicChipGrid-shadow: rgba(0, 158, 219, 0.15);
+}
+
+.topicChipGrid--Estetica {
+  --topicChipGrid-color: var(--kineclin-rose-s);
+  --topicChipGrid-shadow: rgba(218, 142, 129, 0.16);
+}
+
+.topicChipGrid--KCPLUS {
+  --topicChipGrid-color: var(--kineclin-gold);
+  --topicChipGrid-shadow: rgba(216, 144, 0, 0.16);
+}
+
+.topicChipGrid__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.topicChipGrid__title {
+  margin: 0 0 14px 0;
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 600;
+  color: var(--topicChipGrid-color);
+  text-align: center;
+}
+
+.topicChipGrid__lead {
+  max-width: 900px;
+  margin: 0 auto 24px auto;
+  text-align: center;
+  color: #334155;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Flexbox en lugar de grid: si la última fila queda incompleta
+   (p. ej. 3+3+2), los chips sobrantes quedan centrados en vez de
+   pegados a la izquierda. */
+.topicChipGrid__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.topicChipGrid__chip {
+  flex: 1 1 calc(33.333% - 11px);
+  max-width: calc(33.333% - 11px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 10px;
+  box-shadow: 0 10px 20px var(--topicChipGrid-shadow);
+  text-align: center;
+  color: #2b3941;
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .topicChipGrid__grid {
+    gap: 10px;
+  }
+
+  .topicChipGrid__chip {
+    flex-basis: calc(50% - 5px);
+    max-width: calc(50% - 5px);
+    padding: 12px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topicChipGrid {
+    padding: 44px 0;
+  }
+
+  .topicChipGrid__title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+
+  .topicChipGrid__lead {
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+    text-align: justify;
+  }
+}

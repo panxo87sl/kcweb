@@ -1,6 +1,13 @@
 .singleProfessional {
-  background: #fff;
   padding: 56px 0;
+}
+
+.singleProfessional--white {
+  background: #fff;
+}
+
+.singleProfessional--soft {
+  background: var(--kineclin-bg2);
 }
 
 .singleProfessional__inner {

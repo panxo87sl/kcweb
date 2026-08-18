@@ -11,7 +11,7 @@ export default function KinePage() {
         <title>Kinesiología en Antofagasta | KINECLIN Centro de Salud</title>
         <meta
           name="description"
-          content="Servicio de kinesiología en Antofagasta: rehabilitación musculoesquelética, fisioterapia, kinesiología neurológica, respiratoria, geriátrica, fortalecimiento terapéutico y recuperación funcional en KINECLIN."
+          content="Servicio de kinesiología en Antofagasta: rehabilitación musculoesquelética, neurológica, respiratoria y geriátrica, más fortalecimiento terapéutico en KINECLIN."
         />
       </Helmet>
 

@@ -7,7 +7,11 @@ export default function PsicoPage() {
   return (
     <>
       <Helmet>
-        <title>Psicología | Kineclin Centro de Salud</title>
+        <title>Psicología en Antofagasta | KINECLIN Centro de Salud</title>
+        <meta
+          name="description"
+          content="Atención psicológica en Antofagasta: ansiedad, estado de ánimo, autoestima y procesos personales. Acompañamiento profesional y agenda online en KINECLIN."
+        />
       </Helmet>
 
       <main className="psicoPage">

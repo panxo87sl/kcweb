@@ -12,7 +12,7 @@ export default function GymPage() {
         <title>Gimnasio Médico en Antofagasta | KINECLIN Centro de Salud</title>
         <meta
           name="description"
-          content="Gimnasio médico y terapéutico en Antofagasta: rehabilitación, entrenamiento personalizado, fortalecimiento, Pilates funcional, hipopresivos y movimiento integral en KINECLIN."
+          content="Gimnasio médico y terapéutico en Antofagasta: rehabilitación, entrenamiento personalizado, Pilates funcional e hipopresivos en KINECLIN."
         />
       </Helmet>
 

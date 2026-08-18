@@ -1,0 +1,174 @@
+.cardShowcaseGrid {
+  --cardShowcaseGrid-color: var(--kineclin-azul);
+  --cardShowcaseGrid-shadow: rgba(0, 158, 219, 0.12);
+
+  padding: 56px 0;
+}
+
+.cardShowcaseGrid--white {
+  background: #fff;
+}
+
+.cardShowcaseGrid--soft {
+  background: var(--kineclin-bg2);
+}
+
+.cardShowcaseGrid--Centro {
+  --cardShowcaseGrid-color: var(--kineclin-azul);
+  --cardShowcaseGrid-shadow: rgba(0, 158, 219, 0.12);
+}
+
+.cardShowcaseGrid--Estetica {
+  --cardShowcaseGrid-color: var(--kineclin-rose-s);
+  --cardShowcaseGrid-shadow: rgba(218, 142, 129, 0.14);
+}
+
+.cardShowcaseGrid--KCPLUS {
+  --cardShowcaseGrid-color: var(--kineclin-gold);
+  --cardShowcaseGrid-shadow: rgba(216, 144, 0, 0.14);
+}
+
+.cardShowcaseGrid__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.cardShowcaseGrid__title {
+  margin: 0 0 14px 0;
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 600;
+  color: var(--cardShowcaseGrid-color);
+  text-align: center;
+}
+
+.cardShowcaseGrid__lead {
+  max-width: 900px;
+  margin: 0 auto 24px auto;
+  text-align: center;
+  color: #334155;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Flexbox en lugar de grid: permite que la última fila incompleta
+   quede centrada automáticamente en vez de estirarse o alinearse a la izquierda. */
+.cardShowcaseGrid__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 22px;
+}
+
+.cardShowcaseGrid__card {
+  flex: 1 1 300px;
+  max-width: 340px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px var(--cardShowcaseGrid-shadow);
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Altura fija (no aspect-ratio): así todas las tarjetas del componente
+   -sea "Tipos de osteopatía" o "Tratamientos complementarios"- reservan
+   exactamente el mismo espacio para la imagen, sin depender del contenido. */
+.cardShowcaseGrid__media {
+  width: 100%;
+  height: 190px;
+  flex: 0 0 auto;
+  background: #e9f5fb;
+}
+
+.cardShowcaseGrid__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cardShowcaseGrid__body {
+  padding: 18px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+/* Espacio reservado para hasta 2 líneas de título: si un título es más
+   corto que otro, ambos parten el párrafo desde la misma altura. */
+.cardShowcaseGrid__cardTitle {
+  margin: 0 0 10px 0;
+  font-family: var(--font-secondary);
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.3;
+  min-height: calc(19px * 1.3 * 2);
+  color: var(--cardShowcaseGrid-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.cardShowcaseGrid__cardText {
+  margin: 0;
+  color: #4b5563;
+  font-size: var(--font-size-l);
+  line-height: 1.55;
+  text-align: center;
+}
+
+.cardShowcaseGrid__cardList {
+  margin: 10px 0 0 0;
+  padding-left: 18px;
+  color: #4b5563;
+  font-size: var(--font-size-l);
+  line-height: 1.55;
+  text-align: left;
+}
+
+.cardShowcaseGrid__cardList li {
+  margin-bottom: 6px;
+}
+
+.cardShowcaseGrid__cardList li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .cardShowcaseGrid {
+    padding: 44px 0;
+  }
+
+  .cardShowcaseGrid__title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+
+  .cardShowcaseGrid__lead,
+  .cardShowcaseGrid__cardText,
+  .cardShowcaseGrid__cardList {
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+  }
+
+  .cardShowcaseGrid__grid {
+    gap: 18px;
+  }
+
+  .cardShowcaseGrid__card {
+    flex: 1 1 100%;
+    max-width: 420px;
+  }
+
+  .cardShowcaseGrid__media {
+    height: 210px;
+  }
+}
