@@ -1,0 +1,186 @@
+.domiPage {
+  width: 100%;
+  background: #fff;
+}
+
+/* =========================
+HERO
+========================= */
+.domiHero {
+  padding: 120px 0 48px 0;
+  background: var(--kineclin-bg2);
+}
+
+.domiHero__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.domiHero__title {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--kineclin-azul);
+  font-size: clamp(42px, 4.5vw, 56px);
+}
+
+.domiHero__lead {
+  max-width: 860px;
+  margin: 14px auto 0 auto;
+  color: #334155;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+/* =========================
+SECCIONES
+========================= */
+.domiSection {
+  padding: 56px 0;
+  background: #fff;
+}
+
+.domiSection--soft {
+  background: var(--kineclin-bg2);
+}
+
+.domiSection__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.domiSection__inner--center {
+  max-width: 900px;
+  text-align: center;
+}
+
+.domiSection__title {
+  margin: 0 0 20px 0;
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 600;
+  color: var(--kineclin-azul);
+  text-align: center;
+}
+
+/* =========================
+TEXTOS
+========================= */
+.domiText {
+  margin: 0 0 12px 0;
+  font-size: var(--font-size-l);
+  line-height: 1.6;
+  color: #4b5563;
+  text-align: justify;
+}
+
+.domiText--lead {
+  max-width: 900px;
+  margin: 0 auto 24px auto;
+  text-align: center;
+  color: #334155;
+  font-size: 16px;
+}
+
+/* =========================
+SERVICIOS ESPECIALIZADOS
+========================= */
+.domiRelatedGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.domiRelatedCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(0, 158, 219, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.domiRelatedCard__title {
+  margin: 0 0 10px 0;
+  font-family: var(--font-secondary);
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--kineclin-azul);
+  text-align: center;
+}
+
+.domiRelatedCard__text {
+  margin: 0;
+  color: #4b5563;
+  font-size: var(--font-size-l);
+  line-height: 1.55;
+  text-align: justify;
+}
+
+.domiRelatedCard__button {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================
+CIERRE
+========================= */
+.domiClosingText {
+  margin: 0;
+  color: #4b5563;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .domiRelatedGrid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .domiRelatedCard {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .domiHero {
+    padding: 92px 0 40px 0;
+  }
+
+  .domiHero__lead {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .domiSection {
+    padding: 44px 0;
+  }
+
+  .domiSection__title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+
+  .domiText,
+  .domiText--lead,
+  .domiClosingText {
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .domiRelatedCard__title {
+    font-size: 18px;
+  }
+}
