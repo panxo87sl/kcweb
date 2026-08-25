@@ -10,7 +10,7 @@ export default function TeoPage() {
         <title>Terapia Ocupacional en Antofagasta | KINECLIN Centro de Salud</title>
         <meta
           name="description"
-          content="Servicio de terapia ocupacional en Antofagasta: rehabilitación neurológica, autonomía funcional, adulto mayor, adaptación del entorno, ayudas técnicas y terapia ocupacional infantil en KINECLIN."
+          content="Terapia ocupacional en Antofagasta para adultos y personas mayores: rehabilitación neurológica, cognitiva y funcional, autonomía, independencia, ayudas técnicas y participación comunitaria."
         />
       </Helmet>
 
@@ -30,20 +30,22 @@ export default function TeoPage() {
             <h2 className="teoSection__title">Nuestro enfoque</h2>
 
             <p className="teoText">
-              En KINECLIN entendemos la terapia ocupacional como un proceso orientado a mejorar
-              la autonomía, la funcionalidad y la participación de cada persona en sus
-              actividades cotidianas. Nuestro servicio acompaña principalmente a adultos y
-              personas mayores que requieren rehabilitación, apoyo funcional o adaptación de
-              sus rutinas debido a condiciones neurológicas, accidentes, patologías crónicas,
-              cambios asociados al envejecimiento o pérdida de independencia.
+              En KINECLIN entendemos la terapia ocupacional como un proceso centrado en la
+              ocupación, es decir, en las actividades que cada usuario necesita, quiere o
+              valora realizar en su vida diaria. Nuestro enfoque considera sus intereses,
+              rutinas, roles, entorno y necesidades reales, acompañando principalmente a
+              adultos y personas mayores que requieren rehabilitación funcional, neurológica,
+              cognitiva o apoyo para desenvolverse con mayor seguridad en su día a día.
             </p>
 
             <p className="teoText">
-              A través de una evaluación personalizada, se identifican las habilidades,
-              dificultades, intereses y necesidades de cada paciente, considerando su entorno,
-              sus rutinas y sus objetivos. Desde ahí se construye un plan de intervención
-              enfocado en recuperar capacidades, compensar dificultades y promover una vida
-              diaria más segura, activa y significativa.
+              Trabajamos diferenciando dos conceptos fundamentales: la autonomía, entendida
+              como la capacidad de decidir, elegir y dirigir la propia vida; y la
+              independencia, relacionada con la posibilidad de realizar o gestionar actividades
+              significativas con el menor apoyo posible. Desde esta mirada, el objetivo no es
+              solo recuperar funciones, sino favorecer que cada usuario pueda participar de
+              forma más activa, segura y significativa en su hogar, comunidad y actividades
+              cotidianas.
             </p>
           </div>
         </section>
@@ -61,33 +63,33 @@ export default function TeoPage() {
                 reverse={false}
                 showDeco={true}
                 colorProfile="Centro"
-                text="La evaluación de terapia ocupacional permite conocer el nivel de autonomía, funcionalidad, habilidades motoras, cognitivas, sensoriales y sociales del paciente. En esta etapa se revisan antecedentes de salud, rutinas, actividades de la vida diaria, entorno familiar y objetivos personales, con el fin de definir un plan de intervención adecuado a sus necesidades."
+                text="La evaluación de terapia ocupacional permite conocer cómo el usuario se desenvuelve en sus actividades cotidianas, considerando sus habilidades motoras, cognitivas, sensoriales, emocionales y sociales. En esta etapa se revisan antecedentes de salud, rutinas, intereses, entorno y necesidades, para construir un plan de intervención centrado en sus ocupaciones significativas."
               />
             </div>
 
             <div id="teo-rehabilitacion-neurologica">
               <InfoDecoBlock
                 sectionID="rehabilitacion-neurologica"
-                title="Rehabilitación neurológica y funcional"
+                title="Rehabilitación neurológica, cognitiva y funcional"
                 image="/terapiaocupacional/rehabilitacion-neurologica.jpg"
-                imageAlt="Rehabilitación neurológica y funcional"
+                imageAlt="Rehabilitación neurológica, cognitiva y funcional"
                 reverse={true}
                 showDeco={true}
                 colorProfile="Centro"
-                text="Acompañamos procesos de rehabilitación en personas que presentan secuelas neurológicas o pérdida de funcionalidad producto de condiciones como accidente cerebrovascular, Parkinson, deterioro neuromotor u otras patologías que afectan el desempeño diario. El trabajo se orienta a recuperar habilidades, favorecer la independencia y adaptar las actividades según las capacidades actuales del paciente."
+                text="Acompañamos procesos de rehabilitación en usuarios con secuelas neurológicas o pérdida de funcionalidad asociada a condiciones como accidente cerebrovascular, Parkinson, deterioro neuromotor u otras patologías que afectan el desempeño diario. El trabajo puede incluir rehabilitación cognitiva, abordando funciones como atención, memoria, planificación, organización y resolución de problemas aplicadas a actividades reales de la vida diaria."
               />
             </div>
 
-            <div id="teo-vida-diaria">
+            <div id="teo-autonomia-independencia">
               <InfoDecoBlock
-                sectionID="vida-diaria"
-                title="Actividades de la vida diaria"
+                sectionID="autonomia-independencia"
+                title="Autonomía, independencia y vida diaria"
                 image="/terapiaocupacional/vida-diaria.jpg"
-                imageAlt="Actividades de la vida diaria"
+                imageAlt="Autonomía, independencia y actividades de la vida diaria"
                 reverse={false}
                 showDeco={true}
                 colorProfile="Centro"
-                text="Las actividades de la vida diaria incluyen acciones esenciales como vestirse, alimentarse, asearse, desplazarse, organizar rutinas, preparar tareas simples y participar en el hogar o la comunidad. Desde la terapia ocupacional se trabajan estrategias para mejorar la autonomía, facilitar el desempeño cotidiano y entregar herramientas prácticas al paciente y su familia."
+                text="Las actividades de la vida diaria incluyen acciones como vestirse, alimentarse, asearse, desplazarse, organizar rutinas, preparar tareas simples y participar en el hogar. Desde la terapia ocupacional se trabaja la autonomía para tomar decisiones sobre la propia vida y la independencia para ejecutar o gestionar estas actividades con estrategias, adaptaciones o apoyos cuando sea necesario."
               />
             </div>
 
@@ -96,11 +98,11 @@ export default function TeoPage() {
                 sectionID="adulto-mayor"
                 title="Adultos y personas mayores"
                 image="/terapiaocupacional/adulto-mayor.jpg"
-                imageAlt="Terapia ocupacional en adulto mayor"
+                imageAlt="Terapia ocupacional en adultos y personas mayores"
                 reverse={true}
                 showDeco={true}
                 colorProfile="Centro"
-                text="En personas mayores, la terapia ocupacional busca mantener o recuperar funcionalidad, prevenir dependencia, estimular habilidades cognitivas y motoras, mejorar la seguridad en las rutinas y favorecer la participación en actividades significativas. El objetivo es promover una vida diaria más activa, segura y adaptada a cada etapa del envejecimiento."
+                text="En adultos y personas mayores, la terapia ocupacional busca mantener o recuperar funcionalidad, prevenir dependencia, estimular habilidades cognitivas y motoras, mejorar la seguridad en las rutinas y favorecer la participación en actividades significativas. Cada intervención se adapta a la historia, intereses, capacidades y contexto de vida del usuario."
               />
             </div>
 
@@ -113,20 +115,20 @@ export default function TeoPage() {
                 reverse={false}
                 showDeco={true}
                 colorProfile="Centro"
-                text="Evaluamos las necesidades del paciente en su entorno cotidiano para entregar recomendaciones que favorezcan la seguridad, independencia y prevención de riesgos. Esto puede incluir orientación sobre ayudas técnicas, organización del hogar, adaptación de rutinas, prevención de caídas y estrategias para facilitar la participación en actividades diarias."
+                text="Evaluamos las necesidades del usuario en su entorno cotidiano para entregar recomendaciones que favorezcan seguridad, accesibilidad, independencia y prevención de riesgos. Esto puede incluir orientación sobre ayudas técnicas, organización del hogar, adaptación de rutinas, prevención de caídas y estrategias para facilitar el desempeño en actividades relevantes."
               />
             </div>
 
-            <div id="teo-infantil">
+            <div id="teo-comunidad">
               <InfoDecoBlock
-                sectionID="infantil"
-                title="Terapia ocupacional infantil"
-                image="/terapiaocupacional/infantil.jpg"
-                imageAlt="Terapia ocupacional infantil"
+                sectionID="comunidad"
+                title="Participación y manejo en la comunidad"
+                image="/terapiaocupacional/comunidad.jpg"
+                imageAlt="Participación y manejo en la comunidad"
                 reverse={true}
                 showDeco={true}
                 colorProfile="Centro"
-                text="Si bien nuestro servicio se enfoca principalmente en adultos y personas mayores, también contamos con atención infantil orientada al desarrollo de habilidades motoras, autonomía, juego, participación escolar, regulación y rutinas diarias. Cada intervención se adapta a la etapa de desarrollo, necesidades del niño y contexto familiar."
+                text="La terapia ocupacional también acompaña el manejo en la comunidad, favoreciendo que el usuario pueda participar con mayor seguridad en actividades fuera del hogar. Esto puede incluir orientación para desplazamientos, uso de espacios comunitarios, organización de salidas, participación social, retorno progresivo a roles significativos y estrategias para desenvolverse mejor en su entorno."
               />
             </div>
           </div>
@@ -140,17 +142,17 @@ export default function TeoPage() {
             description={
               <>
                 Terapeuta ocupacional orientado a la rehabilitación funcional de adultos y
-                personas mayores, con enfoque en autonomía, actividades de la vida diaria,
-                rehabilitación neurológica, acompañamiento familiar y adaptación de rutinas. Su
-                trabajo busca apoyar a personas que necesitan recuperar o fortalecer su
-                independencia después de accidentes, enfermedades neurológicas, patologías
-                crónicas o cambios asociados al envejecimiento, promoviendo una participación
-                más segura, activa y significativa en la vida cotidiana.
+                personas mayores, con enfoque en autonomía, independencia, rehabilitación
+                neurológica, rehabilitación cognitiva, actividades de la vida diaria,
+                acompañamiento familiar y participación comunitaria. Su trabajo se centra en
+                las ocupaciones significativas de cada usuario, considerando sus intereses,
+                necesidades, rutinas y entorno, para favorecer una vida diaria más segura,
+                activa y con mayor sentido.
               </>
             }
             wsp={true}
             wspLink="https://wa.me/56950833838"
-            wspMsg="Hola, quisiera consultar por atención de terapia ocupacional."
+            wspMsg="Hola, quisiera consultar por atención de terapia ocupacional con Benjamín."
             agenda={false}
             background="white"
           />
