@@ -88,7 +88,7 @@
 /* Mobile adjustments */
 @media (max-width: 700px) {
   .serviceCard {
-    height: 170px;
+    height: 200px;
     padding: 20px 18px 20px 18px;
     border-radius: 16px;
   }

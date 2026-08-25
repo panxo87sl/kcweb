@@ -1,0 +1,175 @@
+.tripleProfessionalShowcase {
+  padding: 56px 0;
+  background: #fff;
+}
+
+.tripleProfessionalShowcase__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* =========================
+   TÍTULO CON BARRAS
+========================= */
+
+.tripleProfessionalShowcase__heading {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 22px;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.tripleProfessionalShowcase__title {
+  margin: 0;
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 600;
+  color: var(--kineclin-azul);
+  text-align: center;
+}
+
+.tripleProfessionalShowcase__headingLine {
+  height: 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(0, 158, 219, 0), rgba(0, 158, 219, 0.45));
+}
+
+.tripleProfessionalShowcase__headingLine:last-child {
+  background: linear-gradient(90deg, rgba(0, 158, 219, 0.45), rgba(0, 158, 219, 0));
+}
+
+/* =========================
+   GRID
+========================= */
+
+.tripleProfessionalShowcase__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.tripleProfessionalShowcase__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  min-width: 0;
+  height: 100%;
+}
+.tripleProfessionalShowcase__photo {
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+  margin-bottom: 18px;
+}
+
+.tripleProfessionalShowcase__text {
+  max-width: 320px;
+  width: 100%;
+  text-align: justify;
+  flex: 1;
+}
+
+.tripleProfessionalShowcase__buttons {
+  margin-top: 22px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* =========================
+   FOTO
+========================= */
+
+.tripleProfessionalShowcase__photo {
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+}
+
+.tripleProfessionalShowcase__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+.tripleProfessionalShowcase__text {
+  max-width: 320px;
+  text-align: justify;
+}
+
+.tripleProfessionalShowcase__text h3 {
+  margin: 3px 0 8px 0;
+  font-weight: 600;
+  text-align: center;
+  color: var(--kineclin-azul);
+}
+
+.tripleProfessionalShowcase__text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #334155;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.tripleProfessionalShowcase__buttons {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tripleProfessionalShowcase__button {
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .tripleProfessionalShowcase__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .tripleProfessionalShowcase__heading {
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .tripleProfessionalShowcase__headingLine {
+    height: 12px;
+  }
+
+  .tripleProfessionalShowcase__title {
+    font-size: 30px;
+  }
+
+  .tripleProfessionalShowcase__text {
+    max-width: 100%;
+  }
+
+  .tripleProfessionalShowcase__buttons {
+    gap: 5px;
+  }
+}
