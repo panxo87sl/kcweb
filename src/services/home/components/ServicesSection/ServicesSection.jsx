@@ -29,13 +29,6 @@ export default function ServicesSection() {
       icon: <OsteopatiaIcon />,
     },
     {
-      published: false,
-      title: "Psiconeuroinmunología Clínica",
-      description:
-        "Abordaje integral que conecta sistema nervioso, inmunológico y endocrino para mejorar la salud desde una mirada funcional y personalizada.",
-      icon: <PsiconeuroIcon />,
-    },
-    {
       published: true,
       title: "Kinesiología",
       to: "/kinesiologia",
@@ -71,11 +64,11 @@ export default function ServicesSection() {
     },
     {
       visible: true,
-      published: false,
+      published: true,
       title: "Terapia Ocupacional",
-      to: "/teocupacional",
+      to: "/terapia-ocupacional",
       description:
-        "Atención orientada a recuperar la autonomía, funcionalidad y participación en actividades de la vida diaria, con cobertura GES según indicación clínica.",
+        "Atención orientada a recuperar la autonomía, funcionalidad y participación en actividades de la vida diaria.",
       icon: <TerapiaOcupacionalIcon />,
     },
 
@@ -99,17 +92,8 @@ export default function ServicesSection() {
     },
     {
       visible: true,
-      published: false,
-      to: "/estetica",
-      title: "Clínica Estética",
-      description:
-        "Tratamientos estéticos médicos profesionales para potenciar tu bienestar y confianza.",
-      icon: <EsteticaIcon />,
-    },
-    {
-      visible: true,
-      published: false,
-      to: "/domicilios",
+      published: true,
+      to: "/domicilio",
       title: "Cuidados Domiciliarios",
       description:
         "Atención integral en el hogar con profesionales de la salud, enfocada en acompañamiento clínico, rehabilitación y bienestar del paciente.",
@@ -132,6 +116,22 @@ export default function ServicesSection() {
       description:
         "Entrenamiento guiado orientado a fortalecer la musculatura profunda, mejorar la postura y aumentar la flexibilidad de forma segura y progresiva.",
       icon: <PilatesIcon />,
+    },
+    {
+      visible: true,
+      published: false,
+      to: "/estetica",
+      title: "Clínica Estética",
+      description:
+        "Tratamientos estéticos médicos profesionales para potenciar tu bienestar y confianza.",
+      icon: <EsteticaIcon />,
+    },
+    {
+      published: false,
+      title: "Psiconeuroinmunología Clínica",
+      description:
+        "Abordaje integral que conecta sistema nervioso, inmunológico y endocrino para mejorar la salud desde una mirada funcional y personalizada.",
+      icon: <PsiconeuroIcon />,
     },
   ];
 
