@@ -25,7 +25,30 @@ export default function TeoPage() {
           </div>
         </header>
 
-        <section className="teoSection">
+        <SingleProfessionalShowcase
+          image="/terapiaocupacional/teoBenjamin.jpg"
+          name="Benjamin Rodriguez"
+          role="Terapeuta Ocupacional"
+          description={
+            <>
+              Terapeuta ocupacional orientado a la rehabilitación funcional de adultos y
+              personas mayores, con enfoque en autonomía, independencia, rehabilitación
+              neurológica, rehabilitación cognitiva, actividades de la vida diaria,
+              acompañamiento familiar y participación comunitaria. Su trabajo se centra en las
+              ocupaciones significativas de cada usuario, considerando sus intereses,
+              necesidades, rutinas y entorno, para favorecer una vida diaria más segura, activa
+              y con mayor sentido.
+            </>
+          }
+          wsp={true}
+          wspLink="https://wa.me/56950833838"
+          wspMsg="Hola, quisiera consultar por atención de terapia ocupacional con Benjamín."
+          agenda={true}
+          agendaLink="https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=38"
+          background="white"
+        />
+
+        <section className="teoSection teoSection--soft">
           <div className="teoSection__inner teoSection__inner--center">
             <h2 className="teoSection__title">Nuestro enfoque</h2>
 
@@ -42,15 +65,16 @@ export default function TeoPage() {
               Trabajamos diferenciando dos conceptos fundamentales: la autonomía, entendida
               como la capacidad de decidir, elegir y dirigir la propia vida; y la
               independencia, relacionada con la posibilidad de realizar o gestionar actividades
-              significativas con el menor apoyo posible. Desde esta mirada, el objetivo no es
-              solo recuperar funciones, sino favorecer que cada usuario pueda participar de
-              forma más activa, segura y significativa en su hogar, comunidad y actividades
-              cotidianas.
+              significativas con el menor apoyo posible, incorporando adaptaciones o ayudas
+              técnicas cuando sean necesarias para favorecer el desempeño . Desde esta mirada,
+              el objetivo no es solo recuperar funciones, sino favorecer que cada usuario pueda
+              participar de forma más activa, segura y significativa en su hogar, comunidad y
+              actividades cotidianas.
             </p>
           </div>
         </section>
 
-        <section className="teoSection teoSection--soft">
+        <section className="teoSection">
           <h2 className="teoSection__title">Áreas de intervención</h2>
 
           <div className="teoSection__inner">
@@ -132,30 +156,6 @@ export default function TeoPage() {
               />
             </div>
           </div>
-        </section>
-
-        <section className="teoSection">
-          <SingleProfessionalShowcase
-            image="/terapiaocupacional/teoBenjamin.jpg"
-            name="Benjamin Rodriguez"
-            role="Terapeuta Ocupacional"
-            description={
-              <>
-                Terapeuta ocupacional orientado a la rehabilitación funcional de adultos y
-                personas mayores, con enfoque en autonomía, independencia, rehabilitación
-                neurológica, rehabilitación cognitiva, actividades de la vida diaria,
-                acompañamiento familiar y participación comunitaria. Su trabajo se centra en
-                las ocupaciones significativas de cada usuario, considerando sus intereses,
-                necesidades, rutinas y entorno, para favorecer una vida diaria más segura,
-                activa y con mayor sentido.
-              </>
-            }
-            wsp={true}
-            wspLink="https://wa.me/56950833838"
-            wspMsg="Hola, quisiera consultar por atención de terapia ocupacional con Benjamín."
-            agenda={false}
-            background="white"
-          />
         </section>
 
         <section className="teoSection teoSection--soft">
