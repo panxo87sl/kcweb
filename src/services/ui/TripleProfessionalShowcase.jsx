@@ -23,6 +23,7 @@ export default function TripleProfessionalShowcase({
 
               <div className="tripleProfessionalShowcase__text">
                 <h3>{professional.name}</h3>
+                <h1>{professional.badgeText}</h1>
                 <p>{professional.text}</p>
               </div>
 

@@ -112,10 +112,18 @@
 }
 
 .tripleProfessionalShowcase__text h3 {
-  margin: 3px 0 8px 0;
+  margin: 3px 0 12px 0;
   font-weight: 600;
   text-align: center;
   color: var(--kineclin-azul);
+}
+
+.tripleProfessionalShowcase__text h1 {
+  margin-bottom: 8px;
+  font-weight: 800;
+  font-size: 14px;
+  text-align: center;
+  color: #334155;
 }
 
 .tripleProfessionalShowcase__text p {

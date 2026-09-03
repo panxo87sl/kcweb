@@ -68,6 +68,7 @@ export default function PsicoPage() {
               {
                 image: "/psicologia/psicPaulina.jpg",
                 name: "Psic. Paulina García",
+                badgeText: "Atención desde los 14 años",
                 text: "Acompaña a adolescentes y adultos en procesos de autoconocimiento y bienestar emocional, integrando Terapia de Aceptación y Compromiso (ACT) con Mindfulness Relacional para promover una relación más compasiva consigo mismo.",
                 wsp: true,
                 wspLink: "https://wa.me/56950833838",
@@ -82,6 +83,7 @@ export default function PsicoPage() {
               {
                 image: "/psicologia/psicFernanda.jpg",
                 name: "Psic. Fernanda Riveros",
+                badgeText: "Atención desde los 18 años",
                 text: "Psicóloga clínica con enfoque sistémico y perspectiva de género. Acompaña procesos terapéuticos en adultos desde un espacio seguro y personalizado, promoviendo la conexión entre cuerpo, mente y emociones.",
                 wsp: true,
                 wspLink: "https://wa.me/56950833838",
@@ -96,6 +98,7 @@ export default function PsicoPage() {
               {
                 image: "/psicologia/psicValentina.jpg",
                 name: "Psic. Valentina González",
+                badgeText: "Atención desde los 14 años",
                 text: "Acompaña a adolescentes y adultos en procesos de autoconocimiento y transformación desde un enfoque integrador, adaptado a las necesidades y objetivos de cada persona. Brinda un espacio de escucha flexible y respetuoso de cada proceso terapéutico.",
                 wsp: true,
                 wspLink: "https://wa.me/56950833838",
