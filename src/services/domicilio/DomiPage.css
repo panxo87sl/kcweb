@@ -1,0 +1,249 @@
+.domiPage {
+  width: 100%;
+  background: #fff;
+}
+
+/* =========================
+HERO
+========================= */
+.domiHero {
+  padding: 120px 0 48px 0;
+  background: var(--kineclin-bg2);
+}
+
+.domiHero__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.domiHero__title {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--kineclin-azul);
+  font-size: clamp(42px, 4.5vw, 56px);
+}
+
+.domiHero__lead {
+  max-width: 900px;
+  margin: 14px auto 0 auto;
+  color: #334155;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+/* =========================
+SECCIONES
+========================= */
+.domiSection {
+  padding: 56px 0;
+  background: #fff;
+}
+
+.domiSection--soft {
+  background: var(--kineclin-bg2);
+}
+
+.domiSection__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.domiSection__inner--center {
+  max-width: 900px;
+  text-align: center;
+}
+
+.domiSection__title {
+  margin: 0 0 20px 0;
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 600;
+  color: var(--kineclin-azul);
+  text-align: center;
+}
+
+/* =========================
+TÍTULOS CON BARRAS
+Estilo inspirado en TripleProfessionalShowcase
+========================= */
+.domiServiceHeading {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto 34px auto;
+  padding: 0 16px;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 22px;
+  align-items: center;
+}
+
+.domiServiceHeading__title {
+  margin: 0;
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 600;
+  color: var(--kineclin-azul);
+  text-align: center;
+}
+
+.domiServiceHeading__line {
+  height: 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(0, 158, 219, 0), rgba(0, 158, 219, 0.45));
+}
+
+.domiServiceHeading__line:last-child {
+  background: linear-gradient(90deg, rgba(0, 158, 219, 0.45), rgba(0, 158, 219, 0));
+}
+
+/* =========================
+TEXTOS
+========================= */
+.domiText {
+  margin: 0 0 12px 0;
+  font-size: var(--font-size-l);
+  line-height: 1.6;
+  color: #4b5563;
+  text-align: justify;
+}
+
+.domiText--lead {
+  max-width: 900px;
+  margin: 0 auto 24px auto;
+  text-align: center;
+  color: #334155;
+  font-size: 16px;
+}
+
+/* =========================
+CÓMO FUNCIONA
+========================= */
+.domiProcessGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.domiProcessCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(0, 158, 219, 0.12);
+}
+
+.domiProcessCard h3 {
+  margin: 0 0 10px 0;
+  font-family: var(--font-secondary);
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--kineclin-azul);
+  text-align: center;
+}
+
+.domiProcessCard p {
+  margin: 0;
+  color: #4b5563;
+  font-size: var(--font-size-l);
+  line-height: 1.55;
+  text-align: justify;
+}
+
+/* =========================
+ACCIONES POR SERVICIO
+========================= */
+.domiServiceActions {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* =========================
+CIERRE
+========================= */
+.domiClosingText {
+  margin: 0;
+  color: #4b5563;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .domiProcessGrid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .domiProcessCard {
+    padding: 18px;
+  }
+
+  .domiServiceActions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .domiServiceHeading {
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .domiServiceHeading__line {
+    height: 12px;
+  }
+
+  .domiServiceHeading__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .domiHero {
+    padding: 92px 0 40px 0;
+  }
+
+  .domiHero__lead {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .domiSection {
+    padding: 44px 0;
+  }
+
+  .domiSection__title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+
+  .domiText,
+  .domiText--lead,
+  .domiClosingText {
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .domiProcessCard h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  .domiServiceHeading {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .domiServiceHeading__line {
+    display: none;
+  }
+}
