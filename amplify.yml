@@ -3,8 +3,9 @@ frontend:
   phases:
     preBuild:
       commands:
+        - npm install -g corepack@latest
         - corepack enable
-        - corepack prepare pnpm@9.0.0 --activate
+        - corepack prepare pnpm@11.24.0 --activate
         - pnpm --version
         - pnpm install --frozen-lockfile
     build:
@@ -13,7 +14,7 @@ frontend:
   artifacts:
     baseDirectory: dist
     files:
-      - '**/*'
+      - "**/*"
   cache:
     paths:
       - node_modules/**/*
