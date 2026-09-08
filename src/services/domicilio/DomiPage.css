@@ -205,6 +205,15 @@ RESPONSIVE
   }
 }
 
+#domicilio-kinesiologia,
+#domicilio-terapia-ocupacional,
+#domicilio-fonoaudiologia,
+#domicilio-enfermeria,
+#cuidados-domiciliarios,
+#equipos-domiciliarios {
+  scroll-margin-top: 40px;
+}
+
 @media (max-width: 768px) {
   .domiHero {
     padding: 92px 0 40px 0;
@@ -245,5 +254,14 @@ RESPONSIVE
 
   .domiServiceHeading__line {
     display: none;
+  }
+
+  #domicilio-kinesiologia,
+  #domicilio-terapia-ocupacional,
+  #domicilio-fonoaudiologia,
+  #domicilio-enfermeria,
+  #cuidados-domiciliarios,
+  #equipos-domiciliarios {
+    scroll-margin-top: 45px;
   }
 }
