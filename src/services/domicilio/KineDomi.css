@@ -1,0 +1,188 @@
+.kineDomiPage {
+  width: 100%;
+  background: #fff;
+}
+
+/* =========================
+HERO
+========================= */
+.kineDomiHero {
+  padding: 120px 0 58px 0;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(0, 158, 219, 0.14), transparent 45%),
+    linear-gradient(180deg, #eef9ff 0%, var(--kineclin-bg2) 100%);
+}
+
+.kineDomiHero__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.kineDomiHero__eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--kineclin-azul);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kineDomiHero__title {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--kineclin-azul);
+  font-size: clamp(42px, 4.5vw, 58px);
+}
+
+.kineDomiHero__lead {
+  max-width: 900px;
+  margin: 16px auto 0 auto;
+  color: #334155;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.kineDomiHero__actions {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+/* =========================
+SECCIONES
+========================= */
+.kineDomiSection {
+  padding: 56px 0;
+  background: #fff;
+}
+
+.kineDomiSection--soft {
+  background: var(--kineclin-bg2);
+}
+
+.kineDomiSection__inner {
+  width: min(var(--w-hero), 1100px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.kineDomiSection__inner--center {
+  max-width: 900px;
+  text-align: center;
+}
+
+.kineDomiSection__title {
+  margin: 0 0 20px 0;
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 600;
+  color: var(--kineclin-azul);
+  text-align: center;
+}
+
+.kineDomiText {
+  margin: 0 0 12px 0;
+  font-size: var(--font-size-l);
+  line-height: 1.6;
+  color: #4b5563;
+  text-align: justify;
+}
+
+/* =========================
+PROCESO
+========================= */
+.kineDomiProcessGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.kineDomiProcessCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(0, 158, 219, 0.12);
+}
+
+.kineDomiProcessCard h3 {
+  margin: 0 0 10px 0;
+  color: var(--kineclin-azul);
+  font-size: 19px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.kineDomiProcessCard p {
+  margin: 0;
+  color: #4b5563;
+  font-size: var(--font-size-l);
+  line-height: 1.55;
+  text-align: justify;
+}
+
+.kineDomiSection__actions {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.kineDomiClosingText {
+  margin: 0;
+  color: #4b5563;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .kineDomiHero__actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .kineDomiProcessGrid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kineDomiHero {
+    padding: 92px 0 44px 0;
+  }
+
+  .kineDomiHero__lead {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .kineDomiSection {
+    padding: 44px 0;
+  }
+
+  .kineDomiSection__title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+
+  .kineDomiText,
+  .kineDomiClosingText {
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .kineDomiProcessCard h3 {
+    font-size: 18px;
+  }
+}

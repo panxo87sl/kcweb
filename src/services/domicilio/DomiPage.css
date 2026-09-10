@@ -68,7 +68,6 @@ SECCIONES
 
 /* =========================
 TÍTULOS CON BARRAS
-Estilo inspirado en TripleProfessionalShowcase
 ========================= */
 .domiServiceHeading {
   width: min(var(--w-hero), 1100px);
@@ -153,8 +152,9 @@ CÓMO FUNCIONA
 }
 
 /* =========================
-ACCIONES POR SERVICIO
+ACCIONES
 ========================= */
+.domiMainAction,
 .domiServiceActions {
   margin-top: 22px;
   display: flex;
@@ -163,14 +163,21 @@ ACCIONES POR SERVICIO
   gap: 12px;
 }
 
-/* =========================
-CIERRE
-========================= */
 .domiClosingText {
   margin: 0;
   color: #4b5563;
   font-size: 17px;
   line-height: 1.65;
+}
+
+/* =========================
+SCROLL LINKS
+========================= */
+#enfermeria,
+#terapia-ocupacional,
+#fonoaudiologia,
+#cuidados-domiciliarios {
+  scroll-margin-top: 40px;
 }
 
 /* =========================
@@ -186,6 +193,7 @@ RESPONSIVE
     padding: 18px;
   }
 
+  .domiMainAction,
   .domiServiceActions {
     flex-direction: column;
     gap: 10px;
@@ -203,15 +211,6 @@ RESPONSIVE
   .domiServiceHeading__title {
     font-size: 30px;
   }
-}
-
-#domicilio-kinesiologia,
-#domicilio-terapia-ocupacional,
-#domicilio-fonoaudiologia,
-#domicilio-enfermeria,
-#cuidados-domiciliarios,
-#equipos-domiciliarios {
-  scroll-margin-top: 40px;
 }
 
 @media (max-width: 768px) {
@@ -256,12 +255,10 @@ RESPONSIVE
     display: none;
   }
 
-  #domicilio-kinesiologia,
-  #domicilio-terapia-ocupacional,
-  #domicilio-fonoaudiologia,
-  #domicilio-enfermeria,
-  #cuidados-domiciliarios,
-  #equipos-domiciliarios {
+  #enfermeria,
+  #terapia-ocupacional,
+  #fonoaudiologia,
+  #cuidados-domiciliarios {
     scroll-margin-top: 45px;
   }
 }

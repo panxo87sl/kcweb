@@ -17,8 +17,6 @@ import {
 } from "./ServiceIcons";
 
 export default function ServicesSection() {
-  const res = 30;
-
   const services = [
     {
       published: true,
@@ -71,7 +69,6 @@ export default function ServicesSection() {
         "Atención orientada a recuperar la autonomía, funcionalidad y participación en actividades de la vida diaria.",
       icon: <TerapiaOcupacionalIcon />,
     },
-
     {
       visible: true,
       published: true,
@@ -91,16 +88,7 @@ export default function ServicesSection() {
       icon: <EnfermeriaIcon />,
     },
     {
-      visible: true,
-      published: true,
-      to: "/domicilio",
-      title: "Cuidados Domiciliarios",
-      description:
-        "Atención integral en el hogar con profesionales de la salud, enfocada en acompañamiento clínico, rehabilitación y bienestar del paciente.",
-      icon: <DomiciliosIcon />,
-    },
-    {
-      visible: true,
+      visible: false,
       published: false,
       to: "/masoterapia",
       title: "Masoterapia",
@@ -118,7 +106,7 @@ export default function ServicesSection() {
       icon: <PilatesIcon />,
     },
     {
-      visible: true,
+      visible: false,
       published: false,
       to: "/estetica",
       title: "Clínica Estética",
@@ -127,6 +115,7 @@ export default function ServicesSection() {
       icon: <EsteticaIcon />,
     },
     {
+      visible: false,
       published: false,
       title: "Psiconeuroinmunología Clínica",
       description:
@@ -135,21 +124,95 @@ export default function ServicesSection() {
     },
   ];
 
-  return (
-    <section id="services" className="servicesSection">
-      <div className="servicesSection__inner">
-        <header className="servicesSection__header">
-          <h2 className="servicesSection__title">Nuestros Servicios</h2>
-          <p className="servicesSection__subtitle">
-            Ofrecemos una amplia gama de servicios médicos y de bienestar para cuidar de tu
-            salud.
-          </p>
-        </header>
+  const homeCareServices = [
+    {
+      published: true,
+      title: "Kinesiología",
+      to: "/kinesiologia-domiciliaria",
+      description:
+        "Rehabilitación, movilidad, fuerza, equilibrio y apoyo respiratorio en el hogar para adultos, personas mayores y niños según evaluación.",
+      icon: <KinesiologiaIcon />,
+    },
+    {
+      published: true,
+      title: "Enfermería",
+      to: "/atencion-domiciliaria#enfermeria",
+      description:
+        "Procedimientos y cuidados clínicos en casa, como curaciones, inyectables, manejo de dispositivos, educación familiar y seguimiento de indicaciones.",
+      icon: <EnfermeriaIcon />,
+    },
+    {
+      published: true,
+      title: "Terapia Ocupacional",
+      to: "/atencion-domiciliaria#terapia-ocupacional",
+      description:
+        "Apoyo para favorecer autonomía, independencia, actividades de la vida diaria, adaptación del hogar, ayudas técnicas y participación cotidiana.",
+      icon: <TerapiaOcupacionalIcon />,
+    },
+    {
+      published: true,
+      title: "Fonoaudiología",
+      to: "/atencion-domiciliaria#fonoaudiologia",
+      description:
+        "Evaluación e intervención en comunicación, habla, lenguaje, voz, deglución y motricidad orofacial directamente en el hogar.",
+      icon: <FonoaudiologiaIcon />,
+    },
+    {
+      published: true,
+      title: "Cuidados domiciliarios",
+      to: "/atencion-domiciliaria#cuidados-domiciliarios",
+      description:
+        "Servicio de cuidadoras y TENS para acompañamiento, asistencia diaria, supervisión, apoyo en rutinas y cuidados en casa.",
+      icon: <DomiciliosIcon />,
+    },
+  ];
 
-        <div className="servicesGrid">
-          {services
-            .filter((service) => service.visible !== false)
-            .map((service) => (
+  return (
+    <>
+      <section id="services" className="servicesSection">
+        <div className="servicesSection__inner">
+          <header className="servicesSection__header">
+            <h2 className="servicesSection__title">Nuestros Servicios</h2>
+            <p className="servicesSection__subtitle">
+              Ofrecemos una amplia gama de servicios médicos y de bienestar para cuidar de tu
+              salud.
+            </p>
+          </header>
+
+          <div className="servicesGrid">
+            {services
+              .filter((service) => service.visible !== false)
+              .map((service) => (
+                <ServiceCard
+                  key={service.title}
+                  title={service.title}
+                  to={service.to}
+                  published={service.published}
+                  description={service.description}
+                  icon={service.icon}
+                />
+              ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="atencion-domiciliaria-home"
+        className="servicesSection servicesSection--homeCare"
+      >
+        <div className="servicesSection__inner">
+          <header className="servicesSection__header">
+            <span className="servicesSection__eyebrow">Servicios en domicilio</span>
+            <h2 className="servicesSection__title">Atención domiciliaria integral</h2>
+            <p className="servicesSection__subtitle">
+              Acercamos nuestros servicios de salud al hogar para usuarios que requieren
+              rehabilitación, procedimientos clínicos, apoyo terapéutico o cuidados
+              personalizados en su vida diaria.
+            </p>
+          </header>
+
+          <div className="servicesGrid servicesGrid--homeCare">
+            {homeCareServices.map((service) => (
               <ServiceCard
                 key={service.title}
                 title={service.title}
@@ -159,8 +222,9 @@ export default function ServicesSection() {
                 icon={service.icon}
               />
             ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

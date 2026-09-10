@@ -18,6 +18,7 @@ import Fonoaudiologia from "./services/fonoaudiologia/FonoPage";
 import TerapiaOcupacional from "./services/terapiaocupacional/TeoPage";
 import AtenDomiciliaria from "./services/domicilio/DomiPage";
 import Domicilio from "./services/domilicioold/DomiPage";
+import KineDomi from "./services/domicilio/KineDomi";
 
 // IMPORTA TU LANDING
 import FacialesPage from "./services/estetica/promos/faciales/FacialesPage";
@@ -59,8 +60,8 @@ export default function App() {
           <Route path="/nutricion" element={<Nutricion />} />
           <Route path="/fonoaudiologia" element={<Fonoaudiologia />} />
           <Route path="/terapia-ocupacional" element={<TerapiaOcupacional />} />
-          <Route path="/domicilio" element={<Domicilio />} />
           <Route path="/atencion-domiciliaria" element={<AtenDomiciliaria />} />
+          <Route path="/kinesiologia-domiciliaria" element={<KineDomi />} />
 
           {/* LANDING SEPARADAS */}
           <Route path="/faciales" element={<FacialesPage />} />

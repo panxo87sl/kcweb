@@ -2,7 +2,6 @@ import "./DomiPage.css";
 import { Helmet } from "react-helmet-async";
 import ActionButton from "../../components/common/ActionButton/ActionButton";
 import InfoDecoBlock from "../ui/InfoDecoBlock";
-import CardShowcaseGrid from "../ui/CardShowcaseGrid";
 import TopicChipGrid from "../ui/TopicChipGrid";
 
 function DomiSectionHeading({ title }) {
@@ -37,7 +36,7 @@ export default function DomiPage() {
         <title>Atención Domiciliaria Integral en Antofagasta | KINECLIN</title>
         <meta
           name="description"
-          content="Atención domiciliaria integral en Antofagasta: kinesiología, terapia ocupacional, fonoaudiología, enfermería, TENS, cuidadoras y arriendo de equipos clínicos."
+          content="Atención domiciliaria integral en Antofagasta: enfermería, terapia ocupacional, fonoaudiología, TENS y cuidadoras a domicilio."
         />
       </Helmet>
 
@@ -72,6 +71,14 @@ export default function DomiPage() {
               espacio terapéutico donde es posible evaluar, intervenir, educar y acompañar de
               manera más cercana cada proceso de salud, rehabilitación o cuidado.
             </p>
+
+            <div className="domiMainAction">
+              <ActionButton
+                label="Ver Kinesiología domiciliaria"
+                href="/kinesiologia-domiciliaria"
+                variant="centro"
+              />
+            </div>
           </div>
         </section>
 
@@ -108,160 +115,7 @@ export default function DomiPage() {
           </div>
         </section>
 
-        <section id="domicilio-kinesiologia" className="domiSection">
-          <DomiSectionHeading title="Kinesiología a domicilio" />
-
-          <div className="domiSection__inner">
-            <InfoDecoBlock
-              sectionID="kinesiologia-domicilio-servicio"
-              title="Rehabilitación física en el hogar"
-              image="/domiciliario/kinesiologia-domicilio.jpg"
-              imageAlt="Kinesiología a domicilio"
-              reverse={false}
-              showDeco={true}
-              colorProfile="Centro"
-              text="La kinesiología a domicilio permite realizar procesos de rehabilitación directamente en el hogar, trabajando movilidad, fuerza, equilibrio, marcha, dolor, control motor y recuperación funcional. Es una alternativa especialmente útil cuando el usuario tiene dificultad para trasladarse o necesita continuar su tratamiento en un entorno más cercano y seguro."
-            />
-
-            <InfoDecoBlock
-              sectionID="kinesiologia-domicilio-indicaciones"
-              title="¿Para quién está indicada?"
-              image="/domiciliario/kinesiologia-usuario.jpg"
-              imageAlt="Usuario recibiendo kinesiología a domicilio"
-              reverse={true}
-              showDeco={true}
-              colorProfile="Centro"
-              text="Está indicada para usuarios con movilidad reducida, pérdida de fuerza, dolor musculoesquelético, riesgo de caídas, recuperación post cirugía, secuelas neurológicas, desacondicionamiento físico o necesidad de mejorar su funcionalidad diaria. El tratamiento se adapta al espacio disponible, objetivos del usuario y nivel de apoyo familiar."
-            />
-
-            <DomiServiceActions
-              serviceHref="/kinesiologia"
-              serviceLabel="Ver Kinesiología"
-              wspMsg="Hola, quisiera consultar por atención de kinesiología a domicilio."
-            />
-          </div>
-        </section>
-
-        <TopicChipGrid
-          title="Necesidades frecuentes en kinesiología domiciliaria"
-          lead="Algunas condiciones o motivos de atención que pueden requerir apoyo kinésico en el hogar."
-          items={[
-            "ACV",
-            "Parkinson",
-            "Post cirugía",
-            "Movilidad reducida",
-            "Riesgo de caídas",
-            "Dolor musculoesquelético",
-            "Debilidad muscular",
-            "Adulto mayor",
-          ]}
-          background="soft"
-          colorProfile="Centro"
-        />
-
-        <section id="domicilio-terapia-ocupacional" className="domiSection">
-          <DomiSectionHeading title="Terapia Ocupacional a domicilio" />
-
-          <div className="domiSection__inner">
-            <InfoDecoBlock
-              sectionID="terapia-ocupacional-domicilio-servicio"
-              title="Autonomía e independencia en el entorno real"
-              image="/domiciliario/terapia-ocupacional-domicilio.jpg"
-              imageAlt="Terapia ocupacional a domicilio"
-              reverse={false}
-              showDeco={true}
-              colorProfile="Centro"
-              text="La terapia ocupacional a domicilio permite evaluar e intervenir en el mismo lugar donde el usuario realiza sus actividades diarias. Esto facilita observar rutinas, barreras del entorno, necesidades de apoyo, ayudas técnicas y actividades significativas, favoreciendo un proceso centrado en la autonomía, la independencia y la participación cotidiana."
-            />
-
-            <InfoDecoBlock
-              sectionID="terapia-ocupacional-domicilio-indicaciones"
-              title="¿Para quién está indicada?"
-              image="/domiciliario/terapia-ocupacional-usuario.jpg"
-              imageAlt="Usuario en terapia ocupacional domiciliaria"
-              reverse={true}
-              showDeco={true}
-              colorProfile="Centro"
-              text="Está indicada para adultos y personas mayores que necesitan recuperar, mantener o adaptar su desempeño en actividades de la vida diaria, ya sea por secuelas neurológicas, deterioro funcional, cambios cognitivos, dependencia parcial, riesgo de caídas o necesidad de reorganizar rutinas dentro del hogar y la comunidad."
-            />
-
-            <DomiServiceActions
-              serviceHref="/terapia-ocupacional"
-              serviceLabel="Ver Terapia Ocupacional"
-              wspMsg="Hola, quisiera consultar por atención de terapia ocupacional a domicilio."
-            />
-          </div>
-        </section>
-
-        <TopicChipGrid
-          title="Necesidades frecuentes en terapia ocupacional domiciliaria"
-          lead="Situaciones donde la terapia ocupacional puede apoyar directamente dentro del hogar."
-          items={[
-            "ACV",
-            "Parkinson",
-            "Deterioro cognitivo",
-            "Dependencia funcional",
-            "Ayudas técnicas",
-            "Adaptación del hogar",
-            "Prevención de caídas",
-            "Adulto mayor",
-          ]}
-          background="soft"
-          colorProfile="Centro"
-        />
-
-        <section id="domicilio-fonoaudiologia" className="domiSection">
-          <DomiSectionHeading title="Fonoaudiología a domicilio" />
-
-          <div className="domiSection__inner">
-            <InfoDecoBlock
-              sectionID="fonoaudiologia-domicilio-servicio"
-              title="Comunicación y deglución en casa"
-              image="/domiciliario/fonoaudiologia-domicilio.jpg"
-              imageAlt="Fonoaudiología a domicilio"
-              reverse={false}
-              showDeco={true}
-              colorProfile="Centro"
-              text="La fonoaudiología a domicilio permite evaluar e intervenir dificultades de comunicación, habla, lenguaje, voz, deglución y motricidad orofacial en el hogar. Este formato facilita acompañar al usuario en un espacio familiar, incorporando orientaciones prácticas para la familia o cuidador cuando existen dificultades para comunicarse o alimentarse de forma segura."
-            />
-
-            <InfoDecoBlock
-              sectionID="fonoaudiologia-domicilio-indicaciones"
-              title="¿Para quién está indicada?"
-              image="/domiciliario/fonoaudiologia-usuario.jpg"
-              imageAlt="Usuario recibiendo fonoaudiología domiciliaria"
-              reverse={true}
-              showDeco={true}
-              colorProfile="Centro"
-              text="Está indicada para usuarios que presentan dificultades para hablar con claridad, comunicarse, organizar el lenguaje, utilizar la voz o tragar alimentos, líquidos o saliva de manera segura. También puede apoyar procesos posteriores a enfermedades neurológicas, hospitalizaciones o condiciones que afectan la alimentación y la comunicación funcional."
-            />
-
-            <DomiServiceActions
-              serviceHref="/fonoaudiologia"
-              serviceLabel="Ver Fonoaudiología"
-              wspMsg="Hola, quisiera consultar por atención de fonoaudiología a domicilio."
-            />
-          </div>
-        </section>
-
-        <TopicChipGrid
-          title="Necesidades frecuentes en fonoaudiología domiciliaria"
-          lead="Motivos de atención donde la fonoaudiología puede ser relevante dentro del hogar."
-          items={[
-            "Disfagia",
-            "ACV",
-            "Parkinson",
-            "Alteraciones del habla",
-            "Trastornos de voz",
-            "Motricidad orofacial",
-            "Comunicación funcional",
-            "Adulto mayor",
-          ]}
-          background="soft"
-          colorProfile="Centro"
-        />
-
-        <section id="domicilio-enfermeria" className="domiSection">
+        <section id="enfermeria" className="domiSection">
           <DomiSectionHeading title="Enfermería a domicilio" />
 
           <div className="domiSection__inner">
@@ -312,6 +166,108 @@ export default function DomiPage() {
           colorProfile="Centro"
         />
 
+        <section id="terapia-ocupacional" className="domiSection">
+          <DomiSectionHeading title="Terapia Ocupacional a domicilio" />
+
+          <div className="domiSection__inner">
+            <InfoDecoBlock
+              sectionID="terapia-ocupacional-domicilio-servicio"
+              title="Autonomía e independencia en el entorno real"
+              image="/domiciliario/terapia-ocupacional-domicilio.jpg"
+              imageAlt="Terapia ocupacional a domicilio"
+              reverse={false}
+              showDeco={true}
+              colorProfile="Centro"
+              text="La terapia ocupacional a domicilio permite evaluar e intervenir en el mismo lugar donde el usuario realiza sus actividades diarias. Esto facilita observar rutinas, barreras del entorno, necesidades de apoyo, ayudas técnicas y actividades significativas, favoreciendo un proceso centrado en la autonomía, la independencia y la participación cotidiana."
+            />
+
+            <InfoDecoBlock
+              sectionID="terapia-ocupacional-domicilio-indicaciones"
+              title="¿Para quién está indicada?"
+              image="/domiciliario/terapia-ocupacional-usuario.jpg"
+              imageAlt="Usuario en terapia ocupacional domiciliaria"
+              reverse={true}
+              showDeco={true}
+              colorProfile="Centro"
+              text="Está indicada para adultos y personas mayores que necesitan recuperar, mantener o adaptar su desempeño en actividades de la vida diaria, ya sea por secuelas neurológicas, deterioro funcional, cambios cognitivos, dependencia parcial, riesgo de caídas o necesidad de reorganizar rutinas dentro del hogar y la comunidad."
+            />
+
+            <DomiServiceActions
+              serviceHref="/terapia-ocupacional"
+              serviceLabel="Ver Terapia Ocupacional"
+              wspMsg="Hola, quisiera consultar por atención de terapia ocupacional a domicilio."
+            />
+          </div>
+        </section>
+
+        <TopicChipGrid
+          title="Necesidades frecuentes en terapia ocupacional domiciliaria"
+          lead="Situaciones donde la terapia ocupacional puede apoyar directamente dentro del hogar."
+          items={[
+            "ACV",
+            "Parkinson",
+            "Deterioro cognitivo",
+            "Dependencia funcional",
+            "Ayudas técnicas",
+            "Adaptación del hogar",
+            "Prevención de caídas",
+            "Adulto mayor",
+          ]}
+          background="soft"
+          colorProfile="Centro"
+        />
+
+        <section id="fonoaudiologia" className="domiSection">
+          <DomiSectionHeading title="Fonoaudiología a domicilio" />
+
+          <div className="domiSection__inner">
+            <InfoDecoBlock
+              sectionID="fonoaudiologia-domicilio-servicio"
+              title="Comunicación y deglución en casa"
+              image="/domiciliario/fonoaudiologia-domicilio.jpg"
+              imageAlt="Fonoaudiología a domicilio"
+              reverse={false}
+              showDeco={true}
+              colorProfile="Centro"
+              text="La fonoaudiología a domicilio permite evaluar e intervenir dificultades de comunicación, habla, lenguaje, voz, deglución y motricidad orofacial en el hogar. Este formato facilita acompañar al usuario en un espacio familiar, incorporando orientaciones prácticas para la familia o cuidador cuando existen dificultades para comunicarse o alimentarse de forma segura."
+            />
+
+            <InfoDecoBlock
+              sectionID="fonoaudiologia-domicilio-indicaciones"
+              title="¿Para quién está indicada?"
+              image="/domiciliario/fonoaudiologia-usuario.jpg"
+              imageAlt="Usuario recibiendo fonoaudiología domiciliaria"
+              reverse={true}
+              showDeco={true}
+              colorProfile="Centro"
+              text="Está indicada para usuarios que presentan dificultades para hablar con claridad, comunicarse, organizar el lenguaje, utilizar la voz o tragar alimentos, líquidos o saliva de manera segura. También puede apoyar procesos posteriores a enfermedades neurológicas, hospitalizaciones o condiciones que afectan la alimentación y la comunicación funcional."
+            />
+
+            <DomiServiceActions
+              serviceHref="/fonoaudiologia"
+              serviceLabel="Ver Fonoaudiología"
+              wspMsg="Hola, quisiera consultar por atención de fonoaudiología a domicilio."
+            />
+          </div>
+        </section>
+
+        <TopicChipGrid
+          title="Necesidades frecuentes en fonoaudiología domiciliaria"
+          lead="Motivos de atención donde la fonoaudiología puede ser relevante dentro del hogar."
+          items={[
+            "Disfagia",
+            "ACV",
+            "Parkinson",
+            "Alteraciones del habla",
+            "Trastornos de voz",
+            "Motricidad orofacial",
+            "Comunicación funcional",
+            "Adulto mayor",
+          ]}
+          background="soft"
+          colorProfile="Centro"
+        />
+
         <section id="cuidados-domiciliarios" className="domiSection">
           <DomiSectionHeading title="Cuidados domiciliarios" />
 
@@ -349,39 +305,7 @@ export default function DomiPage() {
           </div>
         </section>
 
-        <CardShowcaseGrid
-          sectionID="equipos-domiciliarios"
-          title="Equipos clínicos disponibles"
-          background="soft"
-          cards={[
-            {
-              image: "/domiciliario/aspirador-secreciones.jpg",
-              imageAlt: "Aspirador de secreciones",
-              title: "Aspirador de secreciones",
-              text: "Equipo de apoyo para usuarios que requieren manejo de secreciones en el hogar. Permite retirar secreciones de manera más segura cuando existe indicación y orientación profesional, especialmente en personas con dificultad para eliminarlas por sí mismas. Disponible para arriendo diario o mensual, sujeto a disponibilidad.",
-            },
-            {
-              image: "/domiciliario/nebulizador.jpg",
-              imageAlt: "Nebulizador",
-              title: "Nebulizador",
-              text: "Equipo utilizado para administrar medicamentos inhalados en forma de nebulización, cuando ha sido indicado por un profesional de salud. Puede apoyar tratamientos respiratorios domiciliarios y facilitar el cuidado en casa. Disponible para arriendo diario o mensual, sujeto a disponibilidad.",
-            },
-            {
-              image: "/domiciliario/concentrador-oxigeno.jpg",
-              imageAlt: "Concentrador de oxígeno",
-              title: "Concentrador de oxígeno",
-              text: "Equipo de uso domiciliario que entrega oxígeno suplementario a través de cánula nasal o mascarilla, según indicación médica. Es una alternativa práctica para usuarios que requieren apoyo respiratorio en casa. Disponible para arriendo diario o mensual, sujeto a disponibilidad.",
-            },
-            {
-              image: "/domiciliario/cuffometro.jpg",
-              imageAlt: "Cuffómetro para traqueostomía",
-              title: "Cuffómetro para traqueostomía",
-              text: "Instrumento utilizado para medir y controlar la presión del cuff en cánulas de traqueostomía, tubos endotraqueales u otros dispositivos similares. Su uso ayuda a mantener un manejo más seguro de la vía aérea por personal capacitado. Disponible para arriendo diario o mensual, sujeto a disponibilidad.",
-            },
-          ]}
-        />
-
-        <section className="domiSection">
+        <section className="domiSection domiSection--soft">
           <div className="domiSection__inner domiSection__inner--center">
             <p className="domiClosingText">
               En KINECLIN buscamos que cada atención domiciliaria sea cercana, segura y

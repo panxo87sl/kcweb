@@ -2,6 +2,10 @@
   padding: 50px 0;
 }
 
+.servicesSection--homeCare {
+  background: var(--kineclin-bg2);
+}
+
 .servicesSection__inner {
   width: min(1200px, 90%);
   margin: 0 auto;
@@ -12,6 +16,16 @@
   margin-bottom: 48px;
 }
 
+.servicesSection__eyebrow {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--kineclin-azul);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .servicesSection__title {
   font-size: 44px;
   font-weight: 800;
@@ -20,7 +34,7 @@
 }
 
 .servicesSection__subtitle {
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.7;
@@ -33,14 +47,35 @@
   gap: 26px;
 }
 
+.servicesGrid--homeCare {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.servicesGrid--homeCare .serviceCard {
+  height: 285px;
+}
+
+#services,
+#atencion-domiciliaria-home {
+  scroll-margin-top: 65px;
+}
+
 /* Breakpoints */
+@media (max-width: 1200px) {
+  .servicesGrid--homeCare {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 1100px) {
   .servicesGrid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-#services {
-  scroll-margin-top: 65px; /* desktop: navbar + aire */
+
+  .servicesGrid--homeCare {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 700px) {
@@ -48,14 +83,31 @@
     padding: 30px 0;
   }
 
+  .servicesSection--homeCare {
+    padding: 44px 0;
+  }
+
   .servicesSection__title {
     font-size: 34px;
   }
 
-  .servicesGrid {
+  .servicesSection__subtitle {
+    text-align: justify;
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+  }
+
+  .servicesGrid,
+  .servicesGrid--homeCare {
     grid-template-columns: 1fr;
   }
-  #services {
-    scroll-margin-top: 40px; /* desktop: navbar + aire */
+
+  .servicesGrid--homeCare .serviceCard {
+    height: 250px;
+  }
+
+  #services,
+  #atencion-domiciliaria-home {
+    scroll-margin-top: 40px;
   }
 }

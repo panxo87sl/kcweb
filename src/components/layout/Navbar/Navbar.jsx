@@ -25,6 +25,9 @@ export default function Navbar() {
           <Link className="navPill__link" to="/#services">
             Nuestros Servicios
           </Link>
+          <Link className="navPill__link" to="/#atencion-domiciliaria-home">
+            Atención Domiciliaria
+          </Link>
         </div>
 
         <div className="navPill__right__desk">
@@ -37,6 +40,8 @@ export default function Navbar() {
             size="nav"
           />
         </div>
+
+        {/* Menu Mobile */}
         <div className="navPill__right__mobile">
           <button
             type="button"
@@ -62,6 +67,13 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
           >
             Nuestros Servicios
+          </Link>
+          <Link
+            className="navPill__dropdownLink"
+            to="/#atencion-domiciliaria-home"
+            onClick={() => setOpen(false)}
+          >
+            Atención Domiciliaria
           </Link>
         </div>
       </nav>
