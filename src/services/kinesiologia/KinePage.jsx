@@ -13,6 +13,7 @@ export default function KinePage() {
           name="description"
           content="Servicio de kinesiología en Antofagasta: rehabilitación musculoesquelética, neurológica, respiratoria y geriátrica, más fortalecimiento terapéutico en KINECLIN."
         />
+        <link rel="canonical" href="https://www.kineclin.cl/kinesiologia" />
       </Helmet>
 
       <main className="kinePage">

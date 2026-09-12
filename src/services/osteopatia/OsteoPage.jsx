@@ -14,6 +14,7 @@ export default function OsteoPage() {
           name="description"
           content="Atención de osteopatía y quiropraxia en Antofagasta para aliviar dolores musculares, articulares y problemas posturales. Agenda online en KINECLIN."
         />
+        <link rel="canonical" href="https://www.kineclin.cl/osteopatia" />
       </Helmet>
 
       <main className="osteoPage">

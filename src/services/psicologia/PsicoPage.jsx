@@ -13,6 +13,7 @@ export default function PsicoPage() {
           name="description"
           content="Atención psicológica en Antofagasta: ansiedad, estado de ánimo, autoestima y procesos personales. Acompañamiento profesional y agenda online en KINECLIN."
         />
+        <link rel="canonical" href="https://www.kineclin.cl/psicologia" />
       </Helmet>
 
       <main className="psicoPage">

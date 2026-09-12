@@ -12,6 +12,7 @@ export default function TeoPage() {
           name="description"
           content="Terapia ocupacional en Antofagasta para adultos y personas mayores: rehabilitación neurológica, cognitiva y funcional, autonomía, independencia, ayudas técnicas y participación comunitaria."
         />
+        <link rel="canonical" href="https://www.kineclin.cl/terapia-ocupacional" />
       </Helmet>
 
       <main className="teoPage">

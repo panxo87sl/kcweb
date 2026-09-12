@@ -13,6 +13,7 @@ export default function EnfermeriaPage() {
           name="description"
           content="Servicio de enfermería en Antofagasta: curaciones avanzadas, inyectables, manejo de ostomías e invasivos. Atención profesional en KINECLIN Centro de Salud."
         />
+        <link rel="canonical" href="https://www.kineclin.cl/enfermeria" />
       </Helmet>
 
       <main className="enfermeriaPage">

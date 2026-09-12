@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /kcestetica
+Disallow: /faciales
+Disallow: /corporales
+
+Sitemap: https://www.kineclin.cl/sitemap.xml

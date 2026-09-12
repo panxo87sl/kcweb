@@ -38,6 +38,7 @@ export default function DomiPage() {
           name="description"
           content="Atención domiciliaria integral en Antofagasta: enfermería, terapia ocupacional, fonoaudiología, TENS y cuidadoras a domicilio."
         />
+        <link rel="canonical" href="https://www.kineclin.cl/atencion-domiciliaria" />
       </Helmet>
 
       <main className="domiPage">

@@ -75,6 +75,7 @@ export default function ContactPage() {
           name="description"
           content="Postula para trabajar en KINECLIN Centro de Salud en Antofagasta: kinesiología, enfermería, psicología, nutrición y más especialidades."
         />
+        <link rel="canonical" href="https://www.kineclin.cl/contactanos" />
       </Helmet>
 
       <main className="contactPage">

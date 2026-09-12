@@ -19,6 +19,7 @@ import TerapiaOcupacional from "./services/terapiaocupacional/TeoPage";
 import AtenDomiciliaria from "./services/domicilio/DomiPage";
 import Domicilio from "./services/domilicioold/DomiPage";
 import KineDomi from "./services/domicilio/KineDomi";
+import NotFoundPage from "./services/notfound/NotFoundPage";
 
 // IMPORTA TU LANDING
 import FacialesPage from "./services/estetica/promos/faciales/FacialesPage";
@@ -65,6 +66,9 @@ export default function App() {
 
           {/* LANDING SEPARADAS */}
           <Route path="/faciales" element={<FacialesPage />} />
+
+          {/* 404 */}
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </LayoutWrapper>
     </BrowserRouter>

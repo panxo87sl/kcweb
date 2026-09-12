@@ -13,6 +13,7 @@ export default function KineDomi() {
           name="description"
           content="Kinesiología domiciliaria en Antofagasta para adultos, personas mayores y niños: rehabilitación funcional, respiratoria, neurológica, post cirugía, movilidad, fuerza y equilibrio."
         />
+        <link rel="canonical" href="https://www.kineclin.cl/kinesiologia-domiciliaria" />
       </Helmet>
 
       <main className="kineDomiPage">

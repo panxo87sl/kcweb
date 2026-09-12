@@ -12,6 +12,7 @@ export default function FonoPage() {
           name="description"
           content="Servicio de fonoaudiología en Antofagasta: evaluación e intervención en lenguaje, habla, voz, audición, deglución y motricidad orofacial en KINECLIN."
         />
+        <link rel="canonical" href="https://www.kineclin.cl/fonoaudiologia" />
       </Helmet>
 
       <main className="fonoPage">

@@ -1,0 +1,61 @@
+.notFoundPage {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: var(--kineclin-bg2);
+  padding: 120px 0 80px 0;
+}
+
+.notFoundPage__inner {
+  width: min(var(--w-hero), 700px);
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.notFoundPage__code {
+  margin: 0;
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  color: var(--kineclin-azul);
+  font-size: clamp(64px, 10vw, 110px);
+  line-height: 1;
+}
+
+.notFoundPage__title {
+  margin: 8px 0 0 0;
+  font-size: clamp(24px, 3vw, 32px);
+  color: var(--kineclin-grey-s);
+}
+
+.notFoundPage__lead {
+  max-width: 480px;
+  margin: 14px auto 0 auto;
+  color: #4b5563;
+  font-size: var(--font-size-l);
+  line-height: 1.55;
+}
+
+.notFoundPage__button {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 32px;
+  border-radius: 999px;
+  background: var(--kineclin-azul);
+  color: #fff !important;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: var(--font-size-l);
+  transition: background 0.2s ease;
+}
+
+.notFoundPage__button:hover {
+  background: var(--kineclin-azul-s);
+}
+
+@media (max-width: 768px) {
+  .notFoundPage {
+    padding: 92px 0 60px 0;
+  }
+}
