@@ -11,7 +11,7 @@ export default function Home() {
         <title>KINECLIN | Centro de Salud Integral en Antofagasta</title>
         <meta
           name="description"
-          content="Centro de salud integral en Antofagasta: kinesiología, osteopatía, enfermería, psicología y nutrición. Atención clínica, bienestar y agenda online en KINECLIN."
+          content="Centro de salud en Antofagasta: kinesiología, psicología, fonoaudiología, terapia ocupacional, nutrición, enfermería, osteopatía y más. Atención a domicilio."
         />
         <link rel="canonical" href="https://www.kineclin.cl/" />
       </Helmet>
