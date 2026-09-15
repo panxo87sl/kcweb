@@ -17,7 +17,6 @@ import Nutricion from "./services/nutricion/NutricionPage";
 import Fonoaudiologia from "./services/fonoaudiologia/FonoPage";
 import TerapiaOcupacional from "./services/terapiaocupacional/TeoPage";
 import AtenDomiciliaria from "./services/domicilio/DomiPage";
-import Domicilio from "./services/domilicioold/DomiPage";
 import KineDomi from "./services/domicilio/KineDomi";
 import NotFoundPage from "./services/notfound/NotFoundPage";
 
