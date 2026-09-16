@@ -2,7 +2,8 @@ import "./DomiPage.css";
 import { Helmet } from "react-helmet-async";
 import ActionButton from "../../components/common/ActionButton/ActionButton";
 import InfoDecoBlock from "../ui/InfoDecoBlock";
-import TopicChipGrid from "../ui/TopicChipGrid";
+import ServiceDropdown from "../ui/ServiceDropdown";
+import SingleSimpleShowcase from "../ui/SingleSimpleShowcase";
 
 function DomiSectionHeading({ title }) {
   return (
@@ -17,7 +18,9 @@ function DomiSectionHeading({ title }) {
 function DomiServiceActions({ serviceHref, serviceLabel, wspMsg }) {
   return (
     <div className="domiServiceActions">
-      <ActionButton label={serviceLabel} href={serviceHref} variant="centro" />
+      {serviceHref && serviceLabel && (
+        <ActionButton label={serviceLabel} href={serviceHref} variant="centro" />
+      )}
 
       <ActionButton
         label="Consultar por WhatsApp"
@@ -28,6 +31,260 @@ function DomiServiceActions({ serviceHref, serviceLabel, wspMsg }) {
     </div>
   );
 }
+
+function DomiMiniCards({ title = "Necesidades frecuentes", items = [] }) {
+  return (
+    <div className="domiMiniCards">
+      <h3 className="domiMiniCards__title">{title}</h3>
+
+      <div className="domiMiniCards__grid">
+        {items.map((item) => (
+          <span className="domiMiniCards__item" key={item}>
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function DomiServiceBlock({
+  id,
+  title,
+  background = "white",
+  professional,
+  blocks,
+  audience,
+  miniCards,
+  serviceHref,
+  serviceLabel,
+  wspMsg,
+}) {
+  const sectionClassName =
+    background === "soft" ? "domiSection domiSection--soft" : "domiSection";
+
+  return (
+    <section id={id} className={sectionClassName}>
+      <DomiSectionHeading title={title} />
+
+      <div className="domiSection__inner">
+        <SingleSimpleShowcase {...professional} />
+
+        <div className="domiInfoBlocks">
+          {blocks.map((block, index) => (
+            <InfoDecoBlock
+              key={block.title}
+              title={block.title}
+              image={block.image}
+              imageAlt={block.imageAlt}
+              reverse={index % 2 !== 0}
+              showDeco={true}
+              colorProfile="Centro"
+              text={block.text}
+            />
+          ))}
+        </div>
+
+        <ServiceDropdown
+          title="¿Para quién está dirigido?"
+          colorProfile="Centro"
+          items={audience.map((item) => ({
+            name: item,
+          }))}
+        />
+
+        <DomiMiniCards items={miniCards} />
+
+        <DomiServiceActions
+          serviceHref={serviceHref}
+          serviceLabel={serviceLabel}
+          wspMsg={wspMsg}
+        />
+      </div>
+    </section>
+  );
+}
+
+const domicilioServices = [
+  {
+    id: "enfermeria",
+    title: "Enfermería a domicilio",
+    background: "white",
+    professional: {
+      image: "/enfermeria/enfStephie.jpg",
+      name: "Stephanie Grace Mandiola",
+      role: "Enfermera",
+    },
+    blocks: [
+      {
+        title: "Procedimientos y cuidados clínicos en el hogar",
+        image: "/domiciliario/enfermeria-domicilio.jpg",
+        imageAlt: "Enfermería a domicilio",
+        text: "La enfermería a domicilio permite realizar procedimientos y cuidados clínicos en casa, evitando traslados innecesarios y entregando apoyo profesional al usuario y su familia. Puede incluir curaciones, inyectables, manejo de dispositivos, educación en cuidados, observación de signos de alerta y acompañamiento en procesos de recuperación.",
+      },
+      {
+        title: "Continuidad de cuidados y orientación familiar",
+        image: "/domiciliario/enfermeria-usuario.jpg",
+        imageAlt: "Usuario recibiendo enfermería domiciliaria",
+        text: "La atención domiciliaria facilita el seguimiento de indicaciones, la educación al usuario y su familia, y la observación de cambios relevantes durante el proceso de recuperación. El objetivo es entregar cuidados seguros, ordenados y adaptados a las necesidades reales del domicilio.",
+      },
+    ],
+    audience: [
+      "Usuarios que requieren curaciones, inyectables o procedimientos de enfermería.",
+      "Personas con heridas, ostomías, dispositivos clínicos o cuidados específicos.",
+      "Usuarios en recuperación posterior a hospitalizaciones, cirugías o tratamientos.",
+      "Familias que necesitan orientación profesional para cuidados seguros en casa.",
+      "Personas para quienes el traslado al centro de salud resulta complejo o poco conveniente.",
+    ],
+    miniCards: [
+      "Curaciones",
+      "Inyectables",
+      "Ostomías",
+      "Heridas",
+      "Post hospitalización",
+      "Dispositivos clínicos",
+      "Educación familiar",
+      "Adulto mayor",
+    ],
+    serviceHref: "/enfermeria",
+    serviceLabel: "Ver Enfermería",
+    wspMsg: "Hola, quisiera consultar por atención de enfermería a domicilio.",
+  },
+  {
+    id: "terapia-ocupacional",
+    title: "Terapia Ocupacional a domicilio",
+    background: "soft",
+    professional: {
+      image: "/terapiaocupacional/teoBenjamin.jpg",
+      name: "Benjamin Rodriguez",
+      role: "Terapeuta Ocupacional",
+    },
+    blocks: [
+      {
+        title: "Autonomía e independencia en el entorno real",
+        image: "/domiciliario/terapia-ocupacional-domicilio.jpg",
+        imageAlt: "Terapia ocupacional a domicilio",
+        text: "La terapia ocupacional a domicilio permite evaluar e intervenir en el mismo lugar donde el usuario realiza sus actividades diarias. Esto facilita observar rutinas, barreras del entorno, necesidades de apoyo, ayudas técnicas y actividades significativas, favoreciendo un proceso centrado en la autonomía, la independencia y la participación cotidiana.",
+      },
+      {
+        title: "Adaptación del hogar y actividades de la vida diaria",
+        image: "/domiciliario/terapia-ocupacional-usuario.jpg",
+        imageAlt: "Usuario en terapia ocupacional domiciliaria",
+        text: "El trabajo puede incluir entrenamiento funcional, adaptación de actividades, orientación familiar, organización de rutinas, prevención de riesgos y recomendaciones sobre ayudas técnicas. La intervención busca que el usuario pueda desenvolverse con mayor seguridad y con el menor apoyo posible dentro de su hogar y comunidad.",
+      },
+    ],
+    audience: [
+      "Adultos y personas mayores que necesitan recuperar o mantener funcionalidad.",
+      "Usuarios con secuelas neurológicas, deterioro cognitivo o dependencia parcial.",
+      "Personas con dificultades para realizar actividades de la vida diaria.",
+      "Usuarios que requieren adaptación del hogar, ayudas técnicas u orientación familiar.",
+      "Personas con riesgo de caídas o necesidad de reorganizar rutinas cotidianas.",
+    ],
+    miniCards: [
+      "ACV",
+      "Parkinson",
+      "Deterioro cognitivo",
+      "Dependencia funcional",
+      "Ayudas técnicas",
+      "Adaptación del hogar",
+      "Prevención de caídas",
+      "Adulto mayor",
+    ],
+    serviceHref: "/terapia-ocupacional",
+    serviceLabel: "Ver Terapia Ocupacional",
+    wspMsg: "Hola, quisiera consultar por atención de terapia ocupacional a domicilio.",
+  },
+  {
+    id: "fonoaudiologia",
+    title: "Fonoaudiología a domicilio",
+    background: "white",
+    professional: {
+      image: "/fonoaudiologia/fonoCatalina.jpg",
+      name: "Catalina Quiroz",
+      role: "Fonoaudióloga",
+    },
+    blocks: [
+      {
+        title: "Comunicación y deglución en casa",
+        image: "/domiciliario/fonoaudiologia-domicilio.jpg",
+        imageAlt: "Fonoaudiología a domicilio",
+        text: "La fonoaudiología a domicilio permite evaluar e intervenir dificultades de comunicación, habla, lenguaje, voz, deglución y motricidad orofacial en el hogar. Este formato facilita acompañar al usuario en un espacio familiar, incorporando orientaciones prácticas para la familia o cuidador.",
+      },
+      {
+        title: "Orientación para la rutina diaria",
+        image: "/domiciliario/fonoaudiologia-usuario.jpg",
+        imageAlt: "Usuario recibiendo fonoaudiología domiciliaria",
+        text: "La atención en domicilio permite observar necesidades reales de comunicación y alimentación dentro de la rutina del usuario. Desde ahí se entregan estrategias, ejercicios e indicaciones para favorecer una comunicación más funcional y una alimentación más segura cuando existen dificultades de deglución.",
+      },
+    ],
+    audience: [
+      "Usuarios con dificultades para hablar, comunicarse o organizar el lenguaje.",
+      "Personas con alteraciones de voz, habla, motricidad orofacial o deglución.",
+      "Usuarios con disfagia o dificultades para tragar alimentos, líquidos o saliva.",
+      "Personas con secuelas neurológicas, Parkinson, ACV u otras condiciones asociadas.",
+      "Familias o cuidadores que requieren orientación para comunicación y alimentación segura.",
+    ],
+    miniCards: [
+      "Disfagia",
+      "ACV",
+      "Parkinson",
+      "Alteraciones del habla",
+      "Trastornos de voz",
+      "Motricidad orofacial",
+      "Comunicación funcional",
+      "Adulto mayor",
+    ],
+    serviceHref: "/fonoaudiologia",
+    serviceLabel: "Ver Fonoaudiología",
+    wspMsg:
+      "Hola, quisiera consultar por atención de fonoaudiología a domicilio con Catalina.",
+  },
+  {
+    id: "cuidados-domiciliarios",
+    title: "Cuidados domiciliarios",
+    background: "soft",
+    professional: {
+      image: "/enfermeria/enfStephie.jpg",
+      name: "Stephanie Grace Mandiola",
+      role: "Enfermera",
+    },
+    blocks: [
+      {
+        title: "Cuidadoras a domicilio",
+        image: "/domiciliario/cuidadoras.jpg",
+        imageAlt: "Cuidadoras a domicilio",
+        text: "El servicio de cuidadoras a domicilio está orientado a usuarios que necesitan acompañamiento, supervisión y apoyo en sus actividades cotidianas. Puede incluir asistencia en rutinas básicas, higiene, alimentación, movilización, compañía, prevención de riesgos y apoyo general a la familia, siempre de acuerdo con las necesidades del usuario.",
+      },
+      {
+        title: "TENS a domicilio",
+        image: "/domiciliario/tens.jpg",
+        imageAlt: "TENS a domicilio",
+        text: "El servicio de TENS a domicilio permite contar con apoyo técnico en cuidados de salud dentro del hogar. Está pensado para usuarios que requieren asistencia más específica, seguimiento de indicaciones, apoyo en cuidados básicos, observación de signos de alerta y acompañamiento en procesos de recuperación o dependencia.",
+      },
+    ],
+    audience: [
+      "Usuarios que necesitan acompañamiento, supervisión o apoyo en actividades diarias.",
+      "Personas mayores, usuarios con dependencia o movilidad reducida.",
+      "Familias que requieren apoyo para higiene, alimentación, movilización o compañía.",
+      "Usuarios que necesitan apoyo técnico de TENS en cuidados básicos o seguimiento.",
+      "Personas en recuperación, dependencia parcial o necesidad de cuidados continuos.",
+    ],
+    miniCards: [
+      "Cuidadoras",
+      "TENS",
+      "Acompañamiento",
+      "Higiene",
+      "Alimentación",
+      "Movilización",
+      "Supervisión",
+      "Apoyo familiar",
+    ],
+    serviceHref: "",
+    serviceLabel: "",
+    wspMsg:
+      "Hola, quisiera consultar por el servicio de cuidados domiciliarios, cuidadoras o TENS.",
+  },
+];
 
 export default function DomiPage() {
   return (
@@ -116,197 +373,11 @@ export default function DomiPage() {
           </div>
         </section>
 
-        <section id="enfermeria" className="domiSection">
-          <DomiSectionHeading title="Enfermería a domicilio" />
+        {domicilioServices.map((service) => (
+          <DomiServiceBlock key={service.id} {...service} />
+        ))}
 
-          <div className="domiSection__inner">
-            <InfoDecoBlock
-              sectionID="enfermeria-domicilio-servicio"
-              title="Procedimientos y cuidados clínicos en el hogar"
-              image="/domiciliario/enfermeria-domicilio.jpg"
-              imageAlt="Enfermería a domicilio"
-              reverse={false}
-              showDeco={true}
-              colorProfile="Centro"
-              text="La enfermería a domicilio permite realizar procedimientos y cuidados clínicos en casa, evitando traslados innecesarios y entregando apoyo profesional al usuario y su familia. Puede incluir curaciones, inyectables, manejo de dispositivos, educación en cuidados, observación de signos de alerta y acompañamiento en procesos de recuperación."
-            />
-
-            <InfoDecoBlock
-              sectionID="enfermeria-domicilio-indicaciones"
-              title="¿Para quién está indicada?"
-              image="/domiciliario/enfermeria-usuario.jpg"
-              imageAlt="Usuario recibiendo enfermería domiciliaria"
-              reverse={true}
-              showDeco={true}
-              colorProfile="Centro"
-              text="Está indicada para usuarios que requieren procedimientos de enfermería, continuidad de cuidados, apoyo posterior a una hospitalización, manejo de heridas, ostomías, dispositivos clínicos o asistencia profesional en situaciones donde el traslado al centro de salud resulta complejo o poco conveniente."
-            />
-
-            <DomiServiceActions
-              serviceHref="/enfermeria"
-              serviceLabel="Ver Enfermería"
-              wspMsg="Hola, quisiera consultar por atención de enfermería a domicilio."
-            />
-          </div>
-        </section>
-
-        <TopicChipGrid
-          title="Necesidades frecuentes en enfermería domiciliaria"
-          lead="Procedimientos y cuidados que pueden requerir apoyo profesional en el domicilio."
-          items={[
-            "Curaciones",
-            "Inyectables",
-            "Ostomías",
-            "Heridas",
-            "Post hospitalización",
-            "Dispositivos clínicos",
-            "Educación familiar",
-            "Adulto mayor",
-          ]}
-          background="soft"
-          colorProfile="Centro"
-        />
-
-        <section id="terapia-ocupacional" className="domiSection">
-          <DomiSectionHeading title="Terapia Ocupacional a domicilio" />
-
-          <div className="domiSection__inner">
-            <InfoDecoBlock
-              sectionID="terapia-ocupacional-domicilio-servicio"
-              title="Autonomía e independencia en el entorno real"
-              image="/domiciliario/terapia-ocupacional-domicilio.jpg"
-              imageAlt="Terapia ocupacional a domicilio"
-              reverse={false}
-              showDeco={true}
-              colorProfile="Centro"
-              text="La terapia ocupacional a domicilio permite evaluar e intervenir en el mismo lugar donde el usuario realiza sus actividades diarias. Esto facilita observar rutinas, barreras del entorno, necesidades de apoyo, ayudas técnicas y actividades significativas, favoreciendo un proceso centrado en la autonomía, la independencia y la participación cotidiana."
-            />
-
-            <InfoDecoBlock
-              sectionID="terapia-ocupacional-domicilio-indicaciones"
-              title="¿Para quién está indicada?"
-              image="/domiciliario/terapia-ocupacional-usuario.jpg"
-              imageAlt="Usuario en terapia ocupacional domiciliaria"
-              reverse={true}
-              showDeco={true}
-              colorProfile="Centro"
-              text="Está indicada para adultos y personas mayores que necesitan recuperar, mantener o adaptar su desempeño en actividades de la vida diaria, ya sea por secuelas neurológicas, deterioro funcional, cambios cognitivos, dependencia parcial, riesgo de caídas o necesidad de reorganizar rutinas dentro del hogar y la comunidad."
-            />
-
-            <DomiServiceActions
-              serviceHref="/terapia-ocupacional"
-              serviceLabel="Ver Terapia Ocupacional"
-              wspMsg="Hola, quisiera consultar por atención de terapia ocupacional a domicilio."
-            />
-          </div>
-        </section>
-
-        <TopicChipGrid
-          title="Necesidades frecuentes en terapia ocupacional domiciliaria"
-          lead="Situaciones donde la terapia ocupacional puede apoyar directamente dentro del hogar."
-          items={[
-            "ACV",
-            "Parkinson",
-            "Deterioro cognitivo",
-            "Dependencia funcional",
-            "Ayudas técnicas",
-            "Adaptación del hogar",
-            "Prevención de caídas",
-            "Adulto mayor",
-          ]}
-          background="soft"
-          colorProfile="Centro"
-        />
-
-        <section id="fonoaudiologia" className="domiSection">
-          <DomiSectionHeading title="Fonoaudiología a domicilio" />
-
-          <div className="domiSection__inner">
-            <InfoDecoBlock
-              sectionID="fonoaudiologia-domicilio-servicio"
-              title="Comunicación y deglución en casa"
-              image="/domiciliario/fonoaudiologia-domicilio.jpg"
-              imageAlt="Fonoaudiología a domicilio"
-              reverse={false}
-              showDeco={true}
-              colorProfile="Centro"
-              text="La fonoaudiología a domicilio permite evaluar e intervenir dificultades de comunicación, habla, lenguaje, voz, deglución y motricidad orofacial en el hogar. Este formato facilita acompañar al usuario en un espacio familiar, incorporando orientaciones prácticas para la familia o cuidador cuando existen dificultades para comunicarse o alimentarse de forma segura."
-            />
-
-            <InfoDecoBlock
-              sectionID="fonoaudiologia-domicilio-indicaciones"
-              title="¿Para quién está indicada?"
-              image="/domiciliario/fonoaudiologia-usuario.jpg"
-              imageAlt="Usuario recibiendo fonoaudiología domiciliaria"
-              reverse={true}
-              showDeco={true}
-              colorProfile="Centro"
-              text="Está indicada para usuarios que presentan dificultades para hablar con claridad, comunicarse, organizar el lenguaje, utilizar la voz o tragar alimentos, líquidos o saliva de manera segura. También puede apoyar procesos posteriores a enfermedades neurológicas, hospitalizaciones o condiciones que afectan la alimentación y la comunicación funcional."
-            />
-
-            <DomiServiceActions
-              serviceHref="/fonoaudiologia"
-              serviceLabel="Ver Fonoaudiología"
-              wspMsg="Hola, quisiera consultar por atención de fonoaudiología a domicilio."
-            />
-          </div>
-        </section>
-
-        <TopicChipGrid
-          title="Necesidades frecuentes en fonoaudiología domiciliaria"
-          lead="Motivos de atención donde la fonoaudiología puede ser relevante dentro del hogar."
-          items={[
-            "Disfagia",
-            "ACV",
-            "Parkinson",
-            "Alteraciones del habla",
-            "Trastornos de voz",
-            "Motricidad orofacial",
-            "Comunicación funcional",
-            "Adulto mayor",
-          ]}
-          background="soft"
-          colorProfile="Centro"
-        />
-
-        <section id="cuidados-domiciliarios" className="domiSection">
-          <DomiSectionHeading title="Cuidados domiciliarios" />
-
-          <div className="domiSection__inner">
-            <InfoDecoBlock
-              sectionID="cuidadoras"
-              title="Cuidadoras a domicilio"
-              image="/domiciliario/cuidadoras.jpg"
-              imageAlt="Cuidadoras a domicilio"
-              reverse={false}
-              showDeco={true}
-              colorProfile="Centro"
-              text="El servicio de cuidadoras a domicilio está orientado a usuarios que necesitan acompañamiento, supervisión y apoyo en sus actividades cotidianas. Puede incluir asistencia en rutinas básicas, higiene, alimentación, movilización, compañía, prevención de riesgos y apoyo general a la familia, siempre de acuerdo con las necesidades del usuario."
-            />
-
-            <InfoDecoBlock
-              sectionID="tens"
-              title="TENS a domicilio"
-              image="/domiciliario/tens.jpg"
-              imageAlt="TENS a domicilio"
-              reverse={true}
-              showDeco={true}
-              colorProfile="Centro"
-              text="El servicio de TENS a domicilio permite contar con apoyo técnico en cuidados de salud dentro del hogar. Está pensado para usuarios que requieren asistencia más específica, seguimiento de indicaciones, apoyo en cuidados básicos, observación de signos de alerta y acompañamiento en procesos de recuperación o dependencia."
-            />
-
-            <div className="domiServiceActions">
-              <ActionButton
-                label="Consultar cuidados domiciliarios"
-                href="https://wa.me/56950833838"
-                variant="whatsapp"
-                wspmsg="Hola, quisiera consultar por el servicio de cuidados domiciliarios, cuidadoras o TENS."
-              />
-            </div>
-          </div>
-        </section>
-
-        <section className="domiSection domiSection--soft">
+        <section className="domiSection">
           <div className="domiSection__inner domiSection__inner--center">
             <p className="domiClosingText">
               En KINECLIN buscamos que cada atención domiciliaria sea cercana, segura y

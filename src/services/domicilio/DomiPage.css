@@ -109,14 +109,6 @@ TEXTOS
   text-align: justify;
 }
 
-.domiText--lead {
-  max-width: 900px;
-  margin: 0 auto 24px auto;
-  text-align: center;
-  color: #334155;
-  font-size: 16px;
-}
-
 /* =========================
 CÓMO FUNCIONA
 ========================= */
@@ -152,11 +144,122 @@ CÓMO FUNCIONA
 }
 
 /* =========================
+BLOQUES DE SERVICIO
+========================= */
+.domiInfoBlocks {
+  margin-top: 8px;
+}
+
+.domiAudience {
+  max-width: 900px;
+  margin: 24px auto 0 auto;
+  background: #fff;
+  border: 1px solid rgba(0, 158, 219, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 158, 219, 0.1);
+  overflow: hidden;
+}
+
+.domiAudience__summary {
+  padding: 18px 20px;
+  color: var(--kineclin-azul);
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.domiAudience__summary::-webkit-details-marker {
+  display: none;
+}
+
+.domiAudience__summary::after {
+  content: "+";
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(0, 158, 219, 0.1);
+  color: var(--kineclin-azul);
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.domiAudience[open] .domiAudience__summary::after {
+  content: "−";
+}
+
+.domiAudience__content {
+  border-top: 1px solid rgba(0, 158, 219, 0.14);
+  padding: 18px 22px 20px 22px;
+}
+
+.domiAudience__list {
+  margin: 0;
+  padding-left: 22px;
+  color: #4b5563;
+  font-size: var(--font-size-l);
+  line-height: 1.65;
+}
+
+.domiAudience__list li + li {
+  margin-top: 8px;
+}
+
+/* =========================
+MINI TARJETAS
+========================= */
+.domiMiniCards {
+  margin-top: 28px;
+}
+
+.domiMiniCards__title {
+  margin: 0 0 16px 0;
+  color: var(--kineclin-azul);
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.domiMiniCards__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.domiMiniCards__item {
+  flex: 1 1 calc(25% - 12px);
+  max-width: calc(25% - 12px);
+  min-height: 54px;
+
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 10px;
+  box-shadow: 0 10px 20px rgba(0, 158, 219, 0.12);
+
+  color: #2b3941;
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
 ACCIONES
 ========================= */
 .domiMainAction,
 .domiServiceActions {
-  margin-top: 22px;
+  margin-top: 26px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,6 +314,11 @@ RESPONSIVE
   .domiServiceHeading__title {
     font-size: 30px;
   }
+
+  .domiMiniCards__item {
+    flex-basis: calc(50% - 6px);
+    max-width: calc(50% - 6px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -233,7 +341,6 @@ RESPONSIVE
   }
 
   .domiText,
-  .domiText--lead,
   .domiClosingText {
     font-size: var(--font-size-l);
     line-height: 1.5;
@@ -242,6 +349,15 @@ RESPONSIVE
 
   .domiProcessCard h3 {
     font-size: 18px;
+  }
+
+  .domiAudience__summary {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .domiAudience__content {
+    padding: 16px;
   }
 }
 
@@ -253,6 +369,11 @@ RESPONSIVE
 
   .domiServiceHeading__line {
     display: none;
+  }
+
+  .domiMiniCards__item {
+    flex-basis: 100%;
+    max-width: 100%;
   }
 
   #enfermeria,
