@@ -13,12 +13,7 @@
   height: 220px;
   border-radius: 50%;
   overflow: hidden;
-  background: var(--kineclin-azul);
   box-shadow: 0 14px 28px rgba(0, 158, 219, 0.16);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .singleSimpleProfessional__photo img {
@@ -28,7 +23,7 @@
 }
 
 .singleSimpleProfessional__photo span {
-  color: #fff;
+  color: var(--kineclin-azul);
   font-size: 42px;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -43,7 +38,6 @@
 .singleSimpleProfessional__eyebrow {
   display: block;
   color: var(--kineclin-azul);
-  font-size: 14px;
   font-weight: 700;
   margin-bottom: 6px;
 }
