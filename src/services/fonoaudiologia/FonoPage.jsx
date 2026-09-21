@@ -131,7 +131,9 @@ export default function FonoPage() {
           leftWspLink="https://wa.me/56950833838"
           leftWspMsg="Hola, quisiera consultar por atención fonoaudiológica con Catalina."
           leftAgenda={true}
-          leftAgendaLink={"https://ff.healthatom.io/TUXCFw"}
+          leftAgendaLink={
+            "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=27"
+          }
           rightImage="/fonoaudiologia/fonoMariluna.jpg"
           rightName="Mariluna Miranda"
           rightText={
