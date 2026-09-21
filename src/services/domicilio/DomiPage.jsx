@@ -118,13 +118,13 @@ const domicilioServices = [
     blocks: [
       {
         title: "Procedimientos y cuidados clínicos en el hogar",
-        image: "/domiciliario/enfermeria-domicilio.jpg",
+        image: "/domiciliario/enfermeria-cuidados.jpg",
         imageAlt: "Enfermería a domicilio",
         text: "La enfermería a domicilio permite realizar procedimientos y cuidados clínicos en casa, evitando traslados innecesarios y entregando apoyo profesional al usuario y su familia. Puede incluir curaciones, inyectables, manejo de dispositivos, educación en cuidados, observación de signos de alerta y acompañamiento en procesos de recuperación.",
       },
       {
         title: "Continuidad de cuidados y orientación familiar",
-        image: "/domiciliario/enfermeria-usuario.jpg",
+        image: "/domiciliario/enfermeria-orientacion.jpg",
         imageAlt: "Usuario recibiendo enfermería domiciliaria",
         text: "La atención domiciliaria facilita el seguimiento de indicaciones, la educación al usuario y su familia, y la observación de cambios relevantes durante el proceso de recuperación. El objetivo es entregar cuidados seguros, ordenados y adaptados a las necesidades reales del domicilio.",
       },
@@ -147,7 +147,7 @@ const domicilioServices = [
       "Adulto mayor",
     ],
     serviceHref: "/enfermeria",
-    serviceLabel: "Ver Enfermería",
+    serviceLabel: "Ver más sobre Enfermería",
     wspMsg: "Hola, quisiera consultar por atención de enfermería a domicilio.",
   },
   {
@@ -162,13 +162,13 @@ const domicilioServices = [
     blocks: [
       {
         title: "Autonomía e independencia en el entorno real",
-        image: "/domiciliario/terapia-ocupacional-domicilio.jpg",
+        image: "/domiciliario/todomi-evaluacion.jpg",
         imageAlt: "Terapia ocupacional a domicilio",
         text: "La terapia ocupacional a domicilio permite evaluar e intervenir en el mismo lugar donde el usuario realiza sus actividades diarias. Esto facilita observar rutinas, barreras del entorno, necesidades de apoyo, ayudas técnicas y actividades significativas, favoreciendo un proceso centrado en la autonomía, la independencia y la participación cotidiana.",
       },
       {
         title: "Adaptación del hogar y actividades de la vida diaria",
-        image: "/domiciliario/terapia-ocupacional-usuario.jpg",
+        image: "/domiciliario/todomi-adaptacion.jpg",
         imageAlt: "Usuario en terapia ocupacional domiciliaria",
         text: "El trabajo puede incluir entrenamiento funcional, adaptación de actividades, orientación familiar, organización de rutinas, prevención de riesgos y recomendaciones sobre ayudas técnicas. La intervención busca que el usuario pueda desenvolverse con mayor seguridad y con el menor apoyo posible dentro de su hogar y comunidad.",
       },
@@ -206,13 +206,13 @@ const domicilioServices = [
     blocks: [
       {
         title: "Comunicación y deglución en casa",
-        image: "/domiciliario/fonoaudiologia-domicilio.jpg",
+        image: "/domiciliario/fonodomi-deglucion.jpg",
         imageAlt: "Fonoaudiología a domicilio",
         text: "La fonoaudiología a domicilio permite evaluar e intervenir dificultades de comunicación, habla, lenguaje, voz, deglución y motricidad orofacial en el hogar. Este formato facilita acompañar al usuario en un espacio familiar, incorporando orientaciones prácticas para la familia o cuidador.",
       },
       {
         title: "Orientación para la rutina diaria",
-        image: "/domiciliario/fonoaudiologia-usuario.jpg",
+        image: "/domiciliario/fonodomi-orientacion.jpg",
         imageAlt: "Usuario recibiendo fonoaudiología domiciliaria",
         text: "La atención en domicilio permite observar necesidades reales de comunicación y alimentación dentro de la rutina del usuario. Desde ahí se entregan estrategias, ejercicios e indicaciones para favorecer una comunicación más funcional y una alimentación más segura cuando existen dificultades de deglución.",
       },

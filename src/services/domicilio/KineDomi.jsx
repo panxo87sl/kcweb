@@ -76,7 +76,7 @@ export default function KineDomi() {
           <div className="kineDomiSection__inner">
             <InfoDecoBlock
               title="Evaluación kinésica en el hogar"
-              image="/domiciliario/kinesiologia-domicilio.jpg"
+              image="/domiciliario/kinedomi-evaluacion.jpg"
               imageAlt="Evaluación de kinesiología domiciliaria"
               reverse={false}
               showDeco={true}
@@ -86,7 +86,7 @@ export default function KineDomi() {
 
             <InfoDecoBlock
               title="Rehabilitación funcional y movilidad"
-              image="/domiciliario/kinesiologia-movilidad.jpg"
+              image="/domiciliario/kinedomi-funcional.jpg"
               imageAlt="Rehabilitación funcional a domicilio"
               reverse={true}
               showDeco={true}
@@ -96,7 +96,7 @@ export default function KineDomi() {
 
             <InfoDecoBlock
               title="Kinesiología respiratoria domiciliaria"
-              image="/domiciliario/kinesiologia-respiratoria.jpg"
+              image="/domiciliario/kinedomi-respiratorio.jpg"
               imageAlt="Kinesiología respiratoria domiciliaria"
               reverse={false}
               showDeco={true}
@@ -106,7 +106,7 @@ export default function KineDomi() {
 
             <InfoDecoBlock
               title="Adulto mayor y prevención de caídas"
-              image="/domiciliario/kinesiologia-adulto-mayor.jpg"
+              image="/domiciliario/kinedomi-prevencion.jpg"
               imageAlt="Kinesiología domiciliaria en adulto mayor"
               reverse={true}
               showDeco={true}
@@ -116,7 +116,7 @@ export default function KineDomi() {
 
             <InfoDecoBlock
               title="Rehabilitación neurológica y post cirugía"
-              image="/domiciliario/kinesiologia-neurologica.jpg"
+              image="/domiciliario/kinedomi-postcirugia.jpg"
               imageAlt="Rehabilitación neurológica domiciliaria"
               reverse={false}
               showDeco={true}
