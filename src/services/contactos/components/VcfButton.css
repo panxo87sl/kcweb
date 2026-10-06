@@ -1,0 +1,31 @@
+.vcfButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 20px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--kineclin-azul);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 158, 219, 0.25);
+  transition:
+    transform 150ms ease,
+    background-color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.vcfButton:hover {
+  background: var(--kineclin-azul-s);
+  transform: translateY(-1px);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14);
+}
+
+.vcfButton__label {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}

@@ -1,0 +1,59 @@
+.contactAction {
+  --bColor: var(--kineclin-azul);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 6px 12px;
+  background: var(--kineclin-bg2);
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.contactAction:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contactAction--centro {
+  --bColor: var(--kineclin-azul);
+}
+
+.contactAction--estetica {
+  --bColor: var(--kineclin-rose);
+}
+
+.contactAction--kcplus {
+  --bColor: var(--kineclin-gold);
+}
+
+.contactAction--whatsapp {
+  --bColor: #25d366;
+}
+
+.contactAction--instagram {
+  --bColor: #c13584;
+}
+
+.contactAction__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bColor);
+}
+
+.contactAction__label {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  color: #0b2b3a;
+  text-align: center;
+  line-height: 1.2;
+}

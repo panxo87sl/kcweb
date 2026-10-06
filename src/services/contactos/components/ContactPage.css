@@ -1,0 +1,12 @@
+.contactPage {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 20px 0;
+  background: var(--kineclin-bg2);
+}
+
+.contactPage__inner {
+  width: 92%;
+  max-width: 440px;
+}

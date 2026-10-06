@@ -19,17 +19,20 @@ import TerapiaOcupacional from "./services/terapiaocupacional/TeoPage";
 import AtenDomiciliaria from "./services/domicilio/DomiPage";
 import KineDomi from "./services/domicilio/KineDomi";
 import NotFoundPage from "./services/notfound/NotFoundPage";
+import DiegoPage from "./services/contactos/DiegoPage";
 
 // IMPORTA TU LANDING
 import FacialesPage from "./services/estetica/promos/faciales/FacialesPage";
 // futuro:
 // import CorporalesPage from "./pages/corporales/CorporalesPage";
 
+// Paginas islas (no usan layout)
+const islandPaths = ["/faciales", "/corporales", "/diegozuniga"];
+
 function LayoutWrapper({ children }) {
   const location = useLocation();
 
-  // Definicion de paginas islas (no usan layout)
-  const isLanding = location.pathname === "/faciales" || location.pathname === "/corporales";
+  const isLanding = islandPaths.includes(location.pathname);
 
   //Si no son "landing" se muestra el layout
   return (
@@ -65,6 +68,9 @@ export default function App() {
 
           {/* LANDING SEPARADAS */}
           <Route path="/faciales" element={<FacialesPage />} />
+
+          {/* TARJETAS DE CONTACTO */}
+          <Route path="/diegozuniga" element={<DiegoPage />} />
 
           {/* 404 */}
           <Route path="*" element={<NotFoundPage />} />
