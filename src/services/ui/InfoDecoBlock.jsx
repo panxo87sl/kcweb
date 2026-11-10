@@ -9,8 +9,10 @@ export default function InfoDecoBlock({
   reverse = false,
   showDeco = true,
   colorProfile = "Centro", // Centro | Estetica | KCPLUS
+  link,
+  linkLabel = "Ir a",
 }) {
-  return (
+  const block = (
     <article
       id={sectionID || undefined}
       className={`infoDecoBlock ${reverse ? "infoDecoBlock--reverse" : ""} ${
@@ -28,7 +30,21 @@ export default function InfoDecoBlock({
       <div className="infoDecoBlock__content">
         <h3>{title}</h3>
         <p>{text}</p>
+        {link && <span className="infoDecoBlock__go">{linkLabel}</span>}
       </div>
     </article>
+  );
+
+  if (!link) return block;
+
+  return (
+    <a
+      className="infoDecoBlock__link"
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {block}
+    </a>
   );
 }

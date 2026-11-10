@@ -151,10 +151,55 @@
 }
 
 /* =========================
+   BADGE
+========================= */
+
+.tripleProfessionalShowcase__badgeSlot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  margin-bottom: 12px;
+}
+
+.tripleProfessionalShowcase__badge {
+  --badgeColor: var(--kineclin-azul);
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 1px solid color-mix(in srgb, var(--badgeColor), transparent 65%);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--badgeColor), #fff 82%);
+  color: color-mix(in srgb, var(--badgeColor), #000 50%);
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.tripleProfessionalShowcase__badge--centro {
+  --badgeColor: var(--kineclin-azul);
+}
+
+.tripleProfessionalShowcase__badge--estetica {
+  --badgeColor: var(--kineclin-rose);
+}
+
+.tripleProfessionalShowcase__badge--kcplus {
+  --badgeColor: var(--kineclin-gold);
+}
+
+/* =========================
    RESPONSIVE
 ========================= */
 
 @media (max-width: 900px) {
+  .tripleProfessionalShowcase__badgeSlot--empty {
+    display: none;
+  }
+
   .tripleProfessionalShowcase__grid {
     grid-template-columns: 1fr;
     gap: 40px;

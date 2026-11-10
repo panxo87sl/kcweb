@@ -103,6 +103,22 @@
   text-align: justify;
 }
 
+/* enlace en todo el bloque */
+.infoDecoBlock__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.infoDecoBlock__go {
+  display: block;
+  margin-top: 10px;
+  color: #000;
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  text-align: right;
+}
+
 /* mobile */
 @media (max-width: 768px) {
   .infoDecoBlock,
