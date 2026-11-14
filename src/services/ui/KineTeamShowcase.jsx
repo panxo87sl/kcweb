@@ -165,9 +165,10 @@ export default function KineTeamShowcase({
   members = [],
   showDecoStars = true,
   showPhotoBorder = false,
+  background = "white", // white | soft
 }) {
   return (
-    <section className="kineTeamShowcase">
+    <section className={`kineTeamShowcase kineTeamShowcase--${background}`}>
       <div className="kineTeamShowcase__inner">
         <div className="kineTeamShowcase__heading">
           <span className="kineTeamShowcase__headingLine" />

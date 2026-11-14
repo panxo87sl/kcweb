@@ -153,6 +153,29 @@ RESPONSIVE
   }
 }
 
+/* =========================
+SCROLL LINKS
+========================= */
+#traumatologia,
+#neurologia,
+#respiratoria,
+#fisioterapia,
+#geriatria,
+#especialidades-relacionadas {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 900px) {
+  #traumatologia,
+  #neurologia,
+  #respiratoria,
+  #fisioterapia,
+  #geriatria,
+  #especialidades-relacionadas {
+    scroll-margin-top: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .kineHero {
     padding: 92px 0 40px 0;

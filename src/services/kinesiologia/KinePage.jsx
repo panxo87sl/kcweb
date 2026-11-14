@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import ActionButton from "../../components/common/ActionButton/ActionButton";
 import InfoDecoBlock from "../ui/InfoDecoBlock";
 import KineTeamShowcase from "../ui/KineTeamShowcase";
+import TopicChipGrid from "../ui/TopicChipGrid";
 
 export default function KinePage() {
   return (
@@ -44,7 +45,20 @@ export default function KinePage() {
           </div>
         </section>
 
-        <section className="kineSection kineSection--soft">
+        <TopicChipGrid
+          title="¿Cómo podemos ayudarte?"
+          background="soft"
+          items={[
+            { text: "Musculoesquelética", link: "#traumatologia" },
+            { text: "Neurológica", link: "#neurologia" },
+            { text: "Respiratoria", link: "#respiratoria" },
+            { text: "Fortalecimiento", link: "#fisioterapia" },
+            { text: "Geriátrica", link: "#geriatria" },
+            { text: "Especialidades", link: "#especialidades-relacionadas" },
+          ]}
+        />
+
+        <section className="kineSection">
           <h2 className="kineSection__title">Servicios Kinesiológicos</h2>
           <div className="kineSection__inner">
             <InfoDecoBlock
@@ -107,6 +121,7 @@ export default function KinePage() {
           title="Conoce a nuestro equipo"
           showDecoStars={false}
           showPhotoBorder={true}
+          background="soft"
           members={[
             {
               image: "/kinesiologia/equipo/kineDiego.jpg",
@@ -226,7 +241,7 @@ export default function KinePage() {
           ]}
         />
 
-        <section className="kineSection kineSection--soft">
+        <section className="kineSection" id="especialidades-relacionadas">
           <div className="kineSection__inner">
             <h2 className="kineSection__title">Servicios especializados relacionados</h2>
 
@@ -298,7 +313,7 @@ export default function KinePage() {
           </div>
         </section>
 
-        <section className="kineSection">
+        <section className="kineSection kineSection--soft">
           <div className="kineSection__inner kineSection__inner--center">
             <p className="kineClosingText">
               En KINECLIN buscamos que cada proceso de rehabilitación sea claro, seguro y

@@ -39,7 +39,14 @@
   font-size: clamp(26px, 2.8vw, 40px);
   font-weight: 600;
   color: var(--topicChipGrid-color);
+}
+
+.topicChipGrid__title--center {
   text-align: center;
+}
+
+.topicChipGrid__title--left {
+  text-align: left;
 }
 
 .topicChipGrid__lead {
@@ -60,6 +67,7 @@
   justify-content: center;
   gap: 16px;
   margin-top: 22px;
+  color: #334155;
 }
 
 .topicChipGrid__chip {
@@ -67,15 +75,23 @@
   max-width: calc(33.333% - 11px);
   background: #fff;
   border-radius: 12px;
-  padding: 16px 10px;
+  padding: 10px;
   box-shadow: 0 10px 20px var(--topicChipGrid-shadow);
   text-align: center;
-  color: #2b3941;
   font-size: var(--font-size-l);
   font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Chip con enlace: solo cambia el fondo, el texto no cambia ni se subraya */
+.topicChipGrid__chip--link {
+  transition: background-color 0.2s ease;
+}
+
+.topicChipGrid__chip--link:hover {
+  background: color-mix(in srgb, var(--topicChipGrid-color), #fff 70%);
 }
 
 @media (max-width: 900px) {
@@ -86,7 +102,7 @@
   .topicChipGrid__chip {
     flex-basis: calc(50% - 5px);
     max-width: calc(50% - 5px);
-    padding: 12px 8px;
+    padding: 8px;
   }
 }
 
@@ -98,6 +114,10 @@
   .topicChipGrid__title {
     font-size: 30px;
     margin-bottom: 18px;
+  }
+
+  .topicChipGrid__title--left {
+    text-align: center;
   }
 
   .topicChipGrid__lead {

@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import ActionButton from "../../components/common/ActionButton/ActionButton";
 import PsicoTeamShowcase from "../ui/PsicoTeamShowcase";
 import TripleProfessionalShowcase from "../ui/TripleProfessionalShowcase";
+import TopicChipGrid from "../ui/TopicChipGrid";
 
 export default function PsicoPage() {
   return (
@@ -27,7 +28,7 @@ export default function PsicoPage() {
             </p>
           </div>
         </section>
-        <section className="psicoSection">
+        <section className="psicoSection psicoSection--white">
           <div className="psicoSection__inner psicoSection__inner--center">
             <h2 className="psicoSection__title">Nuestro enfoque</h2>
             <p className="psicoText">
@@ -46,22 +47,21 @@ export default function PsicoPage() {
           </div>
         </section>
 
-        <section className="psicoSection psicoSection--alt">
-          <div className="psicoSection__inner">
-            <h2 className="psicoSection__title">¿En qué podemos ayudarte?</h2>
-
-            <div className="psicoGrid">
-              <div className="psicoCard">Ansiedad y estrés</div>
-              <div className="psicoCard">Estado de ánimo bajo o depresión</div>
-              <div className="psicoCard">Autoestima y autoconocimiento</div>
-              <div className="psicoCard">Relaciones y vínculos</div>
-              <div className="psicoCard">Gestión emocional</div>
-              <div className="psicoCard">Procesos personales</div>
-            </div>
-          </div>
-        </section>
+        <TopicChipGrid
+          title="¿En qué podemos ayudarte?"
+          titleAlign="left"
+          background="soft"
+          items={[
+            "Ansiedad y estrés",
+            "Estado de ánimo bajo o depresión",
+            "Autoestima y autoconocimiento",
+            "Relaciones y vínculos",
+            "Gestión emocional",
+            "Procesos personales",
+          ]}
+        />
       </main>
-      <section className="psicoSection psicoSection--alt">
+      <section className="psicoSection psicoSection--white">
         <section className="psicoSection psicoSection--alt">
           <TripleProfessionalShowcase
             title="Conoce a nuestras profesionales"
@@ -113,7 +113,7 @@ export default function PsicoPage() {
           />
         </section>
       </section>
-      <section className="psicoSection">
+      <section className="psicoSection psicoSection--soft">
         <div className="psicoSection__inner psicoSection__inner--center">
           <p className="psicoText__lead">
             A veces dar el primer paso es lo más difícil. Estamos aquí para acompañarte,

@@ -1,7 +1,14 @@
 .kineTeamShowcase {
   padding: 56px 0;
-  background: #fff;
   overflow: hidden;
+}
+
+.kineTeamShowcase--white {
+  background: #fff;
+}
+
+.kineTeamShowcase--soft {
+  background: var(--kineclin-bg2);
 }
 
 .kineTeamShowcase__inner {

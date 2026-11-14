@@ -42,6 +42,14 @@
   background: rgba(255, 255, 255, 0.65);
 }
 
+.psicoSection--white {
+  background: #fff;
+}
+
+.psicoSection--soft {
+  background: var(--kineclin-bg2);
+}
+
 .psicoSection__inner {
   width: min(var(--w-hero), 1100px);
   margin: 0 auto;
@@ -70,22 +78,6 @@
   font-size: 18px;
   line-height: 1.65;
   color: #334155;
-  text-align: center;
-}
-
-/* GRID */
-.psicoGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-/* CARD */
-.psicoCard {
-  background: #fff;
-  border-radius: 12px;
-  padding: 10px;
-  box-shadow: 0 10px 20px rgba(0, 158, 219, 0.15);
   text-align: center;
 }
 
@@ -133,20 +125,6 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  /* GRID */
-  .psicoGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-  }
-
-  .psicoCard {
-    padding: 8px;
-    min-width: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
   .psicoHero__lead {
     max-width: 900px;
     margin: 20px auto 14px auto;
