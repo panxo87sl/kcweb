@@ -54,6 +54,7 @@ export default function KinePage() {
             { text: "Respiratoria", link: "#respiratoria" },
             { text: "Fortalecimiento", link: "#fisioterapia" },
             { text: "Geriátrica", link: "#geriatria" },
+            { text: "Tecnología de punta", link: "#btl" },
             { text: "Especialidades", link: "#especialidades-relacionadas" },
           ]}
         />
@@ -113,6 +114,16 @@ export default function KinePage() {
               showDeco={true}
               colorProfile="Centro"
               text="Acompañamos a personas mayores en procesos orientados a mantener o recuperar movilidad, fuerza, equilibrio, seguridad en la marcha e independencia funcional. Esta área busca prevenir caídas, favorecer la autonomía y apoyar la calidad de vida mediante ejercicio terapéutico, educación y un abordaje adaptado a las necesidades de cada paciente."
+            />
+            <InfoDecoBlock
+              sectionID="btl"
+              title="Tecnología BTL de ondas de choque"
+              image="/kinesiologia/kineBTL.jpg"
+              imageAlt="Tecnología BTL de ondas de choque"
+              reverse={true}
+              showDeco={true}
+              colorProfile="Centro"
+              text="En KINECLIN incorporamos tecnología BTL, fabricante internacional de equipamiento para rehabilitación. La terapia de ondas de choque es una técnica no invasiva que usa impulsos mecánicos controlados para favorecer la circulación, aliviar el dolor musculoesquelético y estimular la recuperación de los tejidos, siempre con evaluación profesional."
             />
           </div>
         </section>
