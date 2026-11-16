@@ -1,13 +1,27 @@
 import { Link } from "react-router-dom";
 import "./TopicChipGrid.css";
 
-// Normaliza un ítem: acepta un texto simple o un objeto { text, link }.
+// Normaliza un ítem: acepta un texto simple o un objeto { text, shortText, link }.
 function getChipData(item) {
   if (typeof item === "string") {
-    return { text: item, link: "" };
+    return { text: item, shortText: "", link: "" };
   }
 
-  return { text: item.text, link: item.link };
+  return { text: item.text, shortText: item.shortText, link: item.link };
+}
+
+// Devuelve el texto del chip. Con shortText, en móvil se muestra la versión corta.
+function getChipLabel(chip) {
+  if (!chip.shortText) {
+    return chip.text;
+  }
+
+  return (
+    <>
+      <span className="topicChipGrid__label topicChipGrid__label--full">{chip.text}</span>
+      <span className="topicChipGrid__label topicChipGrid__label--short">{chip.shortText}</span>
+    </>
+  );
 }
 
 export default function TopicChipGrid({
@@ -15,7 +29,7 @@ export default function TopicChipGrid({
   title,
   lead,
   titleAlign = "center", // center | left
-  items = [], // texto simple o { text, link }. Con link (ej. "#id") el chip navega
+  items = [], // texto simple o { text, shortText, link }. Con link (ej. "#id") el chip navega
   background = "white", // white | soft
   colorProfile = "Centro", // Centro | Estetica | KCPLUS
 }) {
@@ -43,14 +57,14 @@ export default function TopicChipGrid({
                   to={chip.link}
                   key={index}
                 >
-                  {chip.text}
+                  {getChipLabel(chip)}
                 </Link>
               );
             }
 
             return (
               <div className="topicChipGrid__chip" key={index}>
-                {chip.text}
+                {getChipLabel(chip)}
               </div>
             );
           })}

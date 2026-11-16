@@ -103,6 +103,10 @@ SCROLL LINKS
     padding: 92px 0 40px 0;
   }
 
+  .fonoHero__title {
+    font-size: 36px;
+  }
+
   .fonoHero__lead {
     font-size: 15px;
     line-height: 1.5;

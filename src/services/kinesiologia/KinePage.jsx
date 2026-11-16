@@ -54,7 +54,7 @@ export default function KinePage() {
             { text: "Respiratoria", link: "#respiratoria" },
             { text: "Fortalecimiento", link: "#fisioterapia" },
             { text: "Geriátrica", link: "#geriatria" },
-            { text: "Tecnología de punta", link: "#btl" },
+            { text: "Tecnología de punta", shortText: "Tecnología BTL", link: "#btl" },
             { text: "Especialidades", link: "#especialidades-relacionadas" },
           ]}
         />

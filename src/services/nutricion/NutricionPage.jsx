@@ -56,7 +56,7 @@ export default function NutricionPage() {
             { text: "Bioimpedancia", link: "#nutricion-bodypro" },
             { text: "Deportiva", link: "#nutricion-deportiva" },
             { text: "Clínica", link: "#nutricion-clinica" },
-            { text: "KCPLUS", link: "#nutricion-kcplus" },
+            { text: "Suplementos Premium", shortText: "Suplementos", link: "#nutricion-kcplus" },
           ]}
         />
 

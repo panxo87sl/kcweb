@@ -85,6 +85,11 @@
   justify-content: center;
 }
 
+/* Texto corto del chip: solo se muestra en móvil (ver media query) */
+.topicChipGrid__label--short {
+  display: none;
+}
+
 /* Chip con enlace: solo cambia el fondo, el texto no cambia ni se subraya */
 .topicChipGrid__chip--link {
   transition: background-color 0.2s ease;
@@ -109,6 +114,14 @@
 @media (max-width: 768px) {
   .topicChipGrid {
     padding: 44px 0;
+  }
+
+  .topicChipGrid__label--full {
+    display: none;
+  }
+
+  .topicChipGrid__label--short {
+    display: inline;
   }
 
   .topicChipGrid__title {
