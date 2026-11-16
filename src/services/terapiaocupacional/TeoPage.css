@@ -75,6 +75,29 @@
   line-height: 1.65;
 }
 
+/* =========================
+SCROLL LINKS
+========================= */
+#teo-evaluacion,
+#teo-rehabilitacion-neurologica,
+#teo-autonomia-independencia,
+#teo-adulto-mayor,
+#teo-ayudas-tecnicas,
+#teo-comunidad {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 900px) {
+  #teo-evaluacion,
+  #teo-rehabilitacion-neurologica,
+  #teo-autonomia-independencia,
+  #teo-adulto-mayor,
+  #teo-ayudas-tecnicas,
+  #teo-comunidad {
+    scroll-margin-top: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .teoHero {
     padding: 92px 0 40px 0;

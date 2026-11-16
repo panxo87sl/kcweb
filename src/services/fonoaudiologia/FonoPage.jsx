@@ -2,6 +2,7 @@ import "./FonoPage.css";
 import { Helmet } from "react-helmet-async";
 import InfoDecoBlock from "../ui/InfoDecoBlock";
 import PsicoTeamShowcase from "../ui/PsicoTeamShowcase";
+import TopicChipGrid from "../ui/TopicChipGrid";
 
 export default function FonoPage() {
   return (
@@ -48,7 +49,20 @@ export default function FonoPage() {
           </div>
         </section>
 
-        <section className="fonoSection fonoSection--soft">
+        <TopicChipGrid
+          title="¿Cómo podemos ayudarte?"
+          background="soft"
+          items={[
+            { text: "Evaluación", link: "#fono-evaluacion" },
+            { text: "Audición", link: "#fono-audicion" },
+            { text: "Limpieza de oído", link: "#fono-limpieza-oidos" },
+            { text: "Habla y voz", link: "#fono-habla-voz" },
+            { text: "Lenguaje", link: "#fono-lenguaje" },
+            { text: "Deglución", link: "#fono-deglucion-mo" },
+          ]}
+        />
+
+        <section className="fonoSection">
           <div className="fonoSection__inner">
             <div id="fono-evaluacion">
               <InfoDecoBlock
@@ -75,13 +89,26 @@ export default function FonoPage() {
               />
             </div>
 
+            <div id="fono-limpieza-oidos">
+              <InfoDecoBlock
+                sectionID="limpieza-oidos"
+                title="Limpieza clínica de oídos"
+                image="/fonoaudiologia/limpieza-oidos.jpg"
+                imageAlt="Limpieza clínica de oídos"
+                reverse={false}
+                showDeco={true}
+                colorProfile="Centro"
+                text="La limpieza clínica de oídos es un procedimiento seguro, habitualmente indoloro y orientado a la evaluación y extracción del exceso de cerumen del conducto auditivo externo, que puede provocar sensación de oído tapado, disminución de la audición o molestias. Mediante una evaluación previa y técnicas e instrumentos adecuados, se retiran las obstrucciones de forma cuidadosa, respetando las estructuras del oído. Contribuye a recuperar la comodidad auditiva, siempre que las molestias estén relacionadas con la acumulación de cerumen."
+              />
+            </div>
+
             <div id="fono-habla-voz">
               <InfoDecoBlock
                 sectionID="voz"
                 title="Habla y voz"
                 image="/fonoaudiologia/voz.jpg"
                 imageAlt="Terapia de habla y voz"
-                reverse={false}
+                reverse={true}
                 showDeco={true}
                 colorProfile="Centro"
                 text="El habla corresponde a la forma en que producimos sonidos y palabras, mientras que la voz participa en la expresión y calidad de la comunicación. Trabajamos dificultades relacionadas con pronunciación, articulación, claridad, fluidez, coordinación de movimientos orales y uso funcional de la voz, buscando favorecer una comunicación más clara, segura y efectiva."
@@ -93,7 +120,7 @@ export default function FonoPage() {
                 title="Lenguaje"
                 image="/fonoaudiologia/lenguaje.jpg"
                 imageAlt="Terapia de lenguaje"
-                reverse={true}
+                reverse={false}
                 showDeco={true}
                 colorProfile="Centro"
                 text="El lenguaje permite comprender y expresar ideas, emociones, necesidades y pensamientos. Acompañamos a pacientes que presentan dificultades para organizar, comprender o expresar el lenguaje, ya sea en etapas del desarrollo infantil, contextos escolares o procesos de salud que afectan la comunicación en adolescentes, adultos o personas mayores."
@@ -106,7 +133,7 @@ export default function FonoPage() {
                 title="Deglución y motricidad orofacial"
                 image="/fonoaudiologia/deglucion.jpg"
                 imageAlt="Deglución y motricidad orofacial"
-                reverse={false}
+                reverse={true}
                 showDeco={true}
                 colorProfile="Centro"
                 text="La deglución y la motricidad orofacial se relacionan con el funcionamiento de la boca, lengua, labios, mejillas, mandíbula y musculatura facial. Estas áreas participan en funciones importantes como tragar alimentos, líquidos y saliva de manera segura, respirar, succionar, masticar, articular sonidos y mantener una postura oral adecuada. El trabajo fonoaudiológico busca evaluar estas funciones, identificar dificultades y acompañar al paciente con estrategias terapéuticas que favorezcan una alimentación más segura, una mejor coordinación orofacial y mayor funcionalidad en la vida diaria."
@@ -115,43 +142,45 @@ export default function FonoPage() {
           </div>
         </section>
 
-        <PsicoTeamShowcase
-          leftImage="/fonoaudiologia/fonoCatalina.jpg"
-          leftName="Catalina Quiroz"
-          leftText={
-            <>
-              Fonoaudióloga clínica orientada principalmente a la atención de adultos, con
-              experiencia en evaluación e intervención en lenguaje, habla, deglución y
-              motricidad orofacial. Su trabajo se enfoca en comprender las necesidades de cada
-              paciente, establecer objetivos terapéuticos realistas y acompañar el proceso de
-              manera clara, cercana y profesional.
-            </>
-          }
-          leftWsp={true}
-          leftWspLink="https://wa.me/56950833838"
-          leftWspMsg="Hola, quisiera consultar por atención fonoaudiológica con Catalina."
-          leftAgenda={true}
-          leftAgendaLink={
-            "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=27"
-          }
-          rightImage="/fonoaudiologia/fonoMariluna.jpg"
-          rightName="Mariluna Miranda"
-          rightText={
-            <>
-              Fonoaudióloga con especial interés en el área de voz, además de experiencia en
-              lenguaje, habla, deglución y motricidad orofacial. Atiende a niños, adolescentes
-              y adultos, adaptando cada intervención a las necesidades del paciente, con un
-              acompañamiento cercano, ordenado y orientado a una comunicación más segura y
-              funcional.
-            </>
-          }
-          rightWsp={true}
-          rightWspLink="https://wa.me/56950833838"
-          rightWspMsg="Hola, quisiera consultar por atención fonoaudiológica con Mariluna."
-          rightAgenda={false}
-        />
-
         <section className="fonoSection fonoSection--soft">
+          <PsicoTeamShowcase
+            leftImage="/fonoaudiologia/fonoCatalina.jpg"
+            leftName="Catalina Quiroz"
+            leftText={
+              <>
+                Fonoaudióloga clínica orientada principalmente a la atención de adultos, con
+                experiencia en evaluación e intervención en lenguaje, habla, deglución y
+                motricidad orofacial. Su trabajo se enfoca en comprender las necesidades de cada
+                paciente, establecer objetivos terapéuticos realistas y acompañar el proceso de
+                manera clara, cercana y profesional.
+              </>
+            }
+            leftWsp={true}
+            leftWspLink="https://wa.me/56950833838"
+            leftWspMsg="Hola, quisiera consultar por atención fonoaudiológica con Catalina."
+            leftAgenda={true}
+            leftAgendaLink={
+              "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=27"
+            }
+            rightImage="/fonoaudiologia/fonoMariluna.jpg"
+            rightName="Mariluna Miranda"
+            rightText={
+              <>
+                Fonoaudióloga con especial interés en el área de voz, además de experiencia en
+                lenguaje, habla, deglución y motricidad orofacial. Atiende a niños, adolescentes
+                y adultos, adaptando cada intervención a las necesidades del paciente, con un
+                acompañamiento cercano, ordenado y orientado a una comunicación más segura y
+                funcional.
+              </>
+            }
+            rightWsp={true}
+            rightWspLink="https://wa.me/56950833838"
+            rightWspMsg="Hola, quisiera consultar por atención fonoaudiológica con Mariluna."
+            rightAgenda={false}
+          />
+        </section>
+
+        <section className="fonoSection">
           <div className="fonoSection__inner fonoSection__inner--center">
             <p className="fonoClosingText">
               En KINECLIN trabajamos para que cada atención fonoaudiológica sea clara, humana y

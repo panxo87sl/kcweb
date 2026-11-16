@@ -2,6 +2,7 @@ import "./NutricionPage.css";
 import { Helmet } from "react-helmet-async";
 import InfoDecoBlock from "../ui/InfoDecoBlock";
 import TripleProfessionalShowcase from "../ui/TripleProfessionalShowcase";
+import TopicChipGrid from "../ui/TopicChipGrid";
 
 export default function NutricionPage() {
   return (
@@ -47,7 +48,19 @@ export default function NutricionPage() {
           </div>
         </section>
 
-        <section className="nutricionSection nutricionSection--soft">
+        <TopicChipGrid
+          title="¿Cómo podemos ayudarte?"
+          background="soft"
+          items={[
+            { text: "Evaluación", link: "#nutricion-evaluacion" },
+            { text: "Bioimpedancia", link: "#nutricion-bodypro" },
+            { text: "Deportiva", link: "#nutricion-deportiva" },
+            { text: "Clínica", link: "#nutricion-clinica" },
+            { text: "KCPLUS", link: "#nutricion-kcplus" },
+          ]}
+        />
+
+        <section className="nutricionSection">
           <h2 className="kineSection__title">Servicios Nutricionales</h2>
           <div className="nutricionSection__inner">
             <div id="nutricion-evaluacion">
@@ -117,9 +130,10 @@ export default function NutricionPage() {
             </div>
           </div>
         </section>
-        <section className="nutricionSection">
+        <section className="nutricionSection nutricionSection--soft">
           <TripleProfessionalShowcase
             title="Conoce a nuestras profesionales"
+            background="soft"
             professionals={[
               {
                 image: "/nutricion/nutriJennifer.jpg",
@@ -157,7 +171,7 @@ export default function NutricionPage() {
           />
         </section>
 
-        <section className="nutricionSection nutricionSection--soft">
+        <section className="nutricionSection">
           <div className="nutricionSection__inner nutricionSection__inner--center">
             <p className="nutricionClosingText">
               En KINECLIN buscamos que cada proceso nutricional sea cercano, realista y

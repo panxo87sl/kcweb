@@ -2,6 +2,7 @@ import "./TeoPage.css";
 import { Helmet } from "react-helmet-async";
 import InfoDecoBlock from "../ui/InfoDecoBlock";
 import SingleProfessionalShowcase from "../ui/SingleProfessionalShowcase";
+import TopicChipGrid from "../ui/TopicChipGrid";
 
 export default function TeoPage() {
   return (
@@ -75,7 +76,20 @@ export default function TeoPage() {
           </div>
         </section>
 
-        <section className="teoSection">
+        <TopicChipGrid
+          title="¿Cómo podemos ayudarte?"
+          background="white"
+          items={[
+            { text: "Evaluación", link: "#teo-evaluacion" },
+            { text: "Rehabilitación", link: "#teo-rehabilitacion-neurologica" },
+            { text: "Autonomía", link: "#teo-autonomia-independencia" },
+            { text: "Adultos mayores", link: "#teo-adulto-mayor" },
+            { text: "Ayudas técnicas", link: "#teo-ayudas-tecnicas" },
+            { text: "Comunidad", link: "#teo-comunidad" },
+          ]}
+        />
+
+        <section className="teoSection teoSection--soft">
           <h2 className="teoSection__title">Áreas de intervención</h2>
 
           <div className="teoSection__inner">
@@ -159,7 +173,7 @@ export default function TeoPage() {
           </div>
         </section>
 
-        <section className="teoSection teoSection--soft">
+        <section className="teoSection">
           <div className="teoSection__inner teoSection__inner--center">
             <p className="teoClosingText">
               En KINECLIN buscamos que cada proceso de terapia ocupacional sea cercano, claro y

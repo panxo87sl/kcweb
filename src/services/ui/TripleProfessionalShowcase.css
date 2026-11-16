@@ -1,6 +1,13 @@
 .tripleProfessionalShowcase {
   padding: 56px 0;
+}
+
+.tripleProfessionalShowcase--white {
   background: #fff;
+}
+
+.tripleProfessionalShowcase--soft {
+  background: var(--kineclin-bg2);
 }
 
 .tripleProfessionalShowcase__inner {

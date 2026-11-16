@@ -4,11 +4,12 @@ import ActionButton from "../../components/common/ActionButton/ActionButton";
 export default function TripleProfessionalShowcase({
   title = "Conoce a nuestro equipo",
   professionals = [],
+  background = "white", // white | soft
 }) {
   const hasBadges = professionals.some((professional) => professional.badge);
 
   return (
-    <section className="tripleProfessionalShowcase">
+    <section className={`tripleProfessionalShowcase tripleProfessionalShowcase--${background}`}>
       <div className="tripleProfessionalShowcase__inner">
         <div className="tripleProfessionalShowcase__heading">
           <span className="tripleProfessionalShowcase__headingLine" />

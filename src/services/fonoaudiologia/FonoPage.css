@@ -75,6 +75,29 @@
   line-height: 1.65;
 }
 
+/* =========================
+SCROLL LINKS
+========================= */
+#fono-evaluacion,
+#fono-audicion,
+#fono-limpieza-oidos,
+#fono-habla-voz,
+#fono-lenguaje,
+#fono-deglucion-mo {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 900px) {
+  #fono-evaluacion,
+  #fono-audicion,
+  #fono-limpieza-oidos,
+  #fono-habla-voz,
+  #fono-lenguaje,
+  #fono-deglucion-mo {
+    scroll-margin-top: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .fonoHero {
     padding: 92px 0 40px 0;

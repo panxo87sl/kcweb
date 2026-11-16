@@ -75,6 +75,27 @@
   line-height: 1.65;
 }
 
+/* =========================
+SCROLL LINKS
+========================= */
+#nutricion-evaluacion,
+#nutricion-bodypro,
+#nutricion-deportiva,
+#nutricion-clinica,
+#nutricion-kcplus {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 900px) {
+  #nutricion-evaluacion,
+  #nutricion-bodypro,
+  #nutricion-deportiva,
+  #nutricion-clinica,
+  #nutricion-kcplus {
+    scroll-margin-top: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .nutricionHero {
     padding: 92px 0 40px 0;

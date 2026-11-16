@@ -105,6 +105,23 @@ AGENDA / CIERRE
 RESPONSIVE
 ========================= */
 
+/* =========================
+SCROLL LINKS
+========================= */
+#entrenamiento,
+#rehabilitacion,
+#equipamiento {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 900px) {
+  #entrenamiento,
+  #rehabilitacion,
+  #equipamiento {
+    scroll-margin-top: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .gimnasioHero {
     padding: 92px 0 40px 0;

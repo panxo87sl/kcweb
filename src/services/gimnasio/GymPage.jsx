@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import ActionButton from "../../components/common/ActionButton/ActionButton";
 import InfoDecoBlock from "../ui/InfoDecoBlock";
 import PsicoTeamShowcase from "../ui/PsicoTeamShowcase";
+import TopicChipGrid from "../ui/TopicChipGrid";
 
 export default function GymPage() {
   return (
@@ -44,9 +45,20 @@ export default function GymPage() {
           </div>
         </section>
 
-        <section className="gimnasioSection gimnasioSection--soft">
+        <TopicChipGrid
+          title="¿Cómo podemos ayudarte?"
+          background="soft"
+          items={[
+            { text: "Entrenamiento", link: "#entrenamiento" },
+            { text: "Rehabilitación", link: "#rehabilitacion" },
+            { text: "Equipamiento", link: "#equipamiento" },
+          ]}
+        />
+
+        <section className="gimnasioSection">
           <div className="gimnasioSection__inner">
             <InfoDecoBlock
+              sectionID="entrenamiento"
               title="Entrenamiento y movimiento integral"
               image="/gimnasio/entrenamiento.jpg"
               imageAlt="Gimnasio médico personalizado"
@@ -57,6 +69,7 @@ export default function GymPage() {
             />
 
             <InfoDecoBlock
+              sectionID="rehabilitacion"
               title="Rehabilitación y fortalecimiento funcional"
               image="/gimnasio/gimnasio.jpg"
               imageAlt="Rehabilitación y fortalecimiento funcional"
@@ -67,6 +80,7 @@ export default function GymPage() {
             />
 
             <InfoDecoBlock
+              sectionID="equipamiento"
               title="Equipamiento moderno y tecnológico"
               image="/gimnasio/speediance.jpg"
               imageAlt="Equipamiento Speediance en gimnasio médico"
@@ -78,7 +92,7 @@ export default function GymPage() {
           </div>
         </section>
 
-        <section className="gimnasioSection">
+        <section className="gimnasioSection gimnasioSection--soft">
           <div className="gimnasioSection__inner">
             <ServicesCardGrid
               title="Servicios disponibles"
@@ -106,7 +120,7 @@ export default function GymPage() {
           </div>
         </section>
 
-        <section className="gimnasioSection gimnasioSection--soft">
+        <section className="gimnasioSection">
           <PsicoTeamShowcase
             centerTitle="Profesionales a cargo"
             leftImage="/gimnasio/gymCatalina.jpg"
@@ -128,7 +142,7 @@ export default function GymPage() {
           />
         </section>
 
-        <section className="gimnasioSection">
+        <section className="gimnasioSection gimnasioSection--soft">
           <div className="gimnasioSection__inner gimnasioSection__inner--center">
             <h2 className="gimnasioSection__title">Evaluación inicial</h2>
 
@@ -150,7 +164,7 @@ export default function GymPage() {
           </div>
         </section>
 
-        <section className="gimnasioSection gimnasioSection--soft">
+        <section className="gimnasioSection">
           <div className="gimnasioSection__inner gimnasioSection__inner--center">
             <p className="gimnasioClosingText">
               En KINECLIN buscamos que cada entrenamiento sea seguro, progresivo y
