@@ -3,7 +3,7 @@ import ServicesCardGrid from "../ui/ServicesCardGrid";
 import { Helmet } from "react-helmet-async";
 import ActionButton from "../../components/common/ActionButton/ActionButton";
 import InfoDecoBlock from "../ui/InfoDecoBlock";
-import PsicoTeamShowcase from "../ui/PsicoTeamShowcase";
+import DualProfessionalShowcase from "../ui/DualProfessionalShowcase";
 import TopicChipGrid from "../ui/TopicChipGrid";
 
 export default function GymPage() {
@@ -120,27 +120,33 @@ export default function GymPage() {
           </div>
         </section>
 
-        <section className="gimnasioSection">
-          <PsicoTeamShowcase
-            centerTitle="Profesionales a cargo"
-            leftImage="/gimnasio/gymCatalina.jpg"
-            leftName="Klga. Catalina Reyes"
-            leftText="Kinesióloga orientada al área musculoesquelética, respiratoria y al acompañamiento de procesos de rehabilitación y entrenamiento funcional. Su trabajo se enfoca en guiar al paciente de forma progresiva, segura y personalizada."
-            leftWsp={true}
-            leftWspLink="https://wa.me/56950833838"
-            leftWspMsg="Hola, me gustaría consultar por una evaluación para el gimnasio médico con Catalina Reyes."
-            leftAgenda={true}
-            leftAgendaLink="https://ff.healthatom.io/n2W9xW"
-            rightImage="/gimnasio/gymJaviera.jpg"
-            rightName="Klga. Javiera Vega"
-            rightText="Kinesióloga con enfoque transversal en rehabilitación, movimiento terapéutico y entrenamiento guiado. Acompaña a pacientes en procesos de recuperación funcional, fortalecimiento y retorno progresivo a la actividad física."
-            rightWsp={true}
-            rightWspLink="https://wa.me/56950833838"
-            rightWspMsg="Hola, me gustaría consultar por una evaluación para el gimnasio médico con Javiera Vera."
-            rightAgenda={true}
-            rightAgendaLink="https://ff.healthatom.io/KW5rCJ"
-          />
-        </section>
+        <DualProfessionalShowcase
+          title="Conoce a nuestras profesionales"
+          background="white"
+          professionals={[
+            {
+              image: "/gimnasio/gymCatalina.jpg",
+              name: "Klga. Catalina Reyes",              text: "Kinesióloga orientada al área musculoesquelética, respiratoria y al acompañamiento de procesos de rehabilitación y entrenamiento funcional. Su trabajo se enfoca en guiar al paciente de forma progresiva, segura y personalizada.",
+              wsp: true,
+              wspLink: "https://wa.me/56950833838",
+              wspMsg:
+                "Hola, me gustaría consultar por una evaluación para el gimnasio médico con Catalina Reyes.",
+              agenda: true,
+              agendaLink: "https://ff.healthatom.io/n2W9xW",
+            },
+            {
+              image: "/gimnasio/gymJaviera.jpg",
+              name: "Klga. Javiera Vega",
+              text: "Kinesióloga con enfoque transversal en rehabilitación, movimiento terapéutico y entrenamiento guiado. Acompaña a pacientes en procesos de recuperación funcional, fortalecimiento y retorno progresivo a la actividad física.",
+              wsp: true,
+              wspLink: "https://wa.me/56950833838",
+              wspMsg:
+                "Hola, me gustaría consultar por una evaluación para el gimnasio médico con Javiera Vera.",
+              agenda: true,
+              agendaLink: "https://ff.healthatom.io/KW5rCJ",
+            },
+          ]}
+        />
 
         <section className="gimnasioSection gimnasioSection--soft">
           <div className="gimnasioSection__inner gimnasioSection__inner--center">

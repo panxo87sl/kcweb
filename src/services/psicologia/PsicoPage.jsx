@@ -1,7 +1,6 @@
 import "./PsicoPage.css";
 import { Helmet } from "react-helmet-async";
 import ActionButton from "../../components/common/ActionButton/ActionButton";
-import PsicoTeamShowcase from "../ui/PsicoTeamShowcase";
 import TripleProfessionalShowcase from "../ui/TripleProfessionalShowcase";
 import TopicChipGrid from "../ui/TopicChipGrid";
 

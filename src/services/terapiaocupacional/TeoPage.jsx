@@ -31,6 +31,7 @@ export default function TeoPage() {
           image="/terapiaocupacional/teoBenjamin.jpg"
           name="Benjamin Rodriguez"
           role="Terapeuta Ocupacional"
+          badgeText="Atención desde los 18 años"
           description={
             <>
               Terapeuta ocupacional orientado a la rehabilitación funcional de adultos y
@@ -58,8 +59,8 @@ export default function TeoPage() {
               En KINECLIN entendemos la terapia ocupacional como un proceso centrado en la
               ocupación, es decir, en las actividades que cada usuario necesita, quiere o
               valora realizar en su vida diaria. Nuestro enfoque considera sus intereses,
-              rutinas, roles, entorno y necesidades reales, acompañando principalmente a
-              adultos y personas mayores que requieren rehabilitación funcional, neurológica,
+              rutinas, roles, entorno y necesidades reales, acompañando a adultos y personas
+              mayores desde los 18 años que requieren rehabilitación funcional, neurológica,
               cognitiva o apoyo para desenvolverse con mayor seguridad en su día a día.
             </p>
 

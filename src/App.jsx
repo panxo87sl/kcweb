@@ -23,11 +23,9 @@ import DiegoPage from "./services/contactos/DiegoPage";
 
 // IMPORTA TU LANDING
 import FacialesPage from "./services/estetica/promos/faciales/FacialesPage";
-// futuro:
-// import CorporalesPage from "./pages/corporales/CorporalesPage";
 
 // Paginas islas (no usan layout)
-const islandPaths = ["/faciales", "/corporales", "/diegozuniga"];
+const islandPaths = ["/faciales", "/diegozuniga"];
 
 function LayoutWrapper({ children }) {
   const location = useLocation();

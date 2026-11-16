@@ -14,7 +14,14 @@ export default function SingleProfessionalShowcase({
   agendaLink = "#",
   agendaGTag,
   background = "white", // white | soft
+  badgeText = "",
 }) {
+  // La leyenda bajo el cargo (ej. "Atención desde los 18 años") solo se dibuja si viene por props.
+  let badgeBlock = null;
+  if (badgeText) {
+    badgeBlock = <h4 className="singleProfessional__badgeText">{badgeText}</h4>;
+  }
+
   return (
     <section className={`singleProfessional singleProfessional--${background}`}>
       <div className="singleProfessional__inner">
@@ -26,6 +33,7 @@ export default function SingleProfessionalShowcase({
           <span className="singleProfessional__eyebrow">Profesional a cargo</span>
           <h2 className="singleProfessional__name">{name}</h2>
           <h3 className="singleProfessional__role">{role}</h3>
+          {badgeBlock}
           <p className="singleProfessional__description">{description}</p>
 
           {(wsp || agenda) && (

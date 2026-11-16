@@ -55,6 +55,13 @@
   font-weight: 700;
 }
 
+.singleProfessional__badgeText {
+  margin: 0 0 8px 0;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 800;
+}
+
 .singleProfessional__description {
   margin: 0;
   color: #4b5563;

@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-Disallow: /kcestetica
-Disallow: /faciales
-Disallow: /corporales
-Disallow: /diegozuniga
-
 Sitemap: https://www.kineclin.cl/sitemap.xml

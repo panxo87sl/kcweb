@@ -1,7 +1,7 @@
 import "./FonoPage.css";
 import { Helmet } from "react-helmet-async";
 import InfoDecoBlock from "../ui/InfoDecoBlock";
-import PsicoTeamShowcase from "../ui/PsicoTeamShowcase";
+import DualProfessionalShowcase from "../ui/DualProfessionalShowcase";
 import TopicChipGrid from "../ui/TopicChipGrid";
 
 export default function FonoPage() {
@@ -142,43 +142,32 @@ export default function FonoPage() {
           </div>
         </section>
 
-        <section className="fonoSection fonoSection--soft">
-          <PsicoTeamShowcase
-            leftImage="/fonoaudiologia/fonoCatalina.jpg"
-            leftName="Catalina Quiroz"
-            leftText={
-              <>
-                Fonoaudióloga clínica orientada principalmente a la atención de adultos, con
-                experiencia en evaluación e intervención en lenguaje, habla, deglución y
-                motricidad orofacial. Su trabajo se enfoca en comprender las necesidades de cada
-                paciente, establecer objetivos terapéuticos realistas y acompañar el proceso de
-                manera clara, cercana y profesional.
-              </>
-            }
-            leftWsp={true}
-            leftWspLink="https://wa.me/56950833838"
-            leftWspMsg="Hola, quisiera consultar por atención fonoaudiológica con Catalina."
-            leftAgenda={true}
-            leftAgendaLink={
-              "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=27"
-            }
-            rightImage="/fonoaudiologia/fonoMariluna.jpg"
-            rightName="Mariluna Miranda"
-            rightText={
-              <>
-                Fonoaudióloga con especial interés en el área de voz, además de experiencia en
-                lenguaje, habla, deglución y motricidad orofacial. Atiende a niños, adolescentes
-                y adultos, adaptando cada intervención a las necesidades del paciente, con un
-                acompañamiento cercano, ordenado y orientado a una comunicación más segura y
-                funcional.
-              </>
-            }
-            rightWsp={true}
-            rightWspLink="https://wa.me/56950833838"
-            rightWspMsg="Hola, quisiera consultar por atención fonoaudiológica con Mariluna."
-            rightAgenda={false}
-          />
-        </section>
+        <DualProfessionalShowcase
+          title="Conoce a nuestras profesionales"
+          background="soft"
+          professionals={[
+            {
+              image: "/fonoaudiologia/fonoCatalina.jpg",
+              name: "Catalina Quiroz",
+              text: "Fonoaudióloga clínica orientada principalmente a la atención de adultos, con experiencia en evaluación e intervención en lenguaje, habla, deglución y motricidad orofacial. Su trabajo se enfoca en comprender las necesidades de cada paciente, establecer objetivos terapéuticos realistas y acompañar el proceso de manera clara, cercana y profesional.",
+              wsp: true,
+              wspLink: "https://wa.me/56950833838",
+              wspMsg: "Hola, quisiera consultar por atención fonoaudiológica con Catalina.",
+              agenda: true,
+              agendaLink:
+                "https://99cc847c17b2db7b36831a8547ec3db203e2aff1.agenda.softwaremedilink.com/agenda/profesional?modalidad=1&id_profesional=27",
+            },
+            {
+              image: "/fonoaudiologia/fonoMariluna.jpg",
+              name: "Mariluna Miranda",
+              text: "Fonoaudióloga con especial interés en el área de voz, además de experiencia en lenguaje, habla, deglución y motricidad orofacial. Atiende a niños, adolescentes y adultos, adaptando cada intervención a las necesidades del paciente, con un acompañamiento cercano, ordenado y orientado a una comunicación más segura y funcional.",
+              wsp: true,
+              wspLink: "https://wa.me/56950833838",
+              wspMsg: "Hola, quisiera consultar por atención fonoaudiológica con Mariluna.",
+              agenda: false,
+            },
+          ]}
+        />
 
         <section className="fonoSection">
           <div className="fonoSection__inner fonoSection__inner--center">
